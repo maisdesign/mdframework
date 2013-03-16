@@ -1,0 +1,10 @@
+.pagenavi a, .utompage {
+  display: block;
+  padding: 5px 8px;
+  float: left;
+  margin: 0px 5px;
+}
+
+.pagenavi a { border: 1px solid #A0A0A0; }
+.pagenavi a:hover { text-decoration: none; background: #E4E4E4; border: 1px solid #A0A0A0; }
+

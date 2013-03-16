@@ -1,0 +1,172 @@
+@font-face
+{
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 400;
+	src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/u-WUoqrET9fUeobQW7jkRaCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+HEADER.testata.tdx SECTION.topslide
+{
+	float: left;
+	width: 60%;
+}
+HEADER.testata.tsx SECTION.topslide
+{
+	float: right;
+	width: 60%;
+}
+ARTICLE.firstcat, ARTICLE.secondcat, ARTICLE.thirdcat
+{
+	float: left;
+	width: 33%;
+	border: 1px solid #111;
+	height: 300px;
+}
+FOOTER.basso
+{
+	width: 96%;
+	margin: auto;
+	overflow: hidden;
+}
+ARTICLE.firstareahotel, ARTICLE.thirdareahotel
+{
+	float: left;
+}
+SECTION.firstareahotel, SECTION.secondareahotel, SECTION.thirdareahotel
+{
+	width: 96%;
+	margin: auto auto 1%;
+	padding: 1%;
+	/*+box-shadow:1px 1px 1px #FFF;*/
+	-moz-box-shadow: 1px 1px 1px #FFF;
+	-webkit-box-shadow: 1px 1px 1px #FFF;
+	-o-box-shadow: 1px 1px 1px #FFF;
+	box-shadow: 1px 1px 1px #FFF;
+	border: 1px solid #111;
+	overflow: hidden;
+}
+ASIDE.secondareahotel
+{
+	width: 30%;
+	float: left;
+	overflow: hidden;
+}
+ARTICLE.secondareahotel
+{
+	float: right;
+	text-align: right;
+}
+@font-face
+{
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 700;
+	src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzNqQynqKV_9Plp7mupa0S4g.ttf) format('truetype');
+}
+@font-face
+{
+	font-family: "Open Sans";
+	font-style: italic;
+	font-weight: 400;
+	src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/xjAJXh38I15wypJXxuGMBl02b4v3fUxqf9CZJ1qUoIA.ttf) format('truetype');
+}
+@font-face
+{
+	font-family: "Open Sans";
+	font-style: italic;
+	font-weight: 700;
+	src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/PRmiXeptR36kaC0GEAetxiBnJMIPt0VoltfALX9gDFQ.ttf) format('truetype');
+}
+ASIDE.firstareahotel, ASIDE.thirdareahotel
+{
+	width: 30%;
+	float: right;
+	overflow: hidden;
+}
+FIGURE.firstareahotel A[title]:hover:after, FIGURE.thirdareahotel A[title]:hover:after
+{
+	content: attr(title);
+	width: 200px;
+	padding: 4px 8px;
+	color: #333;
+	/*+text-shadow:1px 1px 1px #FFF;*/
+	-moz-text-shadow: 1px 1px 1px #FFF;
+	-webkit-text-shadow: 1px 1px 1px #FFF;
+	-o-text-shadow: 1px 1px 1px #FFF;
+	text-shadow: 1px 1px 1px #FFF;
+	font-weight: bold;
+	position: absolute;
+	right: 40px;
+	text-decoration: none !important;
+	z-index: 100;
+	/*+border-radius:2px;*/
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-khtml-border-radius: 2px;
+	border-radius: 2px;
+	/*+box-shadow:1px 1px 1px #111;*/
+	-moz-box-shadow: 1px 1px 1px #111;
+	-webkit-box-shadow: 1px 1px 1px #111;
+	-o-box-shadow: 1px 1px 1px #111;
+	box-shadow: 1px 1px 1px #111;
+	background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #eeeeee),color-stop(1, #cccccc));
+	background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+	background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+	background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
+	background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
+}
+ASIDE.firstareahotel A IMG, ASIDE.secondareahotel A IMG, ASIDE.thirdareahotel A IMG
+{
+	max-width: 100%;
+	max-height: 100%;
+	/*+box-shadow:1px 1px 1px #AAA;*/
+	-moz-box-shadow: 1px 1px 1px #AAA;
+	-webkit-box-shadow: 1px 1px 1px #AAA;
+	-o-box-shadow: 1px 1px 1px #AAA;
+	box-shadow: 1px 1px 1px #AAA;
+	/*+border-radius:2px;*/
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-khtml-border-radius: 2px;
+	border-radius: 2px;
+}
+ARTICLE.secondareahotel, ARTICLE.firstareahotel, ARTICLE.thirdareahotel
+{
+	width: 60%;
+	max-height: 300px;
+	padding: 1%;
+}
+FIGURE.secondareahotel A[title]:hover:after
+{
+	content: attr(title);
+	width: 200px;
+	padding: 4px 8px;
+	color: #333;
+	/*+text-shadow:1px 1px 1px #FFF;*/
+	-moz-text-shadow: 1px 1px 1px #FFF;
+	-webkit-text-shadow: 1px 1px 1px #FFF;
+	-o-text-shadow: 1px 1px 1px #FFF;
+	text-shadow: 1px 1px 1px #FFF;
+	font-weight: bold;
+	position: absolute;
+	left: 40px;
+	text-decoration: none !important;
+	z-index: 100;
+	/*+border-radius:2px;*/
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-khtml-border-radius: 2px;
+	border-radius: 2px;
+	/*+box-shadow:1px 1px 1px #111;*/
+	-moz-box-shadow: 1px 1px 1px #111;
+	-webkit-box-shadow: 1px 1px 1px #111;
+	-o-box-shadow: 1px 1px 1px #111;
+	box-shadow: 1px 1px 1px #111;
+	background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #eeeeee),color-stop(1, #cccccc));
+	background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+	background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+	background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
+	background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
+}
