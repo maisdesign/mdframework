@@ -1,66 +1,18 @@
-<?php
-/**
- * The template for displaying Archive pages.
- *
- * Used to display archive-type pages if nothing more specific matches a query.
- * For example, puts together date-based pages if no date.php file exists.
- *
- * If you'd like to further customize these archive views, you may create a
- * new template file for each specific one. For example, MD Framework already
- * has tag.php for Tag archives, category.php for Category archives, and
- * author.php for Author archives.
- *
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
- *
- * @package WordPress
- * @subpackage MD_Framework
- * @since MD Framework 1.0
- */
-
-get_header(); ?>
-
-	<section id="primary" class="site-content">
-		<div id="content" role="main">
-
-		<?php if ( have_posts() ) : ?>
-			<header class="archive-header">
-				<h1 class="archive-title"><?php
-					if ( is_day() ) :
-						printf( __( 'Daily Archives: %s', 'mdframework' ), '<span>' . get_the_date() . '</span>' );
-					elseif ( is_month() ) :
-						printf( __( 'Monthly Archives: %s', 'mdframework' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'mdframework' ) ) . '</span>' );
-					elseif ( is_year() ) :
-						printf( __( 'Yearly Archives: %s', 'mdframework' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'mdframework' ) ) . '</span>' );
-					else :
-						_e( 'Archives', 'mdframework' );
-					endif;
-				?></h1>
-			</header><!-- .archive-header -->
-
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
-
-				/* Include the post format-specific template for the content. If you want to
-				 * this in a child theme then include a file called called content-___.php
-				 * (where ___ is the post format) and that will be used instead.
-				 */
-				get_template_part( 'content', get_post_format() );
-
-			endwhile;
-
-			mdframework_content_nav( 'nav-below' );
-			?>
-
-		<?php else : ?>
-			<?php get_template_part( 'content', 'none' ); ?>
-		<?php endif; ?>
-
-		</div><!-- #content -->
-	</section><!-- #primary -->
-
-<?php $partibody = of_get_option('example_images', 'no entry' );
-if (!($partibody == 'unacol')){ 
-	get_sidebar();
-};?>
-<?php get_footer(); ?>
+<?php
+/**
+ * The template for displaying Archive pages.
+ *
+ * Used to display archive-type pages if nothing more specific matches a query.
+ * For example, puts together date-based pages if no date.php file exists.
+ *
+ * If you'd like to further customize these archive views, you may create a
+ * new template file for each specific one. For example, MD Framework already
+ * has tag.php for Tag archives, category.php for Category archives, and
+ * author.php for Author archives.
+ *
+ * Learn more: http://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package WordPress
+ * @subpackage MD_Framework
+ * @since MD Framework 1.0
+ */if (of_get_option('enabling_test_homepage')){		get_template_part('parti/test','options');	}else{ $_SESSION['templatesidewide'] = of_get_option('select_sitewide_template', '' );		switch ($_SESSION['templatesidewide']) {    case 'forum':        get_template_part('parti/'.$_SESSION['templatesidewide'].'/head',$_SESSION['templatesidewide']);/*Usually <head></head><body>*/		get_template_part('parti/'.$_SESSION['templatesidewide'].'/top',$_SESSION['templatesidewide']);/*<header></header><hgroup></hgroup><nav></nav>*/		get_template_part('parti/'.$_SESSION['templatesidewide'].'/archive',$_SESSION['templatesidewide']);/*All the goodies */		get_template_part('parti/'.$_SESSION['templatesidewide'].'/footer',$_SESSION['templatesidewide']);/*End of the page */        break;    case 'blog':        get_template_part('parti/'.$_SESSION['templatesidewide'].'/head',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/top',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/archive',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/footer',$_SESSION['templatesidewide']);        break;    case 'hotel':        get_template_part('parti/'.$_SESSION['templatesidewide'].'/head',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/top',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/archive',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/footer',$_SESSION['templatesidewide']);        break;	case 'ecommerce':        get_template_part('parti/'.$_SESSION['templatesidewide'].'/head',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/top',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/archive',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/footer',$_SESSION['templatesidewide']);        break;	case 'base':        get_template_part('parti/'.$_SESSION['templatesidewide'].'/head',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/top',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/archive',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/footer',$_SESSION['templatesidewide']);        break;	default:		get_header();	}; };?><!-- Fine archive.php -->

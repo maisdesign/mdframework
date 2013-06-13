@@ -1,32 +1,9 @@
-<?php
-/**
- * The template for displaying 404 pages (Not Found).
- *
- * @package WordPress
- * @subpackage MD_Framework
- * @since MD Framework 1.0
- */
-
-get_header(); ?>
-
-	<div id="primary" class="site-content <?php echo of_get_option('example_images', 'no entry' ); ?>">
-		<div id="content" role="main">
-
-			<article id="post-0" class="post error404 no-results not-found">
-				<header class="entry-header">
-					<h1 class="entry-title"><?php _e( 'This is somewhat embarrassing, isn&rsquo;t it?', 'mdframework' ); ?></h1>
-				</header>
-
-				<div class="entry-content">
-					<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'mdframework' ); ?></p>
-					<?php get_search_form(); ?>
-				</div><!-- .entry-content -->
-			</article><!-- #post-0 -->
-
-		</div><!-- #content -->
-	</div><!-- #primary -->
-<?php $partibody = of_get_option('example_images', 'no entry' );
-if (!($partibody == 'unacol')){ 
-	get_sidebar();
-};?>
-<?php get_footer(); ?>
+<?php
+/**
+ * The template for displaying 404 pages (Not Found).
+ *
+ * @package WordPress
+ * @subpackage MD_Framework
+ * @since MD Framework 1.0
+ */
+if (of_get_option('enabling_test_homepage')){		get_template_part('parti/test','options');	}else{ $_SESSION['templatesidewide'] = of_get_option('select_sitewide_template', '' );		switch ($_SESSION['templatesidewide']) {    case 'forum':        get_template_part('parti/'.$_SESSION['templatesidewide'].'/head',$_SESSION['templatesidewide']);/*Usually <head></head><body>*/		get_template_part('parti/'.$_SESSION['templatesidewide'].'/top',$_SESSION['templatesidewide']);/*<header></header><hgroup></hgroup><nav></nav>*/		get_template_part('parti/'.$_SESSION['templatesidewide'].'/404',$_SESSION['templatesidewide']);/*All the goodies */		get_template_part('parti/'.$_SESSION['templatesidewide'].'/footer',$_SESSION['templatesidewide']);/*End of the page */        break;    case 'blog':        get_template_part('parti/'.$_SESSION['templatesidewide'].'/head',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/top',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/404',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/footer',$_SESSION['templatesidewide']);        break;    case 'hotel':        get_template_part('parti/'.$_SESSION['templatesidewide'].'/head',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/top',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/404',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/footer',$_SESSION['templatesidewide']);        break;	case 'ecommerce':        get_template_part('parti/'.$_SESSION['templatesidewide'].'/head',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/top',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/404',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/footer',$_SESSION['templatesidewide']);        break;	case 'base':        get_template_part('parti/'.$_SESSION['templatesidewide'].'/head',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/top',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/404',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/footer',$_SESSION['templatesidewide']);        break;	default:		get_header();	}; };?>

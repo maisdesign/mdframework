@@ -1,52 +1,1 @@
-<?php
-/**
- * The template for displaying Search Results pages.
- *
- * @package WordPress
- * @subpackage MD_Framework
- * @since MD Framework 1.0
- */
-
-get_header(); ?>
-
-	<section id="primary" class="site-content">
-		<div id="content" role="main">
-
-		<?php if ( have_posts() ) : ?>
-
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'mdframework' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-			</header>
-
-			<?php mdframework_content_nav( 'nav-above' ); ?>
-
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'content', get_post_format() ); ?>
-			<?php endwhile; ?>
-
-			<?php mdframework_content_nav( 'nav-below' ); ?>
-
-		<?php else : ?>
-
-			<article id="post-0" class="post no-results not-found">
-				<header class="entry-header">
-					<h1 class="entry-title"><?php _e( 'Nothing Found', 'mdframework' ); ?></h1>
-				</header>
-
-				<div class="entry-content">
-					<p><?php _e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'mdframework' ); ?></p>
-					<?php get_search_form(); ?>
-				</div><!-- .entry-content -->
-			</article><!-- #post-0 -->
-
-		<?php endif; ?>
-
-		</div><!-- #content -->
-	</section><!-- #primary -->
-
-<?php $partibody = of_get_option('example_images', 'no entry' );
-if (!($partibody == 'unacol')){ 
-	get_sidebar();
-};?>
-<?php get_footer(); ?>
+<!-- File search --><?php/** * The template for displaying Search Results pages. * * @package WordPress * @subpackage MD_Framework * @since MD Framework 1.0 */if (of_get_option('enabling_test_homepage')){		get_template_part('parti/test','options');	}else{ $_SESSION['templatesidewide'] = of_get_option('select_sitewide_template', '' );		switch ($_SESSION['templatesidewide']) {    case 'forum':        get_template_part('parti/'.$_SESSION['templatesidewide'].'/head',$_SESSION['templatesidewide']);/*Usually <head></head><body>*/		get_template_part('parti/'.$_SESSION['templatesidewide'].'/top',$_SESSION['templatesidewide']);/*<header></header><hgroup></hgroup><nav></nav>*/		get_template_part('parti/'.$_SESSION['templatesidewide'].'/search',$_SESSION['templatesidewide']);/*All the goodies */		get_template_part('parti/'.$_SESSION['templatesidewide'].'/footer',$_SESSION['templatesidewide']);/*End of the page */        break;    case 'blog':        get_template_part('parti/'.$_SESSION['templatesidewide'].'/head',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/top',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/search',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/footer',$_SESSION['templatesidewide']);        break;    case 'hotel':        get_template_part('parti/'.$_SESSION['templatesidewide'].'/head',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/top',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/search',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/footer',$_SESSION['templatesidewide']);        break;	case 'ecommerce':        get_template_part('parti/'.$_SESSION['templatesidewide'].'/head',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/top',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/search',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/footer',$_SESSION['templatesidewide']);        break;	case 'base':        get_template_part('parti/'.$_SESSION['templatesidewide'].'/head',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/top',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/search',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/footer',$_SESSION['templatesidewide']);        break;	default:		get_header();	}; };?><!-- Fine search -->

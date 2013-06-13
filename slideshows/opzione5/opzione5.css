@@ -1,0 +1,170 @@
+/*The slider*/
+.iviewSlider
+{
+	display: block;
+	/*[disabled]width:900px;*/
+	/*[disabled]height:400px;*/
+	overflow: hidden;
+	border-radius: 4px;
+	top: -20px;
+}
+/*The timer in the Slider*/
+#iview-timer
+{
+	position: absolute;
+	z-index: 100;
+	border-radius: 5px;
+	cursor: pointer;
+}
+#iview-timer DIV
+{
+	border-radius: 3px;
+}
+/*The Preloader in the Slider*/
+#iview-preloader
+{
+	position: absolute;
+	z-index: 1000;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #000;
+	padding: 1px;
+	width: 100px;
+	height: 3px;
+}
+#iview-preloader DIV
+{
+	float: left;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	height: 3px;
+	background: #000;
+	width: 0px;
+}
+/*The strips and boxes in the Slider*/
+.iview-strip
+{
+	display: block;
+	position: absolute;
+	z-index: 5;
+}
+.iview-block
+{
+	display: block;
+	position: absolute;
+	z-index: 5;
+}
+/*Direction nav styles (e.g. Next & Prev)*/
+.iview-directionNav A
+{
+	position: absolute;
+	top: 45%;
+	z-index: 9;
+	cursor: pointer;
+}
+.iview-prevNav
+{
+	left: 0px;
+}
+.iview-nextNav
+{
+	right: 0px;
+}
+/*Control nav styles (e.g. 1,2,3...)*/
+.iview-controlNav
+{
+	position: absolute;
+	z-index: 9;
+}
+.iview-controlNav A
+{
+	z-index: 9;
+	cursor: pointer;
+}
+.iview-controlNav A.active
+{
+	font-weight: bold;
+}
+.iview-controlNav .iview-items UL
+{
+	list-style: none;
+	width: 60%;
+	margin: auto;
+	/*[empty]float:;*/
+	background: rgba(0, 0, 0, 0.2);
+	top: -18px;
+	position: relative;
+}
+.iview-controlNav .iview-items UL LI
+{
+	display: inline;
+	position: relative;
+}
+.iview-controlNav .iview-tooltip
+{
+	position: absolute;
+}
+/*The captions in the Slider*/
+.iview-caption
+{
+	position: absolute;
+	z-index: 4;
+	overflow: hidden;
+	cursor: default;
+}
+/*The video show in the Slider*/
+.iview-video-show
+{
+	background: #000;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 101;
+}
+.iview-video-show .iview-video-container
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.iview-video-show .iview-video-container A.iview-video-close
+{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	background: #222;
+	color: #FFF;
+	height: 20px;
+	width: 20px;
+	text-align: center;
+	line-height: 29px;
+	font-size: 22px;
+	font-weight: bold;
+	overflow: hidden;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+.iview-video-show .iview-video-container A.iview-video-close:hover
+{
+	background: #444;
+}
+/*Aggiunta responsiva*/
+#iview
+{
+	display: block;
+	max-width: 90% !important;
+	min-width: 300px;
+	background: #000;
+	background: rgba(0, 0, 0, 0.7);
+	padding: 5px;
+	border-radius: 5px;
+	position: relative;
+	-webkit-box-shadow: 0 38px 30px -18px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 38px 30px -18px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 38px 30px -18px rgba(0, 0, 0, 0.5);
+	margin: 0px auto 40px;
+	top: 0;
+}

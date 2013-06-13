@@ -1,0 +1,218 @@
+.container
+{
+	display: block;
+	margin: 0px auto;
+}
+#iview
+{
+	display: block;
+	max-width: 960px;
+	min-width: 300px;
+	background: #000;
+	background: rgba(0, 0, 0, 0.7);
+	padding: 5px;
+	position: relative;
+	-webkit-box-shadow: 0 38px 30px -18px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 38px 30px -18px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 38px 30px -18px rgba(0, 0, 0, 0.5);
+	margin: 40px auto;
+	overflow: hidden;
+}
+.iview-caption.caption1
+{
+	font-size: 36px;
+	font-weight: bold;
+	height: 45px;
+}
+.iview-caption.caption2
+{
+	background: #00B4FF;
+	font-size: 36px;
+	font-weight: bold;
+	text-shadow: none;
+}
+.iview-caption.caption4
+{
+	font-size: 22px;
+	font-weight: bold;
+}
+.iview-caption.caption5
+{
+	background: #C4302B;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+	font-size: 20px;
+	font-weight: bold;
+	text-shadow: none;
+}
+.iview-caption.caption6
+{
+	font-size: 18px;
+}
+.iview-caption.caption7
+{
+	text-align: left;
+	font-size: 11px;
+	color: #888;
+	border-radius: 0px;
+}
+.iview-caption.caption7 DIV
+{
+	line-height: 200%;
+}
+.iview-caption.caption7 H3
+{
+	margin-bottom: 20px;
+	color: #FFF;
+}
+.iview-caption.blackcaption
+{
+	background: #000;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+	text-shadow: none;
+}
+.iview-controlNav
+{
+	position: static;
+	height: 45px;
+	text-align: center;
+	/*[disabled]background:url('../img/navigation-bg.png');*/
+	border-radius: 0px 0px 4px 4px;
+	width: 60%;
+	margin: 0 20%;
+}
+.iview-controlNav
+{
+	position: absolute;
+	z-index: 9;
+}
+.iview-controlNav A
+{
+	z-index: 9;
+	cursor: pointer;
+}
+.iview-controlNav A.active
+{
+	font-weight: bold;
+}
+.iview-controlNav .iview-items UL
+{
+	list-style: none;
+	width: 60%;
+	margin: auto;
+	/*[empty]float:;*/
+	background: rgba(0, 0, 0, 0.2);
+	top: -18px;
+	position: relative;
+}
+.iview-controlNav .iview-items UL LI
+{
+	display: inline;
+	position: relative;
+}
+.iview-controlNav .iview-tooltip
+{
+	position: absolute;
+}
+.iview-controlNav .iview-items
+{
+	display: block;
+	padding: 0px 20px;
+}
+.iview-controlNav A IMG
+{
+	height: 30px;
+	border: 1px solid #000;
+	margin: 7px 7px 0px 0px;
+	border-radius: 2px;
+}
+.iview-controlNav A.active IMG
+{
+	border-color: #999;
+}
+#iview .iviewSlider
+{
+	display: block;
+	width: 900px;
+	height: 400px;
+	overflow: hidden;
+	border-radius: 4px;
+}
+#iview DIV.iview-directionNav
+{
+	position: absolute;
+	top: 47%;
+	left: 0px;
+	z-index: 9;
+	width: 100%;
+}
+#iview DIV.iview-directionNav A
+{
+	display: block;
+	cursor: pointer;
+	position: absolute;
+	width: 27px;
+	height: 27px;
+	background-image: url(../../img/bg_direction_nav.png);
+	text-indent: -9999px;
+	-webkit-transition: left 0.3s ease-in-out;
+	-webkit-transition-property: left,right;
+	-moz-transition: left 0.3s ease-in-out;
+	-moz-transition-property: left,right;
+	-o-transition: left 0.3s ease-in-out;
+	-o-transition-property: left,right;
+	-ms-transition: left 0.3s ease-in-out;
+	-ms-transition-property: left,right;
+	transition: left 0.3s ease-in-out;
+	transition-property: left,right;
+}
+#iview DIV.iview-directionNav A.iview-nextNav
+{
+	right: -27px;
+	background-position: 27px 0px;
+}
+#iview DIV.iview-directionNav A.iview-prevNav
+{
+	left: -27px;
+	background-position: 0px 0px;
+}
+#iview.iview-hover DIV.iview-directionNav A.iview-nextNav
+{
+	right: 20px;
+}
+#iview.iview-hover DIV.iview-directionNav A.iview-prevNav
+{
+	left: 20px;
+}
+.iview-caption
+{
+	background: url('../img/caption-bg.png');
+	color: #FFF;
+	border-radius: 3px;
+	padding: 10px 15px;
+	font-family: Verdana;
+	font-size: 12px;
+	text-shadow: 1px 1px #000;
+}
+.iview-caption.caption3
+{
+	background: #C4302B;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+	text-shadow: none;
+}
+#iview-preloader
+{
+	border: 1px solid #666;
+	width: 150px;
+}
+#iview-preloader DIV
+{
+	background: #666;
+}
+#iview-timer
+{
+	border-radius: 10px;
+}
+#iview-timer DIV
+{
+	border-radius: 10px;
+}

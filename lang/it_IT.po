@@ -1,0 +1,5199 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MD Framework v1.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-03-02 14:08+0700\n"
+"PO-Revision-Date: 2013-06-01 00:09:43+0000\n"
+"Last-Translator: name <email@domain.com>\n"
+"Language-Team: Rilwis <rilwis@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Textdomain-Support: yes"
+
+#: inc/classes/meta-box.php:360
+#: meta-box/inc/classes/meta-box.php:326
+#@ rwmb
+msgid "+"
+msgstr ""
+
+#: inc/classes/meta-box.php:382
+#: meta-box/inc/classes/meta-box.php:350
+#@ rwmb
+msgid "&#8211;"
+msgstr ""
+
+#: meta-box/meta-box.php:79
+#@ rwmb
+msgid "RW_Meta_Box Debug:"
+msgstr ""
+
+#: inc/fields/file.php:66
+#: meta-box/inc/fields/file.php:69
+#@ rwmb
+msgid "Error: Cannot delete file"
+msgstr "Errore: impossibile cancellare il file"
+
+#: meta-box/inc/fields/file.php:83
+#@ rwmb
+msgctxt "file upload"
+msgid "Uploaded files"
+msgstr "Carica i files"
+
+#: meta-box/inc/fields/file.php:84
+#@ rwmb
+msgctxt "file upload"
+msgid "Delete this file"
+msgstr "Elimina file"
+
+#: inc/fields/file.php:133
+#: meta-box/inc/fields/file.php:85
+#@ rwmb
+msgctxt "file upload"
+msgid "Delete"
+msgstr "Elimina"
+
+#: meta-box/inc/fields/file.php:86
+#@ rwmb
+msgctxt "file upload"
+msgid "Upload files"
+msgstr "Carica files"
+
+#: inc/fields/image.php:64
+#: meta-box/inc/fields/image.php:75
+#@ rwmb
+msgid "Order saved"
+msgstr "Ordine salvato"
+
+#: meta-box/inc/fields/image.php:91
+#: meta-box/inc/fields/plupload-image.php:145
+#@ rwmb
+msgctxt "image upload"
+msgid "Uploaded files"
+msgstr "Files caricati"
+
+#: meta-box/inc/fields/image.php:92
+#: meta-box/inc/fields/plupload-image.php:111
+#@ rwmb
+msgctxt "image upload"
+msgid "Delete this file"
+msgstr "Elimina file"
+
+#: inc/fields/image.php:144
+#: meta-box/inc/fields/image.php:93
+#: meta-box/inc/fields/plupload-image.php:112
+#@ rwmb
+msgctxt "image upload"
+msgid "Delete"
+msgstr "Cancella"
+
+#: inc/fields/image.php:145
+#: meta-box/inc/fields/image.php:94
+#: meta-box/inc/fields/plupload-image.php:113
+#@ rwmb
+msgctxt "image upload"
+msgid "Edit"
+msgstr ""
+
+#: meta-box/inc/fields/image.php:95
+#: meta-box/inc/fields/plupload-image.php:146
+#@ rwmb
+msgctxt "image upload"
+msgid "Upload files"
+msgstr "Carica files"
+
+#: inc/fields/plupload-image.php:181
+#: meta-box/inc/fields/plupload-image.php:94
+#@ rwmb
+msgctxt "image upload"
+msgid "Allowed Image Files"
+msgstr ""
+
+#: inc/fields/plupload-image.php:104
+#: meta-box/inc/fields/plupload-image.php:149
+#@ rwmb
+msgctxt "image upload"
+msgid "Drop images here"
+msgstr ""
+
+#: inc/fields/plupload-image.php:105
+#: meta-box/inc/fields/plupload-image.php:150
+#@ rwmb
+msgctxt "image upload"
+msgid "or"
+msgstr ""
+
+#: inc/fields/plupload-image.php:106
+#: meta-box/inc/fields/plupload-image.php:151
+#, fuzzy
+#@ rwmb
+msgctxt "image upload"
+msgid "Select Files"
+msgstr "Seleziona un colore"
+
+#: Custom-Meta-Boxes/classes.fields.php:455
+#@ default
+msgid "Allowed Image Files"
+msgstr ""
+
+#: Custom-Meta-Boxes/custom-meta-boxes.php:221
+#@ default
+msgid "id"
+msgstr ""
+
+#: Custom-Meta-Boxes/example-functions.php:61
+#@ mdframework
+msgid "Active"
+msgstr ""
+
+#: Custom-Meta-Boxes/example-functions.php:62
+#@ mdframework
+msgid "NOT Active"
+msgstr ""
+
+#: Custom-Meta-Boxes/example-functions.php:66
+#@ mdframework
+msgid "Modify Fields"
+msgstr ""
+
+#: Custom-Meta-Boxes/example-functions.php:77
+#@ mdframework
+msgid "Modify Fields 2"
+msgstr ""
+
+#: activity/activity-loop.php:41
+#@ buddypress
+msgid "Load More"
+msgstr ""
+
+#: activity/activity-loop.php:55
+#@ buddypress
+msgid "Sorry, there was no activity found. Please try a different filter."
+msgstr ""
+
+#. translators: 1: user profile link, 2: user name, 3: activity permalink, 4: activity timestamp
+#: activity/comment.php:27
+#, php-format
+#@ buddypress
+msgid "<a href=\"%1$s\">%2$s</a> replied <a href=\"%3$s\" class=\"activity-time-since\"><span class=\"time-since\">%4$s</span></a>"
+msgstr ""
+
+#: activity/comment.php:37
+#: functions.php:373
+#: groups/single/forum/edit.php:10
+#@ buddypress
+#@ mdframework
+msgid "Reply"
+msgstr ""
+
+#: activity/comment.php:43
+#: members/single/messages/messages-loop.php:51
+#: members/single/messages/single.php:24
+#@ buddypress
+msgid "Delete"
+msgstr ""
+
+#: activity/entry.php:37
+#@ buddypress
+msgid "In reply to: "
+msgstr ""
+
+#: activity/entry.php:37
+#@ buddypress
+msgid "View Thread / Permalink"
+msgstr ""
+
+#: activity/entry.php:37
+#: inc/mdcustom-post.php:13
+#@ buddypress
+#@ default
+msgid "View"
+msgstr ""
+
+#: activity/entry.php:60
+#, php-format
+#@ buddypress
+msgid "Comment <span>%s</span>"
+msgstr ""
+
+#: activity/entry.php:68
+#@ buddypress
+msgid "Mark as Favorite"
+msgstr ""
+
+#: activity/entry.php:68
+#@ buddypress
+msgid "Favorite"
+msgstr ""
+
+#: activity/entry.php:72
+#@ buddypress
+msgid "Remove Favorite"
+msgstr ""
+
+#: activity/entry.php:104
+#: inc/fields/post.php:54
+#@ buddypress
+#@ rwmb
+msgid "Post"
+msgstr ""
+
+#: activity/entry.php:104
+#@ buddypress
+msgid "or press esc to cancel."
+msgstr ""
+
+#: activity/index.php:21
+#@ buddypress
+msgid "Site Activity"
+msgstr ""
+
+#: activity/index.php:39
+#@ buddypress
+msgid "The public activity for everyone on this site."
+msgstr ""
+
+#: activity/index.php:39
+#: members/index.php:33
+#, php-format
+#@ buddypress
+msgid "All Members <span>%s</span>"
+msgstr ""
+
+#: activity/index.php:49
+#@ buddypress
+msgid "The activity of my friends only."
+msgstr ""
+
+#: activity/index.php:49
+#: members/index.php:37
+#, php-format
+#@ buddypress
+msgid "My Friends <span>%s</span>"
+msgstr ""
+
+#: activity/index.php:61
+#@ buddypress
+msgid "The activity of groups I am a member of."
+msgstr ""
+
+#: activity/index.php:61
+#: groups/index.php:39
+#, php-format
+#@ buddypress
+msgid "My Groups <span>%s</span>"
+msgstr ""
+
+#: activity/index.php:71
+#@ buddypress
+msgid "The activity I've marked as a favorite."
+msgstr ""
+
+#: activity/index.php:71
+#, php-format
+#@ buddypress
+msgid "My Favorites <span>%s</span>"
+msgstr ""
+
+#: activity/index.php:77
+#@ buddypress
+msgid "Activity that I have been mentioned in."
+msgstr ""
+
+#: activity/index.php:77
+#@ buddypress
+msgid "Mentions"
+msgstr ""
+
+#: activity/index.php:77
+#, php-format
+#@ buddypress
+msgid "<span>%s new</span>"
+msgstr ""
+
+#: activity/index.php:87
+#: groups/single/activity.php:3
+#@ buddypress
+msgid "RSS Feed"
+msgstr ""
+
+#: activity/index.php:87
+#: groups/single/activity.php:3
+#@ buddypress
+msgid "RSS"
+msgstr ""
+
+#: activity/index.php:92
+#: groups/single/activity.php:8
+#: members/single/activity.php:18
+#@ buddypress
+msgid "Show:"
+msgstr ""
+
+#: activity/index.php:94
+#: groups/single/activity.php:10
+#: members/single/activity.php:20
+#@ buddypress
+msgid "Everything"
+msgstr ""
+
+#: activity/index.php:95
+#: groups/single/activity.php:11
+#: members/single/activity.php:21
+#@ buddypress
+msgid "Updates"
+msgstr ""
+
+#: activity/index.php:99
+#: forums/forums-loop.php:40
+#: members/single/activity.php:27
+#@ buddypress
+msgid "Posts"
+msgstr ""
+
+#: activity/index.php:100
+#: members/single/activity.php:28
+#@ buddypress
+msgid "Comments"
+msgstr ""
+
+#: activity/index.php:106
+#: groups/single/activity.php:14
+#: members/single/activity.php:43
+#@ buddypress
+msgid "Forum Topics"
+msgstr ""
+
+#: activity/index.php:107
+#: groups/single/activity.php:15
+#: members/single/activity.php:44
+#@ buddypress
+msgid "Forum Replies"
+msgstr ""
+
+#: activity/index.php:113
+#: members/single/activity.php:50
+#@ buddypress
+msgid "New Groups"
+msgstr ""
+
+#: activity/index.php:114
+#: groups/single/activity.php:18
+#: members/single/activity.php:51
+#@ buddypress
+msgid "Group Memberships"
+msgstr ""
+
+#: activity/index.php:120
+#: members/single/activity.php:35
+#@ buddypress
+msgid "Friendships"
+msgstr ""
+
+#: activity/index.php:124
+#@ buddypress
+msgid "New Members"
+msgstr ""
+
+#: activity/post-form.php:23
+#, php-format
+#@ buddypress
+msgid "What's new in %s, %s?"
+msgstr ""
+
+#: activity/post-form.php:25
+#, php-format
+#@ buddypress
+msgid "What's new, %s?"
+msgstr ""
+
+#: activity/post-form.php:35
+#@ buddypress
+msgid "Post Update"
+msgstr ""
+
+#: activity/post-form.php:42
+#@ buddypress
+msgid "Post in"
+msgstr ""
+
+#: activity/post-form.php:45
+#: members/single/profile/profile-wp.php:8
+#@ buddypress
+msgid "My Profile"
+msgstr ""
+
+#: author.php:32
+#, php-format
+#@ mdframework
+msgid "Author Archives: %s"
+msgstr ""
+
+#: author.php:53
+#: content.php:1
+#, php-format
+#@ mdframework
+msgid "About %s"
+msgstr ""
+
+#: blogs/blogs-loop.php:90
+#@ buddypress
+msgid "Sorry, there were no sites found."
+msgstr ""
+
+#: blogs/create.php:21
+#: blogs/index.php:21
+#@ buddypress
+msgid "Create a Site"
+msgstr ""
+
+#: blogs/create.php:21
+#: blogs/index.php:21
+#@ buddypress
+msgid "Site Directory"
+msgstr ""
+
+#: blogs/create.php:32
+#@ buddypress
+msgid "Site registration is currently disabled"
+msgstr ""
+
+#: blogs/index.php:33
+#, php-format
+#@ buddypress
+msgid "All Sites <span>%s</span>"
+msgstr ""
+
+#: blogs/index.php:37
+#, php-format
+#@ buddypress
+msgid "My Sites <span>%s</span>"
+msgstr ""
+
+#: blogs/index.php:53
+#: forums/index.php:60
+#: groups/index.php:55
+#: groups/single/forum.php:36
+#: members/index.php:53
+#: members/single/blogs.php:19
+#: members/single/forums.php:18
+#: members/single/friends.php:20
+#: members/single/groups.php:20
+#@ buddypress
+msgid "Order By:"
+msgstr ""
+
+#: blogs/index.php:55
+#: forums/index.php:62
+#: groups/index.php:57
+#: groups/single/forum.php:38
+#: members/index.php:55
+#: members/single/blogs.php:21
+#: members/single/forums.php:20
+#: members/single/friends.php:22
+#: members/single/groups.php:22
+#@ buddypress
+msgid "Last Active"
+msgstr ""
+
+#: blogs/index.php:56
+#: members/single/blogs.php:22
+#@ buddypress
+msgid "Newest"
+msgstr ""
+
+#: blogs/index.php:57
+#: groups/index.php:60
+#: members/index.php:60
+#: members/single/blogs.php:23
+#: members/single/friends.php:24
+#: members/single/groups.php:25
+#@ buddypress
+msgid "Alphabetical"
+msgstr ""
+
+#: comments.php:22
+#, php-format
+#@ mdframework
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:22
+#@ mdframework
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:22
+#@ mdframework
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:22
+#@ mdframework
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:22
+#@ mdframework
+msgid "Comments are closed."
+msgstr ""
+
+#: content-aside.php:3
+#: content-aside.php:10
+#: content-image.php:17
+#: content-link.php:18
+#: content-quote.php:17
+#: content-status.php:15
+#: content.php:1
+#: parti/forum/content-archive-forum.php:24
+#, php-format
+#@ mdframework
+msgid "Permalink to %s"
+msgstr ""
+
+#: content-aside.php:5
+#: content-image.php:13
+#: content-link.php:14
+#: content-quote.php:13
+#: content-status.php:21
+#: content.php:1
+#@ mdframework
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: content-aside.php:13
+#: content-image.php:23
+#: content-link.php:21
+#: content-quote.php:20
+#: content-status.php:27
+#: content.php:1
+#: parti/forum/content-archive-forum.php:28
+#@ mdframework
+msgid "Leave a reply"
+msgstr ""
+
+#: content-aside.php:13
+#: content-image.php:23
+#: content-link.php:21
+#: content-quote.php:20
+#: content-status.php:27
+#: content.php:1
+#: parti/forum/content-archive-forum.php:28
+#@ mdframework
+msgid "1 Reply"
+msgstr ""
+
+#: content-aside.php:13
+#: content-image.php:23
+#: content-link.php:21
+#: content-quote.php:20
+#: content-status.php:27
+#: content.php:1
+#: parti/forum/content-archive-forum.php:28
+#@ mdframework
+msgid "% Replies"
+msgstr ""
+
+#: content-aside.php:16
+#: content-image.php:26
+#: content-link.php:24
+#: content-page.php:2
+#: content-quote.php:23
+#: content-status.php:30
+#: content.php:1
+#: functions.php:370
+#: inc/mdcustom-post.php:11
+#: parti/forum/content-archive-forum.php:66
+#: parti/forum/image-forum.php:25
+#@ mdframework
+#@ default
+msgid "Edit"
+msgstr ""
+
+#: content-link.php:12
+#@ mdframework
+msgid "Link"
+msgstr ""
+
+#: content-none.php:13
+#: parti/forum/search-forum.php:21
+#@ mdframework
+msgid "Nothing Found"
+msgstr ""
+
+#: content-none.php:17
+#@ mdframework
+msgid "Apologies, but no results were found. Perhaps searching will help find a related post."
+msgstr ""
+
+#: content-page.php:2
+#: content.php:1
+#: parti/forum/content-archive-forum.php:46
+#: parti/forum/image-forum.php:72
+#@ mdframework
+msgid "Pages:"
+msgstr ""
+
+#: content.php:1
+#@ mdframework
+msgid "Featured post"
+msgstr ""
+
+#: content.php:1
+#, php-format
+#@ mdframework
+msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: forums/forums-loop.php:39
+#@ buddypress
+msgid "Topic"
+msgstr ""
+
+#: forums/forums-loop.php:41
+#@ buddypress
+msgid "Freshness"
+msgstr ""
+
+#: forums/forums-loop.php:54
+#@ buddypress
+msgid "Permalink"
+msgstr ""
+
+#. translators: "started by [poster] in [forum]
+#: forums/forums-loop.php:61
+#, php-format
+#@ buddypress
+msgid "Started by %1$s"
+msgstr ""
+
+#. translators: "started by [poster] in [forum]
+#: forums/forums-loop.php:72
+#, php-format
+#@ buddypress
+msgid "in %1$s"
+msgstr ""
+
+#: forums/forums-loop.php:122
+#@ buddypress
+msgid "Sorry, there were no forum topics found."
+msgstr ""
+
+#: forums/index.php:23
+#@ buddypress
+msgid "Forums Directory"
+msgstr ""
+
+#: forums/index.php:23
+#: groups/single/forum.php:19
+#@ buddypress
+msgid "New Topic"
+msgstr ""
+
+#: forums/index.php:40
+#, php-format
+#@ buddypress
+msgid "All Topics <span>%s</span>"
+msgstr ""
+
+#: forums/index.php:44
+#, php-format
+#@ buddypress
+msgid "My Topics <span>%s</span>"
+msgstr ""
+
+#: forums/index.php:63
+#: groups/single/forum.php:39
+#: members/single/forums.php:21
+#@ buddypress
+msgid "Most Posts"
+msgstr ""
+
+#: forums/index.php:64
+#: groups/single/forum.php:40
+#: members/single/forums.php:22
+#@ buddypress
+msgid "Unreplied"
+msgstr ""
+
+#: forums/index.php:100
+#@ buddypress
+msgid "Create New Topic:"
+msgstr ""
+
+#: forums/index.php:104
+#: groups/single/forum/edit.php:47
+#: groups/single/forum.php:75
+#@ buddypress
+msgid "Title:"
+msgstr ""
+
+#: forums/index.php:107
+#: groups/single/forum/edit.php:50
+#: groups/single/forum.php:78
+#@ buddypress
+msgid "Content:"
+msgstr ""
+
+#: forums/index.php:110
+#: groups/single/forum/edit.php:53
+#: groups/single/forum.php:81
+#@ buddypress
+msgid "Tags (comma separated):"
+msgstr ""
+
+#: forums/index.php:113
+#@ buddypress
+msgid "Post In Group Forum:"
+msgstr ""
+
+#. translators: no option picked in select box
+#: forums/index.php:116
+#@ buddypress
+msgid "----"
+msgstr ""
+
+#: forums/index.php:133
+#: groups/single/forum.php:87
+#@ buddypress
+msgid "Post Topic"
+msgstr ""
+
+#: forums/index.php:134
+#@ buddypress
+msgid "Cancel"
+msgstr ""
+
+#: forums/index.php:145
+#, php-format
+#@ buddypress
+msgid "You are not a member of any groups so you don't have any group forums you can post in. To start posting, first find a group that matches the topic subject you'd like to start. If this group does not exist, why not <a href='%s'>create a new group</a>? Once you have joined or created the group you can post your topic in that group's forum."
+msgstr ""
+
+#: functions.php:54
+#@ mdframework
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:55
+#@ mdframework
+msgid "Forum Top Menu"
+msgstr ""
+
+#: functions.php:103
+#@ mdframework
+msgctxt "Open Sans font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:107
+#@ mdframework
+msgctxt "Open Sans font: add new subset (greek, cyrillic, vietnamese)"
+msgid "no-subset"
+msgstr ""
+
+#: functions.php:154
+#, php-format
+#@ mdframework
+msgid "Page %s"
+msgstr ""
+
+#: functions.php:176
+#@ mdframework
+msgid "Main Sidebar"
+msgstr ""
+
+#: functions.php:178
+#@ mdframework
+msgid "Appears on posts and pages except the optional Front Page template, which has its own widgets"
+msgstr ""
+
+#: functions.php:185
+#@ mdframework
+msgid "Second Sidebar just in case of a three coloumn template"
+msgstr ""
+
+#: functions.php:187
+#@ mdframework
+msgid "Appears when a 3 coloumn template in choosen"
+msgstr ""
+
+#: functions.php:194
+#@ mdframework
+msgid "Sidebar specific for forum style homepage"
+msgstr ""
+
+#: functions.php:196
+#@ mdframework
+msgid "Appears on a Forum Style Template when needed"
+msgstr ""
+
+#: functions.php:203
+#: functions.php:205
+#@ mdframework
+msgid "Left Banner Area"
+msgstr ""
+
+#: functions.php:212
+#: functions.php:214
+#@ mdframework
+msgid "Right Banner Area"
+msgstr ""
+
+#: functions.php:221
+#@ mdframework
+msgid "First Front Page Widget Area"
+msgstr ""
+
+#: functions.php:223
+#: functions.php:232
+#@ mdframework
+msgid "Appears when using the optional Front Page template with a page set as Static Front Page"
+msgstr ""
+
+#: functions.php:230
+#@ mdframework
+msgid "Second Front Page Widget Area"
+msgstr ""
+
+#: functions.php:239
+#@ mdframework
+msgid "Footer Left Widget"
+msgstr ""
+
+#: functions.php:241
+#@ mdframework
+msgid "First widgetized area on the left of Footer"
+msgstr ""
+
+#: functions.php:248
+#@ mdframework
+msgid "Footer Center Widget"
+msgstr ""
+
+#: functions.php:250
+#@ mdframework
+msgid "Second widgetized area in the middle of Footer"
+msgstr ""
+
+#: functions.php:257
+#@ mdframework
+msgid "First Hotel HomePage Widget"
+msgstr ""
+
+#: functions.php:259
+#@ mdframework
+msgid "Insert here the text you would like to see on Hotel Style HomePage First Spot "
+msgstr ""
+
+#: functions.php:266
+#@ mdframework
+msgid "Second Hotel HomePage Widget"
+msgstr ""
+
+#: functions.php:268
+#@ mdframework
+msgid "Insert here the text you would like to see on Hotel Style HomePage Second Spot "
+msgstr ""
+
+#: functions.php:275
+#@ mdframework
+msgid "Third Hotel HomePage Widget"
+msgstr ""
+
+#: functions.php:277
+#@ mdframework
+msgid "Insert here the text you would like to see on Hotel Style HomePage Third Spot "
+msgstr ""
+
+#: functions.php:284
+#@ mdframework
+msgid "Forum Special Sidebar"
+msgstr ""
+
+#: functions.php:286
+#@ mdframework
+msgid "In Forum Link template this would be the place for latest Forum Topics"
+msgstr ""
+
+#: functions.php:293
+#@ mdframework
+msgid "Forum Lower Sidebar"
+msgstr ""
+
+#: functions.php:295
+#@ mdframework
+msgid "In Forum Template this will be a low Widgetized Area next to the Bottom Slideshow"
+msgstr ""
+
+#: functions.php:314
+#: parti/content-hotel.php:6
+#: parti/forum/single-forum.php:11
+#: parti/hotel/content-hotel.php:6
+#: parti/single-forum.php:6
+#@ mdframework
+msgid "Post navigation"
+msgstr ""
+
+#: functions.php:315
+#@ mdframework
+msgid "<span class=\"meta-nav indietro\"></span> Older posts"
+msgstr ""
+
+#: functions.php:316
+#@ mdframework
+msgid "Newer posts <span class=\"meta-nav avanti\"></span>"
+msgstr ""
+
+#: functions.php:340
+#@ mdframework
+msgid "Pingback:"
+msgstr ""
+
+#: functions.php:340
+#@ mdframework
+msgid "(Edit)"
+msgstr ""
+
+#: functions.php:355
+#@ mdframework
+msgid "Post author"
+msgstr ""
+
+#. translators: 1: date, 2: time
+#: functions.php:361
+#, php-format
+#@ mdframework
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: functions.php:366
+#@ mdframework
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#. Translators: used between list items, there is a space after the comma.
+#. Translators: used between list items, there is a space after the comma.
+#: functions.php:391
+#: functions.php:393
+#@ mdframework
+msgid ", "
+msgstr ""
+
+#: functions.php:402
+#, php-format
+#@ mdframework
+msgid "View all posts by %s"
+msgstr ""
+
+#. Translators: 1 is category, 2 is tag, 3 is the date and 4 is the author's name.
+#: functions.php:407
+#, php-format
+#@ mdframework
+msgid "This entry was posted in %1$s and tagged %2$s on %3$s<span class=\"by-author\"> by %4$s</span>."
+msgstr ""
+
+#: functions.php:409
+#, php-format
+#@ mdframework
+msgid "This entry was posted in %1$s on %3$s<span class=\"by-author\"> by %4$s</span>."
+msgstr ""
+
+#: functions.php:411
+#, php-format
+#@ mdframework
+msgid "This entry was posted on %3$s<span class=\"by-author\"> by %4$s</span>."
+msgstr ""
+
+#: functions.php:534
+#: functions.php:543
+#@ mdframework
+msgid "Open Login Form"
+msgstr ""
+
+#: functions.php:754
+#@ mdramework
+msgid "Read More &raquo;"
+msgstr ""
+
+#: functions.php:1024
+#@ mdramework
+msgid "Gimme a title and I'll leverage the Wor(l)d"
+msgstr ""
+
+#: functions.php:1099
+#@ mdframework
+msgid "<p>Welcome to <a href=\"http://maisdesign.it\" title=\"WebDesign SEO Catania\">MDFRAMEWORK</a>! Need help? Contact the developer <a href=\"mailto:marco@maisdesign.it\">here</a>."
+msgstr ""
+
+#: functions.php:1223
+#@ default
+msgid "<h3>Post correlati</h3>"
+msgstr ""
+
+#: functions.php:1330
+#@ default
+msgid "default"
+msgstr ""
+
+#: groups/create.php:18
+#: groups/index.php:21
+#@ buddypress
+msgid "Create a Group"
+msgstr ""
+
+#: groups/create.php:18
+#: groups/index.php:21
+#@ buddypress
+msgid "Groups Directory"
+msgstr ""
+
+#: groups/create.php:39
+#: groups/single/admin.php:16
+#@ buddypress
+msgid "Group Name (required)"
+msgstr ""
+
+#: groups/create.php:42
+#: groups/single/admin.php:19
+#@ buddypress
+msgid "Group Description (required)"
+msgstr ""
+
+#: groups/create.php:58
+#: groups/single/admin.php:56
+#@ buddypress
+msgid "Privacy Options"
+msgstr ""
+
+#: groups/create.php:62
+#: groups/single/admin.php:61
+#@ buddypress
+msgid "This is a public group"
+msgstr ""
+
+#: groups/create.php:64
+#: groups/single/admin.php:63
+#@ buddypress
+msgid "Any site member can join this group."
+msgstr ""
+
+#: groups/create.php:65
+#: groups/create.php:74
+#: groups/single/admin.php:64
+#: groups/single/admin.php:74
+#@ buddypress
+msgid "This group will be listed in the groups directory and in search results."
+msgstr ""
+
+#: groups/create.php:66
+#: groups/single/admin.php:65
+#@ buddypress
+msgid "Group content and activity will be visible to any site member."
+msgstr ""
+
+#: groups/create.php:71
+#: groups/single/admin.php:71
+#@ buddypress
+msgid "This is a private group"
+msgstr ""
+
+#: groups/create.php:73
+#: groups/single/admin.php:73
+#@ buddypress
+msgid "Only users who request membership and are accepted can join the group."
+msgstr ""
+
+#: groups/create.php:75
+#: groups/create.php:84
+#: groups/single/admin.php:75
+#: groups/single/admin.php:85
+#@ buddypress
+msgid "Group content and activity will only be visible to members of the group."
+msgstr ""
+
+#: groups/create.php:80
+#: groups/single/admin.php:81
+#@ buddypress
+msgid "This is a hidden group"
+msgstr ""
+
+#: groups/create.php:82
+#: groups/single/admin.php:83
+#@ buddypress
+msgid "Only users who are invited can join the group."
+msgstr ""
+
+#: groups/create.php:83
+#: groups/single/admin.php:84
+#@ buddypress
+msgid "This group will not be listed in the groups directory or search results."
+msgstr ""
+
+#: groups/create.php:89
+#: groups/single/admin.php:92
+#@ buddypress
+msgid "Group Invitations"
+msgstr ""
+
+#: groups/create.php:91
+#: groups/single/admin.php:94
+#@ buddypress
+msgid "Which members of this group are allowed to invite others?"
+msgstr ""
+
+#: groups/create.php:96
+#: groups/single/admin.php:99
+#@ buddypress
+msgid "All group members"
+msgstr ""
+
+#: groups/create.php:101
+#: groups/single/admin.php:104
+#@ buddypress
+msgid "Group admins and mods only"
+msgstr ""
+
+#: groups/create.php:106
+#: groups/single/admin.php:109
+#@ buddypress
+msgid "Group admins only"
+msgstr ""
+
+#: groups/create.php:112
+#@ buddypress
+msgid "Group Forums"
+msgstr ""
+
+#: groups/create.php:116
+#@ buddypress
+msgid "Should this group have a forum?"
+msgstr ""
+
+#: groups/create.php:119
+#: groups/single/admin.php:47
+#@ buddypress
+msgid "Enable discussion forum"
+msgstr ""
+
+#: groups/create.php:123
+#, php-format
+#@ buddypress
+msgid "<strong>Attention Site Admin:</strong> Group forums require the <a href=\"%s\">correct setup and configuration</a> of a bbPress installation."
+msgstr ""
+
+#: groups/create.php:149
+#: groups/single/admin.php:127
+#@ buddypress
+msgid "Upload an image to use as an avatar for this group. The image will be shown on the main group page, and in search results."
+msgstr ""
+
+#: groups/create.php:153
+#: groups/single/admin.php:131
+#: members/single/profile/change-avatar.php:18
+#@ buddypress
+msgid "Upload Image"
+msgstr ""
+
+#: groups/create.php:157
+#@ buddypress
+msgid "To skip the avatar upload process, hit the \"Next Step\" button."
+msgstr ""
+
+#: groups/create.php:164
+#@ buddypress
+msgid "Crop Group Avatar"
+msgstr ""
+
+#: groups/create.php:166
+#: groups/single/admin.php:151
+#: members/single/profile/change-avatar.php:33
+#@ buddypress
+msgid "Avatar to crop"
+msgstr ""
+
+#: groups/create.php:169
+#: groups/single/admin.php:154
+#: members/single/profile/change-avatar.php:36
+#@ buddypress
+msgid "Avatar preview"
+msgstr ""
+
+#: groups/create.php:172
+#: groups/single/admin.php:157
+#: members/single/profile/change-avatar.php:39
+#@ buddypress
+msgid "Crop Image"
+msgstr ""
+
+#: groups/create.php:211
+#: groups/single/send-invites.php:22
+#@ buddypress
+msgid "Select people to invite from your friends list."
+msgstr ""
+
+#: groups/create.php:229
+#: groups/single/send-invites.php:42
+#@ buddypress
+msgid "Remove Invite"
+msgstr ""
+
+#: groups/create.php:246
+#: groups/single/send-invites.php:73
+#@ buddypress
+msgid "Once you have built up friend connections you will be able to invite others to your group. You can send invites any time in the future by selecting the \"Send Invites\" option when viewing your new group."
+msgstr ""
+
+#: groups/create.php:268
+#@ buddypress
+msgid "Back to Previous Step"
+msgstr ""
+
+#: groups/create.php:275
+#@ buddypress
+msgid "Next Step"
+msgstr ""
+
+#: groups/create.php:282
+#@ buddypress
+msgid "Create Group and Continue"
+msgstr ""
+
+#: groups/create.php:289
+#@ buddypress
+msgid "Finish"
+msgstr ""
+
+#: groups/groups-loop.php:47
+#: groups/single/group-header.php:42
+#, php-format
+#@ buddypress
+msgid "active %s"
+msgstr ""
+
+#: groups/groups-loop.php:95
+#@ buddypress
+msgid "There were no groups found."
+msgstr ""
+
+#: groups/index.php:35
+#, php-format
+#@ buddypress
+msgid "All Groups <span>%s</span>"
+msgstr ""
+
+#: groups/index.php:58
+#: members/single/groups.php:23
+#@ buddypress
+msgid "Most Members"
+msgstr ""
+
+#: groups/index.php:59
+#: members/single/groups.php:24
+#@ buddypress
+msgid "Newly Created"
+msgstr ""
+
+#: groups/single/admin.php:25
+#@ buddypress
+msgid "Notify group members of changes via email"
+msgstr ""
+
+#: groups/single/admin.php:26
+#: options.php:1
+#: registration/register.php:227
+#@ buddypress
+#@ mdframework
+msgid "Yes"
+msgstr ""
+
+#: groups/single/admin.php:27
+#: options.php:1
+#: registration/register.php:228
+#@ buddypress
+#@ mdframework
+msgid "No"
+msgstr ""
+
+#: groups/single/admin.php:32
+#: groups/single/admin.php:117
+#: groups/single/forum/edit.php:58
+#: groups/single/forum/edit.php:74
+#: members/single/profile/edit.php:146
+#: members/single/settings/general.php:72
+#: members/single/settings/notifications.php:61
+#@ buddypress
+msgid "Save Changes"
+msgstr ""
+
+#: groups/single/admin.php:137
+#@ buddypress
+msgid "If you'd like to remove the existing avatar but not upload a new one, please use the delete avatar button."
+msgstr ""
+
+#: groups/single/admin.php:139
+#: members/single/profile/change-avatar.php:24
+#@ buddypress
+msgid "Delete Avatar"
+msgstr ""
+
+#: groups/single/admin.php:149
+#@ buddypress
+msgid "Crop Avatar"
+msgstr ""
+
+#: groups/single/admin.php:177
+#@ buddypress
+msgid "Administrators"
+msgstr ""
+
+#: groups/single/admin.php:185
+#: groups/single/admin.php:212
+#, php-format
+#@ buddypress
+msgid "Profile picture of %s"
+msgstr ""
+
+#: groups/single/admin.php:190
+#: groups/single/admin.php:217
+#@ buddypress
+msgid "Demote to Member"
+msgstr ""
+
+#: groups/single/admin.php:205
+#@ buddypress
+msgid "Moderators"
+msgstr ""
+
+#: groups/single/admin.php:216
+#: groups/single/admin.php:272
+#@ buddypress
+msgid "Promote to Admin"
+msgstr ""
+
+#: groups/single/admin.php:231
+#@ buddypress
+msgid "Members"
+msgstr ""
+
+#: groups/single/admin.php:260
+#@ buddypress
+msgid "(banned)"
+msgstr ""
+
+#: groups/single/admin.php:266
+#@ buddypress
+msgid "Unban this member"
+msgstr ""
+
+#: groups/single/admin.php:266
+#@ buddypress
+msgid "Remove Ban"
+msgstr ""
+
+#: groups/single/admin.php:270
+#@ buddypress
+msgid "Kick and ban this member"
+msgstr ""
+
+#: groups/single/admin.php:270
+#@ buddypress
+msgid "Kick &amp; Ban"
+msgstr ""
+
+#: groups/single/admin.php:271
+#@ buddypress
+msgid "Promote to Mod"
+msgstr ""
+
+#: groups/single/admin.php:276
+#@ buddypress
+msgid "Remove this member"
+msgstr ""
+
+#: groups/single/admin.php:276
+#@ buddypress
+msgid "Remove from group"
+msgstr ""
+
+#: groups/single/admin.php:290
+#: groups/single/members.php:87
+#@ buddypress
+msgid "This group has no members."
+msgstr ""
+
+#: groups/single/admin.php:320
+#: members/single/friends/requests.php:37
+#: members/single/groups/invites.php:23
+#@ buddypress
+msgid "Accept"
+msgstr ""
+
+#: groups/single/admin.php:322
+#: members/single/friends/requests.php:38
+#: members/single/groups/invites.php:24
+#@ buddypress
+msgid "Reject"
+msgstr ""
+
+#: groups/single/admin.php:335
+#@ buddypress
+msgid "There are no pending membership requests."
+msgstr ""
+
+#: groups/single/admin.php:352
+#@ buddypress
+msgid "WARNING: Deleting this group will completely remove ALL content associated with it. There is no way back, please be careful with this option."
+msgstr ""
+
+#: groups/single/admin.php:355
+#@ buddypress
+msgid "I understand the consequences of deleting this group."
+msgstr ""
+
+#: groups/single/admin.php:360
+#@ buddypress
+msgid "Delete Group"
+msgstr ""
+
+#: groups/single/forum/edit.php:16
+#: groups/single/forum/topic.php:17
+#: groups/single/forum.php:27
+#@ buddypress
+msgid "Forum Directory"
+msgstr ""
+
+#: groups/single/forum/edit.php:25
+#@ buddypress
+msgid "Edit:"
+msgstr ""
+
+#: groups/single/forum/edit.php:87
+#@ buddypress
+msgid "This topic does not exist."
+msgstr ""
+
+#: groups/single/forum/topic.php:9
+#@ buddypress
+msgid "New Reply"
+msgstr ""
+
+#: groups/single/forum/topic.php:32
+#@ buddypress
+msgid "Topic tags:"
+msgstr ""
+
+#: groups/single/forum/topic.php:81
+#, php-format
+#@ buddypress
+msgid "%1$s said %2$s:"
+msgstr ""
+
+#: groups/single/forum/topic.php:95
+#@ buddypress
+msgid "Permanent link to this post"
+msgstr ""
+
+#: groups/single/forum/topic.php:119
+#@ buddypress
+msgid "There are no posts for this topic."
+msgstr ""
+
+#: groups/single/forum/topic.php:134
+#@ buddypress
+msgid "You will auto join this group when you reply to this topic."
+msgstr ""
+
+#: groups/single/forum/topic.php:139
+#@ buddypress
+msgid "Add a reply:"
+msgstr ""
+
+#: groups/single/forum/topic.php:144
+#@ buddypress
+msgid "Post Reply"
+msgstr ""
+
+#: groups/single/forum/topic.php:155
+#@ buddypress
+msgid "This topic is closed, replies are no longer accepted."
+msgstr ""
+
+#: groups/single/forum.php:69
+#@ buddypress
+msgid "You will auto join this group when you start a new topic."
+msgstr ""
+
+#: groups/single/forum.php:73
+#@ buddypress
+msgid "Post a New Topic:"
+msgstr ""
+
+#: groups/single/group-header.php:11
+#@ buddypress
+msgid "Group Admins"
+msgstr ""
+
+#: groups/single/group-header.php:20
+#@ buddypress
+msgid "Group Mods"
+msgstr ""
+
+#: groups/single/request-membership.php:4
+#, php-format
+#@ buddypress
+msgid "You are requesting to become a member of the group '%s'."
+msgstr ""
+
+#: groups/single/request-membership.php:7
+#@ buddypress
+msgid "Comments (optional)"
+msgstr ""
+
+#: groups/single/request-membership.php:12
+#@ buddypress
+msgid "Send Request"
+msgstr ""
+
+#: groups/single/send-invites.php:60
+#@ buddypress
+msgid "Send Invites"
+msgstr ""
+
+#: inc/classes/meta-box.php:299
+#@ rwmb
+msgid "Please correct the errors highlighted below and try again."
+msgstr ""
+
+#: inc/cpost/cpost-array-loop.php:23
+#: inc/cpost/cpost-array-loop.php:24
+#: inc/cpost/cpost-array-loop.php:39
+#: inc/cpost/cpost-array-loop.php:40
+#: inc/cpost/cpost-array-loop.php:54
+#: inc/cpost/cpost-array-loop.php:55
+#: inc/cpost/cpost-array-loop.php:69
+#: inc/cpost/cpost-array-loop.php:70
+#: inc/cpost/cpost-array-loop.php:84
+#: inc/cpost/cpost-array-loop.php:85
+#: inc/cpost/cpost_if_1.php:59
+#: inc/cpost/cpost_if_2.php:13
+#: inc/cpost/cpost_if_2.php:61
+#: inc/cpost/cpost_if_3.php:13
+#: inc/cpost/cpost_if_3.php:60
+#: inc/cpost/cpost_if_3.php:107
+#: inc/cpost/cpost_if_4.php:13
+#: inc/cpost/cpost_if_4.php:60
+#: inc/cpost/cpost_if_4.php:107
+#: inc/cpost/cpost_if_4.php:154
+#: inc/cpost/cpost_if_5.php:13
+#: inc/cpost/cpost_if_5.php:60
+#: inc/cpost/cpost_if_5.php:107
+#: inc/cpost/cpost_if_5.php:154
+#: inc/cpost/cpost_if_5.php:201
+#: inc/mdcustom-post.php:9
+#@ default
+msgctxt ""
+msgid "Add New"
+msgstr ""
+
+#: inc/cpost/cpost-array-loop.php:25
+#: inc/cpost/cpost-array-loop.php:41
+#: inc/cpost/cpost-array-loop.php:56
+#: inc/cpost/cpost-array-loop.php:71
+#: inc/cpost/cpost-array-loop.php:86
+#@ default
+msgctxt ""
+msgid "Edit"
+msgstr ""
+
+#: inc/cpost/cpost-array-loop.php:26
+#: inc/cpost/cpost-array-loop.php:42
+#: inc/cpost/cpost-array-loop.php:57
+#: inc/cpost/cpost-array-loop.php:72
+#: inc/cpost/cpost-array-loop.php:87
+#@ default
+msgctxt ""
+msgid "New"
+msgstr ""
+
+#: inc/cpost/cpost-array-loop.php:27
+#: inc/cpost/cpost-array-loop.php:43
+#: inc/cpost/cpost-array-loop.php:58
+#: inc/cpost/cpost-array-loop.php:73
+#: inc/cpost/cpost-array-loop.php:88
+#@ default
+msgctxt ""
+msgid "View"
+msgstr ""
+
+#: inc/cpost/cpost-array-loop.php:28
+#: inc/cpost/cpost-array-loop.php:44
+#: inc/cpost/cpost-array-loop.php:59
+#: inc/cpost/cpost-array-loop.php:74
+#: inc/cpost/cpost-array-loop.php:89
+#@ default
+msgctxt ""
+msgid "Search"
+msgstr ""
+
+#: inc/cpost/cpost-array-loop.php:29
+#: inc/cpost/cpost-array-loop.php:45
+#: inc/cpost/cpost-array-loop.php:60
+#: inc/cpost/cpost-array-loop.php:75
+#: inc/cpost/cpost-array-loop.php:90
+#@ default
+msgctxt ""
+msgid "No found"
+msgstr ""
+
+#: inc/cpost/cpost-array-loop.php:30
+#: inc/cpost/cpost-array-loop.php:46
+#: inc/cpost/cpost-array-loop.php:61
+#: inc/cpost/cpost-array-loop.php:76
+#: inc/cpost/cpost-array-loop.php:91
+#@ default
+msgctxt ""
+msgid "No found in Trash"
+msgstr ""
+
+#: inc/cpost/cpost-array-loop.php:31
+#: inc/cpost/cpost-array-loop.php:47
+#: inc/cpost/cpost-array-loop.php:62
+#: inc/cpost/cpost-array-loop.php:77
+#: inc/cpost/cpost-array-loop.php:92
+#@ default
+msgctxt ""
+msgid "Parent:"
+msgstr ""
+
+#: inc/cpost/cpost_if_1.php:60
+#: inc/cpost/cpost_if_2.php:14
+#: inc/cpost/cpost_if_2.php:62
+#: inc/cpost/cpost_if_3.php:14
+#: inc/cpost/cpost_if_3.php:61
+#: inc/cpost/cpost_if_3.php:108
+#: inc/cpost/cpost_if_4.php:14
+#: inc/cpost/cpost_if_4.php:61
+#: inc/cpost/cpost_if_4.php:108
+#: inc/cpost/cpost_if_4.php:155
+#: inc/cpost/cpost_if_5.php:14
+#: inc/cpost/cpost_if_5.php:61
+#: inc/cpost/cpost_if_5.php:108
+#: inc/cpost/cpost_if_5.php:155
+#: inc/cpost/cpost_if_5.php:202
+#@ default
+msgctxt ""
+msgid "Add New "
+msgstr ""
+
+#: inc/cpost/cpost_if_1.php:61
+#: inc/cpost/cpost_if_2.php:15
+#: inc/cpost/cpost_if_2.php:63
+#: inc/cpost/cpost_if_3.php:15
+#: inc/cpost/cpost_if_3.php:62
+#: inc/cpost/cpost_if_3.php:109
+#: inc/cpost/cpost_if_4.php:15
+#: inc/cpost/cpost_if_4.php:62
+#: inc/cpost/cpost_if_4.php:109
+#: inc/cpost/cpost_if_4.php:156
+#: inc/cpost/cpost_if_5.php:15
+#: inc/cpost/cpost_if_5.php:62
+#: inc/cpost/cpost_if_5.php:109
+#: inc/cpost/cpost_if_5.php:156
+#: inc/cpost/cpost_if_5.php:203
+#@ default
+msgctxt ""
+msgid "Edit "
+msgstr ""
+
+#: inc/cpost/cpost_if_1.php:62
+#: inc/cpost/cpost_if_2.php:16
+#: inc/cpost/cpost_if_2.php:64
+#: inc/cpost/cpost_if_3.php:16
+#: inc/cpost/cpost_if_3.php:63
+#: inc/cpost/cpost_if_3.php:110
+#: inc/cpost/cpost_if_4.php:16
+#: inc/cpost/cpost_if_4.php:63
+#: inc/cpost/cpost_if_4.php:110
+#: inc/cpost/cpost_if_4.php:157
+#: inc/cpost/cpost_if_5.php:16
+#: inc/cpost/cpost_if_5.php:63
+#: inc/cpost/cpost_if_5.php:110
+#: inc/cpost/cpost_if_5.php:157
+#: inc/cpost/cpost_if_5.php:204
+#@ default
+msgctxt ""
+msgid "New "
+msgstr ""
+
+#: inc/cpost/cpost_if_1.php:63
+#: inc/cpost/cpost_if_2.php:17
+#: inc/cpost/cpost_if_2.php:65
+#: inc/cpost/cpost_if_3.php:17
+#: inc/cpost/cpost_if_3.php:64
+#: inc/cpost/cpost_if_3.php:111
+#: inc/cpost/cpost_if_4.php:17
+#: inc/cpost/cpost_if_4.php:64
+#: inc/cpost/cpost_if_4.php:111
+#: inc/cpost/cpost_if_4.php:158
+#: inc/cpost/cpost_if_5.php:17
+#: inc/cpost/cpost_if_5.php:64
+#: inc/cpost/cpost_if_5.php:111
+#: inc/cpost/cpost_if_5.php:158
+#: inc/cpost/cpost_if_5.php:205
+#@ default
+msgctxt ""
+msgid "View "
+msgstr ""
+
+#: inc/cpost/cpost_if_1.php:64
+#: inc/cpost/cpost_if_2.php:18
+#: inc/cpost/cpost_if_2.php:66
+#: inc/cpost/cpost_if_3.php:18
+#: inc/cpost/cpost_if_3.php:65
+#: inc/cpost/cpost_if_3.php:112
+#: inc/cpost/cpost_if_4.php:18
+#: inc/cpost/cpost_if_4.php:65
+#: inc/cpost/cpost_if_4.php:112
+#: inc/cpost/cpost_if_4.php:159
+#: inc/cpost/cpost_if_5.php:18
+#: inc/cpost/cpost_if_5.php:65
+#: inc/cpost/cpost_if_5.php:112
+#: inc/cpost/cpost_if_5.php:159
+#: inc/cpost/cpost_if_5.php:206
+#@ default
+msgctxt ""
+msgid "Search "
+msgstr ""
+
+#: inc/cpost/cpost_if_1.php:65
+#: inc/cpost/cpost_if_2.php:19
+#: inc/cpost/cpost_if_2.php:67
+#: inc/cpost/cpost_if_3.php:19
+#: inc/cpost/cpost_if_3.php:66
+#: inc/cpost/cpost_if_3.php:113
+#: inc/cpost/cpost_if_4.php:19
+#: inc/cpost/cpost_if_4.php:66
+#: inc/cpost/cpost_if_4.php:113
+#: inc/cpost/cpost_if_4.php:160
+#: inc/cpost/cpost_if_5.php:19
+#: inc/cpost/cpost_if_5.php:66
+#: inc/cpost/cpost_if_5.php:113
+#: inc/cpost/cpost_if_5.php:160
+#: inc/cpost/cpost_if_5.php:207
+#@ default
+msgctxt ""
+msgid "No  found"
+msgstr ""
+
+#: inc/cpost/cpost_if_1.php:66
+#: inc/cpost/cpost_if_2.php:20
+#: inc/cpost/cpost_if_2.php:68
+#: inc/cpost/cpost_if_3.php:20
+#: inc/cpost/cpost_if_3.php:67
+#: inc/cpost/cpost_if_3.php:114
+#: inc/cpost/cpost_if_4.php:20
+#: inc/cpost/cpost_if_4.php:67
+#: inc/cpost/cpost_if_4.php:114
+#: inc/cpost/cpost_if_4.php:161
+#: inc/cpost/cpost_if_5.php:20
+#: inc/cpost/cpost_if_5.php:67
+#: inc/cpost/cpost_if_5.php:114
+#: inc/cpost/cpost_if_5.php:161
+#: inc/cpost/cpost_if_5.php:208
+#@ default
+msgctxt ""
+msgid "No  found in Trash"
+msgstr ""
+
+#: inc/cpost/cpost_if_1.php:67
+#: inc/cpost/cpost_if_2.php:21
+#: inc/cpost/cpost_if_2.php:69
+#: inc/cpost/cpost_if_3.php:21
+#: inc/cpost/cpost_if_3.php:68
+#: inc/cpost/cpost_if_3.php:115
+#: inc/cpost/cpost_if_4.php:21
+#: inc/cpost/cpost_if_4.php:68
+#: inc/cpost/cpost_if_4.php:115
+#: inc/cpost/cpost_if_4.php:162
+#: inc/cpost/cpost_if_5.php:21
+#: inc/cpost/cpost_if_5.php:68
+#: inc/cpost/cpost_if_5.php:115
+#: inc/cpost/cpost_if_5.php:162
+#: inc/cpost/cpost_if_5.php:209
+#@ default
+msgctxt ""
+msgid "Parent :"
+msgstr ""
+
+#: inc/cpost/cpostloop1.php:12
+#: inc/cpost/cpostloop1.php:13
+#@ default
+msgctxt "mdframework_custom_created_post1"
+msgid "Add New"
+msgstr ""
+
+#: inc/cpost/cpostloop1.php:14
+#@ default
+msgctxt "mdframework_custom_created_post1"
+msgid "Edit"
+msgstr ""
+
+#: inc/cpost/cpostloop1.php:15
+#@ default
+msgctxt "mdframework_custom_created_post1"
+msgid "New"
+msgstr ""
+
+#: inc/cpost/cpostloop1.php:16
+#@ default
+msgctxt "mdframework_custom_created_post1"
+msgid "View"
+msgstr ""
+
+#: inc/cpost/cpostloop1.php:17
+#@ default
+msgctxt "mdframework_custom_created_post1"
+msgid "Search"
+msgstr ""
+
+#: inc/cpost/cpostloop1.php:18
+#@ default
+msgctxt "mdframework_custom_created_post1"
+msgid "No  found"
+msgstr ""
+
+#: inc/cpost/cpostloop1.php:19
+#@ default
+msgctxt "mdframework_custom_created_post1"
+msgid "No  found in Trash"
+msgstr ""
+
+#: inc/cpost/cpostloop1.php:20
+#@ default
+msgctxt "mdframework_custom_created_post1"
+msgid "Parent :"
+msgstr ""
+
+#: inc/cpost/cpostloop2.php:12
+#: inc/cpost/cpostloop2.php:13
+#: inc/cpost/cpostloop3.php:12
+#: inc/cpost/cpostloop3.php:13
+#: inc/cpost/cpostloop4.php:12
+#: inc/cpost/cpostloop4.php:13
+#: inc/cpost/cpostloop5.php:12
+#: inc/cpost/cpostloop5.php:13
+#@ default
+msgctxt "mdframework_custom_created_post"
+msgid "Add New"
+msgstr ""
+
+#: inc/cpost/cpostloop2.php:14
+#: inc/cpost/cpostloop3.php:14
+#: inc/cpost/cpostloop4.php:14
+#: inc/cpost/cpostloop5.php:14
+#@ default
+msgctxt "mdframework_custom_created_post"
+msgid "Edit"
+msgstr ""
+
+#: inc/cpost/cpostloop2.php:15
+#: inc/cpost/cpostloop3.php:15
+#: inc/cpost/cpostloop4.php:15
+#: inc/cpost/cpostloop5.php:15
+#@ default
+msgctxt "mdframework_custom_created_post"
+msgid "New"
+msgstr ""
+
+#: inc/cpost/cpostloop2.php:16
+#: inc/cpost/cpostloop3.php:16
+#: inc/cpost/cpostloop4.php:16
+#: inc/cpost/cpostloop5.php:16
+#@ default
+msgctxt "mdframework_custom_created_post"
+msgid "View"
+msgstr ""
+
+#: inc/cpost/cpostloop2.php:17
+#: inc/cpost/cpostloop3.php:17
+#: inc/cpost/cpostloop4.php:17
+#: inc/cpost/cpostloop5.php:17
+#@ default
+msgctxt "mdframework_custom_created_post"
+msgid "Search"
+msgstr ""
+
+#: inc/cpost/cpostloop2.php:18
+#: inc/cpost/cpostloop3.php:18
+#: inc/cpost/cpostloop4.php:18
+#: inc/cpost/cpostloop5.php:18
+#@ default
+msgctxt "mdframework_custom_created_post"
+msgid "No  found"
+msgstr ""
+
+#: inc/cpost/cpostloop2.php:19
+#: inc/cpost/cpostloop3.php:19
+#: inc/cpost/cpostloop4.php:19
+#: inc/cpost/cpostloop5.php:19
+#@ default
+msgctxt "mdframework_custom_created_post"
+msgid "No  found in Trash"
+msgstr ""
+
+#: inc/cpost/cpostloop2.php:20
+#: inc/cpost/cpostloop3.php:20
+#: inc/cpost/cpostloop4.php:20
+#: inc/cpost/cpostloop5.php:20
+#@ default
+msgctxt "mdframework_custom_created_post"
+msgid "Parent :"
+msgstr ""
+
+#: inc/fields/file-advanced.php:62
+#@ rwmb
+msgctxt "file upload"
+msgid "Select or Upload Files"
+msgstr ""
+
+#: inc/fields/file.php:80
+#@ rwmb
+msgctxt "file upload"
+msgid "Upload Files"
+msgstr ""
+
+#: inc/fields/file.php:81
+#: meta-box/inc/fields/file.php:87
+#@ rwmb
+msgctxt "file upload"
+msgid "+ Add new file"
+msgstr ""
+
+#: inc/fields/file.php:134
+#@ rwmb
+msgctxt "file upload"
+msgid "Edit"
+msgstr ""
+
+#: inc/fields/image-advanced.php:68
+#@ rwmb
+msgctxt "image upload"
+msgid "Select or Upload Images"
+msgstr ""
+
+#: inc/fields/image.php:78
+#: inc/fields/thickbox-image.php:35
+#@ rwmb
+msgctxt "image upload"
+msgid "Upload Images"
+msgstr ""
+
+#: inc/fields/image.php:79
+#: meta-box/inc/fields/image.php:96
+#@ rwmb
+msgctxt "image upload"
+msgid "+ Add new image"
+msgstr ""
+
+#: inc/fields/map.php:46
+#@ rwmb
+msgid "Find Address"
+msgstr ""
+
+#: inc/fields/post.php:68
+#: inc/fields/taxonomy.php:40
+#, php-format
+#@ rwmb
+msgid "Select a %s"
+msgstr ""
+
+#: inc/fields/select-advanced.php:71
+#@ rwmb
+msgid "Select a value"
+msgstr ""
+
+#: inc/mdcustom-post.php:7
+#@ default
+msgctxt "post type general name"
+msgid "s"
+msgstr ""
+
+#: inc/mdcustom-post.php:10
+#@ default
+msgid "Add New"
+msgstr ""
+
+#: inc/mdcustom-post.php:12
+#@ default
+msgid "New"
+msgstr ""
+
+#: inc/mdcustom-post.php:14
+#@ default
+msgid "Searchs"
+msgstr ""
+
+#: inc/mdcustom-post.php:15
+#@ default
+msgid "Nothing found"
+msgstr ""
+
+#: inc/mdcustom-post.php:16
+#@ default
+msgid "Nothing found in Trash"
+msgstr ""
+
+#: inc/mdcustom-post2.php:7
+#: inc/mdcustom-post2.php:18
+#@ default
+msgctxt "mdframework_price"
+msgid "Prices"
+msgstr ""
+
+#: inc/mdcustom-post2.php:8
+#@ default
+msgctxt "mdframework_price"
+msgid "Price"
+msgstr ""
+
+#: inc/mdcustom-post2.php:9
+#@ default
+msgctxt "mdframework_price"
+msgid "Add New"
+msgstr ""
+
+#: inc/mdcustom-post2.php:10
+#@ default
+msgctxt "mdframework_price"
+msgid "Add New Price"
+msgstr ""
+
+#: inc/mdcustom-post2.php:11
+#@ default
+msgctxt "mdframework_price"
+msgid "Edit Price"
+msgstr ""
+
+#: inc/mdcustom-post2.php:12
+#@ default
+msgctxt "mdframework_price"
+msgid "New Price"
+msgstr ""
+
+#: inc/mdcustom-post2.php:13
+#@ default
+msgctxt "mdframework_price"
+msgid "View Price"
+msgstr ""
+
+#: inc/mdcustom-post2.php:14
+#@ default
+msgctxt "mdframework_price"
+msgid "Search Prices"
+msgstr ""
+
+#: inc/mdcustom-post2.php:15
+#@ default
+msgctxt "mdframework_price"
+msgid "No prices found"
+msgstr ""
+
+#: inc/mdcustom-post2.php:16
+#@ default
+msgctxt "mdframework_price"
+msgid "No prices found in Trash"
+msgstr ""
+
+#: inc/mdcustom-post2.php:17
+#@ default
+msgctxt "mdframework_price"
+msgid "Parent Price:"
+msgstr ""
+
+#: inc/options-framework.php:1
+#@ options_framework_theme
+msgid "Theme Options"
+msgstr ""
+
+#: inc/options-framework.php:1
+#: members/single/profile/edit.php:58
+#: members/single/profile/edit.php:73
+#: registration/register.php:119
+#@ options_framework_theme
+#@ buddypress
+msgid "Clear"
+msgstr ""
+
+#: inc/options-framework.php:1
+#@ options_framework_theme
+msgid "Default"
+msgstr ""
+
+#: inc/options-framework.php:1
+#@ options_framework_theme
+msgid "Select Color"
+msgstr ""
+
+#: inc/options-framework.php:1
+#@ options_framework_theme
+msgid "Save Options"
+msgstr ""
+
+#: inc/options-framework.php:1
+#@ options_framework_theme
+msgid "Restore Defaults"
+msgstr ""
+
+#: inc/options-framework.php:1
+#@ options_framework_theme
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr ""
+
+#: inc/options-framework.php:1
+#@ options_framework_theme
+msgid "Default options restored."
+msgstr ""
+
+#: inc/options-framework.php:1
+#@ options_framework_theme
+msgid "Options saved."
+msgstr ""
+
+#: inc/options-media-uploader.php:1
+#@ options_framework_theme
+msgid "No file chosen"
+msgstr ""
+
+#: inc/options-media-uploader.php:1
+#@ options_framework_theme
+#@ mdframework
+msgid "Upload"
+msgstr ""
+
+#: inc/options-media-uploader.php:1
+#@ options_framework_theme
+#@ mdframework
+msgid "Remove"
+msgstr ""
+
+#: inc/options-media-uploader.php:1
+#@ options_framework_theme
+msgid "Upgrade your version of WordPress for full media support."
+msgstr ""
+
+#: inc/options-media-uploader.php:1
+#@ options_framework_theme
+msgid "View File"
+msgstr ""
+
+#: inc/options-sanitize.php:232
+#@ mdframework
+msgid "No Repeat"
+msgstr ""
+
+#: inc/options-sanitize.php:233
+#@ mdframework
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: inc/options-sanitize.php:234
+#@ mdframework
+msgid "Repeat Vertically"
+msgstr ""
+
+#: inc/options-sanitize.php:235
+#@ mdframework
+msgid "Repeat All"
+msgstr ""
+
+#: inc/options-sanitize.php:248
+#@ mdframework
+msgid "Top Left"
+msgstr ""
+
+#: inc/options-sanitize.php:249
+#@ mdframework
+msgid "Top Center"
+msgstr ""
+
+#: inc/options-sanitize.php:250
+#@ mdframework
+msgid "Top Right"
+msgstr ""
+
+#: inc/options-sanitize.php:251
+#@ mdframework
+msgid "Middle Left"
+msgstr ""
+
+#: inc/options-sanitize.php:252
+#@ mdframework
+msgid "Middle Center"
+msgstr ""
+
+#: inc/options-sanitize.php:253
+#@ mdframework
+msgid "Middle Right"
+msgstr ""
+
+#: inc/options-sanitize.php:254
+#@ mdframework
+msgid "Bottom Left"
+msgstr ""
+
+#: inc/options-sanitize.php:255
+#@ mdframework
+msgid "Bottom Center"
+msgstr ""
+
+#: inc/options-sanitize.php:256
+#@ mdframework
+msgid "Bottom Right"
+msgstr ""
+
+#: inc/options-sanitize.php:269
+#@ mdframework
+msgid "Scroll Normally"
+msgstr ""
+
+#: inc/options-sanitize.php:270
+#@ mdframework
+msgid "Fixed in Place"
+msgstr ""
+
+#: inc/options-sanitize.php:344
+#@ mdframework
+msgid "Normal"
+msgstr ""
+
+#: inc/options-sanitize.php:345
+#@ mdframework
+msgid "Italic"
+msgstr ""
+
+#: inc/options-sanitize.php:346
+#@ mdframework
+msgid "Bold"
+msgstr ""
+
+#: inc/options-sanitize.php:347
+#@ mdframework
+msgid "Bold Italic"
+msgstr ""
+
+#: members/index.php:21
+#@ buddypress
+msgid "Members Directory"
+msgstr ""
+
+#: members/index.php:56
+#: members/single/friends.php:23
+#@ buddypress
+msgid "Newest Registered"
+msgstr ""
+
+#: members/members-loop.php:108
+#@ buddypress
+msgid "Sorry, no members were found."
+msgstr ""
+
+#: members/single/friends/requests.php:68
+#@ buddypress
+msgid "You have no pending friendship requests."
+msgstr ""
+
+#: members/single/groups/invites.php:14
+#, php-format
+#@ buddypress
+msgid "%s members"
+msgstr ""
+
+#: members/single/groups/invites.php:37
+#@ buddypress
+msgid "You have no outstanding group invites."
+msgstr ""
+
+#: members/single/messages/compose.php:5
+#@ buddypress
+msgid "Send To (Username or Friend's Name)"
+msgstr ""
+
+#: members/single/messages/compose.php:14
+#@ buddypress
+msgid "This is a notice to all users."
+msgstr ""
+
+#: members/single/messages/compose.php:17
+#@ buddypress
+msgid "Subject"
+msgstr ""
+
+#: members/single/messages/compose.php:20
+#@ buddypress
+msgid "Message"
+msgstr ""
+
+#: members/single/messages/compose.php:28
+#@ buddypress
+msgid "Send Message"
+msgstr ""
+
+#: members/single/messages/messages-loop.php:32
+#@ buddypress
+msgid "From:"
+msgstr ""
+
+#: members/single/messages/messages-loop.php:37
+#@ buddypress
+msgid "To:"
+msgstr ""
+
+#: members/single/messages/messages-loop.php:43
+#@ buddypress
+msgid "View Message"
+msgstr ""
+
+#: members/single/messages/messages-loop.php:51
+#: members/single/messages/notices-loop.php:43
+#: members/single/messages/single.php:24
+#@ buddypress
+msgid "Delete Message"
+msgstr ""
+
+#: members/single/messages/messages-loop.php:69
+#@ buddypress
+msgid "Sorry, no messages were found."
+msgstr ""
+
+#: members/single/messages/notices-loop.php:36
+#@ buddypress
+msgid "Sent:"
+msgstr ""
+
+#: members/single/messages/notices-loop.php:54
+#@ buddypress
+msgid "Sorry, no notices were found."
+msgstr ""
+
+#: members/single/messages/single.php:14
+#@ buddypress
+msgid "You are alone in this conversation."
+msgstr ""
+
+#: members/single/messages/single.php:18
+#, php-format
+#@ buddypress
+msgid "Conversation between %s and you."
+msgstr ""
+
+#: members/single/messages/single.php:75
+#@ buddypress
+msgid "Send a Reply"
+msgstr ""
+
+#: members/single/messages/single.php:91
+#@ buddypress
+msgid "Send Reply"
+msgstr ""
+
+#: members/single/profile/change-avatar.php:1
+#@ buddypress
+msgid "Change Avatar"
+msgstr ""
+
+#: members/single/profile/change-avatar.php:7
+#@ buddypress
+msgid "Your avatar will be used on your profile and throughout the site. If there is a <a href=\"http://gravatar.com\">Gravatar</a> associated with your account email we will use that, or you can upload an image from your computer."
+msgstr ""
+
+#: members/single/profile/change-avatar.php:14
+#@ buddypress
+msgid "Click below to select a JPG, GIF or PNG format photo from your computer and then click 'Upload Image' to proceed."
+msgstr ""
+
+#: members/single/profile/change-avatar.php:23
+#@ buddypress
+msgid "If you'd like to delete your current avatar but not upload a new one, please use the delete avatar button."
+msgstr ""
+
+#: members/single/profile/change-avatar.php:24
+#@ buddypress
+msgid "Delete My Avatar"
+msgstr ""
+
+#: members/single/profile/change-avatar.php:31
+#@ buddypress
+msgid "Crop Your New Avatar"
+msgstr ""
+
+#: members/single/profile/change-avatar.php:55
+#@ buddypress
+msgid "Your avatar will be used on your profile and throughout the site. To change your avatar, please create an account with <a href=\"http://gravatar.com\">Gravatar</a> using the same email address as you used to register with this site."
+msgstr ""
+
+#: members/single/profile/edit.php:10
+#, php-format
+#@ buddypress
+msgid "Editing '%s' Profile Group"
+msgstr ""
+
+#: members/single/profile/edit.php:26
+#: members/single/profile/edit.php:33
+#: members/single/profile/edit.php:40
+#: members/single/profile/edit.php:49
+#: members/single/profile/edit.php:67
+#: members/single/profile/edit.php:83
+#: members/single/profile/edit.php:93
+#: registration/register.php:37
+#: registration/register.php:41
+#: registration/register.php:45
+#: registration/register.php:49
+#: registration/register.php:76
+#: registration/register.php:84
+#: registration/register.php:92
+#: registration/register.php:102
+#: registration/register.php:113
+#: registration/register.php:128
+#: registration/register.php:139
+#: registration/register.php:211
+#: registration/register.php:220
+#@ buddypress
+msgid "(required)"
+msgstr ""
+
+#: members/single/profile/edit.php:118
+#: members/single/profile/edit.php:132
+#: registration/register.php:159
+#: registration/register.php:174
+#, php-format
+#@ buddypress
+msgid "This field can be seen by: <span class=\"current-visibility-level\">%s</span>"
+msgstr ""
+
+#: members/single/profile/edit.php:118
+#@ buddypress
+msgid "Change"
+msgstr ""
+
+#: members/single/profile/edit.php:123
+#: registration/register.php:164
+#@ buddypress
+msgid "Who can see this field?"
+msgstr ""
+
+#: members/single/profile/edit.php:128
+#: registration/register.php:169
+#@ buddypress
+msgid "Close"
+msgstr ""
+
+#: members/single/profile/profile-wp.php:8
+#, php-format
+#@ buddypress
+msgid "%s's Profile"
+msgstr ""
+
+#: members/single/profile/profile-wp.php:15
+#@ buddypress
+msgid "Name"
+msgstr ""
+
+#: members/single/profile/profile-wp.php:24
+#@ buddypress
+msgid "About Me"
+msgstr ""
+
+#: members/single/profile/profile-wp.php:33
+#@ buddypress
+msgid "Website"
+msgstr ""
+
+#: members/single/profile/profile-wp.php:42
+#@ buddypress
+msgid "Jabber"
+msgstr ""
+
+#: members/single/profile/profile-wp.php:51
+#@ buddypress
+msgid "AOL Messenger"
+msgstr ""
+
+#: members/single/profile/profile-wp.php:60
+#@ buddypress
+msgid "Yahoo Messenger"
+msgstr ""
+
+#: members/single/settings/capabilities.php:49
+#@ buddypress
+msgid "Capabilities"
+msgstr ""
+
+#: members/single/settings/capabilities.php:57
+#@ buddypress
+msgid "This user is a spammer."
+msgstr ""
+
+#: members/single/settings/capabilities.php:61
+#@ buddypress
+msgid "Save"
+msgstr ""
+
+#: members/single/settings/delete-account.php:50
+#: members/single/settings/delete-account.php:76
+#@ buddypress
+msgid "Delete Account"
+msgstr ""
+
+#: members/single/settings/delete-account.php:56
+#@ buddypress
+msgid "Deleting your account will delete all of the content you have created. It will be completely irrecoverable."
+msgstr ""
+
+#: members/single/settings/delete-account.php:60
+#@ buddypress
+msgid "Deleting this account will delete all of the content it has created. It will be completely irrecoverable."
+msgstr ""
+
+#: members/single/settings/delete-account.php:72
+#@ buddypress
+msgid "I understand the consequences."
+msgstr ""
+
+#: members/single/settings/general.php:49
+#@ buddypress
+msgid "General Settings"
+msgstr ""
+
+#: members/single/settings/general.php:57
+#@ buddypress
+msgid "Current Password <span>(required to update email or change current password)</span>"
+msgstr ""
+
+#: members/single/settings/general.php:58
+#@ buddypress
+msgid "Password Lost and Found"
+msgstr ""
+
+#: members/single/settings/general.php:58
+#@ buddypress
+msgid "Lost your password?"
+msgstr ""
+
+#: members/single/settings/general.php:62
+#@ buddypress
+msgid "Account Email"
+msgstr ""
+
+#: members/single/settings/general.php:65
+#@ buddypress
+msgid "Change Password <span>(leave blank for no change)</span>"
+msgstr ""
+
+#: members/single/settings/general.php:66
+#@ buddypress
+msgid "New Password"
+msgstr ""
+
+#: members/single/settings/general.php:67
+#@ buddypress
+msgid "Repeat New Password"
+msgstr ""
+
+#: members/single/settings/notifications.php:49
+#@ buddypress
+msgid "Email Notification"
+msgstr ""
+
+#: members/single/settings/notifications.php:54
+#@ buddypress
+msgid "Send a notification by email when:"
+msgstr ""
+
+#: meta-box/mdfmeta.php:31
+#@ mdframework
+msgid "Upload the images for your slideshows"
+msgstr ""
+
+#: meta-box/mdfmeta.php:36
+#@ mdframework
+msgid "Image Uploader"
+msgstr ""
+
+#: meta-box/mdfmeta.php:37
+#@ mdframework
+msgid "Drag/Drop the image you would like to have as a slideshow"
+msgstr ""
+
+#: meta-box/mdfmeta.php:51
+#@ mdframework
+msgid "Personal Information About the Author"
+msgstr ""
+
+#: meta-box/mdfmeta.php:67
+#@ mdframework
+msgid "Full name"
+msgstr ""
+
+#: meta-box/mdfmeta.php:71
+#@ mdframework
+msgid "Format: First Last"
+msgstr ""
+
+#: meta-box/mdfmeta.php:76
+#@ mdframework
+msgid "Name Surname"
+msgstr ""
+
+#: meta-box/mdfmeta.php:80
+#@ mdframework
+msgid "Day of Birth"
+msgstr ""
+
+#: meta-box/mdfmeta.php:88
+#@ mdframework
+msgid "Gender"
+msgstr ""
+
+#: meta-box/mdfmeta.php:94
+#@ mdframework
+msgid "Male"
+msgstr ""
+
+#: meta-box/mdfmeta.php:95
+#@ mdframework
+msgid "Female"
+msgstr ""
+
+#: meta-box/mdfmeta.php:98
+#@ mdframework
+msgid "Need an explaination?"
+msgstr ""
+
+#: meta-box/mdfmeta.php:102
+#@ mdframework
+msgid "Bio"
+msgstr ""
+
+#: meta-box/mdfmeta.php:103
+#@ mdframework
+msgid "What's your professions? What have you done so far?"
+msgstr ""
+
+#: meta-box/mdfmeta.php:106
+#@ mdframework
+msgid "I'm a special agent from Vietnam."
+msgstr ""
+
+#: meta-box/mdfmeta.php:117
+#@ mdframework
+msgid "USA"
+msgstr ""
+
+#: meta-box/mdfmeta.php:118
+#@ mdframework
+msgid "Vietnam"
+msgstr ""
+
+#: meta-box/mdfmeta.php:124
+#@ mdframework
+msgid "Select the current place, not in the past"
+msgstr ""
+
+#: meta-box/mdfmeta.php:128
+#@ mdframework
+msgid "About WordPress"
+msgstr ""
+
+#: meta-box/mdfmeta.php:131
+#@ mdframework
+msgid "I love WordPress"
+msgstr ""
+
+#: meta-box/mdfmeta.php:140
+#@ mdframework
+msgid "no, i'm visible"
+msgstr ""
+
+#: meta-box/mdfmeta.php:154
+#@ mdframework
+msgid "Additional Information"
+msgstr ""
+
+#: meta-box/mdfmeta.php:160
+#@ mdframework
+msgid "Your thoughts about Deluxe Blog Tips"
+msgstr ""
+
+#: meta-box/mdfmeta.php:163
+#@ mdframework
+msgid "It's great!"
+msgstr ""
+
+#: meta-box/mdfmeta.php:164
+#@ mdframework
+msgid "Do you think so?"
+msgstr ""
+
+#: meta-box/mdfmeta.php:168
+#@ mdframework
+msgid "Upload your source code"
+msgstr ""
+
+#: meta-box/mdfmeta.php:169
+#@ mdframework
+msgid "Any modified code, or extending code"
+msgstr ""
+
+#: meta-box/mdfmeta.php:175
+#@ mdframework
+msgid "Screenshots"
+msgstr ""
+
+#: meta-box/mdfmeta.php:176
+#: meta-box/mdfmeta.php:183
+#@ mdframework
+msgid "Screenshots of problems, warnings, etc."
+msgstr ""
+
+#: meta-box/mdfmeta.php:182
+#@ mdframework
+msgid "Screenshots (plupload)"
+msgstr ""
+
+#: meta-box/mdfmeta.php:194
+#@ mdframework
+msgid "Survey"
+msgstr ""
+
+#: meta-box/mdfmeta.php:200
+#@ mdframework
+msgid "Your favorite color"
+msgstr ""
+
+#: meta-box/mdfmeta.php:206
+#@ mdframework
+msgid "Your hobby"
+msgstr ""
+
+#: meta-box/mdfmeta.php:211
+#@ mdframework
+msgid "Books"
+msgstr ""
+
+#: meta-box/mdfmeta.php:212
+#@ mdframework
+msgid "Gym, Boxing"
+msgstr ""
+
+#: meta-box/mdfmeta.php:214
+#@ mdframework
+msgid "What do you do in free time?"
+msgstr ""
+
+#: meta-box/mdfmeta.php:218
+#@ mdframework
+msgid "When do you get up?"
+msgstr ""
+
+#: meta-box/mdfmeta.php:226
+#@ mdframework
+msgid "When were you born?"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Blog"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Hotel"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Forum"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "eCommerce"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Base"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "300"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "450"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "600"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "800"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "960"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "One"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Two"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Three"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Four"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Five"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Vanishing"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Static"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Ibrid"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "None"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "0"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "1"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "2"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "3"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "4"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "5"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Only an ugly big one"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Split it in 2 Boxes, like Web 2.0 Says"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Act as a normal Widgetized SideBar"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Custom Articles Only"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Widgetized AND Custom articles"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "No Slideshow for this Area"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Only First Section, the one on top, has Slideshow enabled"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Only Second Section, the lower one, has Slideshow enabled"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Enable Slideshow for Both"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "French Toast"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Pancake"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Omelette"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Crepe"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Waffle"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Basic Settings"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose if you want to show the WordPress Admin Bar"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Click here to deactivate it."
+msgstr ""
+
+#: options.php:1
+#@ options_framework_theme
+msgid "Insert Here Your Google Analytics Code"
+msgstr ""
+
+#: options.php:1
+#@ options_framework_theme
+msgid "Would you like to track your visits?"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose and upload a Favicon"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Upload a Favicon, recommended size = 36px*36px."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "iPhone and Apple Stuff Favicon"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Upload a Favicon specific for iPhone and Apple Products, recommended size = 57px*57px."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose your SiteWide Template"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose your website style."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Color Settings"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Colorpicker Body Background"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "No color selected by default."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Colorpicker Header"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Colorpicker Top Menu"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Colorpicker Content"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Colorpicker Articles Title"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Colorpicker Post"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Colorpicker Sidebar"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Colorpicker Footer"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Advanced Settings"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Check to Activate reflect effect in Header"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Click here to activate it."
+msgstr ""
+
+#: options.php:1
+#@ default
+msgid "Choose your Layout"
+msgstr ""
+
+#: options.php:1
+#@ default
+msgid "Choose how to compose your Header."
+msgstr ""
+
+#: options.php:1
+#@ default
+msgid "Choose where or not place the sidebar."
+msgstr ""
+
+#: options.php:1
+#@ default
+msgid "Choose your Footer"
+msgstr ""
+
+#: options.php:1
+#@ default
+msgid "Choose how to compose your footer."
+msgstr ""
+
+#: options.php:1
+#@ default
+msgid "Choose your Home Grid Style"
+msgstr ""
+
+#: options.php:1
+#@ default
+msgid "Choose how to compose Home Grid."
+msgstr ""
+
+#: options.php:1
+#@ default
+msgid "Choose your Archive Page Grid Style"
+msgstr ""
+
+#: options.php:1
+#@ default
+msgid "Choose how to compose The Archive page.\t\t<br /><br />\t\tIn order:\t\t<ul>\t\t\t<li>33% Width Grids</li>\t\t\t\t\t\t<li>1 big splitted between image and text and 6 33% Grids</li>\t\t\t\t\t\t<li>3*33%, 1 big splitted between image and text,3*33%</li>\t\t\t\t\t\t<li>3*33%,3*33%,1 big splitted between image and text</li>\t\t\t\t\t\t<li>3 big splitted in image and text</li>\t\t\t\t\t\t<li>3 big splitted in image and text but vertical</li>\t\t\t\t\t\t<li>Boxes 50% width and height</li>\t\t\t\t\t\t<li>Big content (no excerpt)</li>\t\t\t\t\t</ul>"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "WebSite BackGround"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+#@ options_framework_theme
+msgid "Change the background CSS."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Hotel Style HomePage"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "What does this panel do?"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "This panel is here to help you configure <code>Home Hotel Style</code> page template."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "SEO PART"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Configure <code>Home Hotel Style</code> page template Basic SEO sections."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Check to start configuring SEO for this template"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Titolo Pagina"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Insert here your <code>Home Hotel Style</code> template specific title tag."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Meta Tag KeyWord"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Insert here your Keyword MetaTag only for <code>Home Hotel Style</code> template."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Meta Tag Description"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Insert here your Description MetaTag only for <code>Home Hotel Style</code> template."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Meta Tag Copyright"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Insert here your <code>Home Hotel Style</code> template copyright info."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Meta Tag Author"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Insert here your <code>Home Hotel Style</code> template Author Tag."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "General"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Mature"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Restricted"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Meta Tag Rating"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose your rating only for <code>Home Hotel Style</code> template."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "HEADER PART"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Configure <code>Home Hotel Style</code> page template <code>HEADER</code> Section."
+msgstr ""
+
+#: options.php:1
+#@ default
+msgid "Choose your Header Layout"
+msgstr ""
+
+#: options.php:1
+#@ default
+msgid "Choose how to compose your Header. Title + Slide, Slide + Title or 100% Slide"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Check if you want a slideshow on this page"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "First Image"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Upload first image of your slideshow."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Alt & Title Tag for First Image"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Insert here Alt & Title Tag for First Image."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Second Image"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Upload Second image of your slideshow."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Third Image"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Upload Third image of your slideshow."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Fourth Image"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Upload Fourth image of your slideshow."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Fifth Image"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Upload Fifth image of your slideshow."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Or... insert a Youtube Video"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Just place here your YouTube video URL, something like:<code>http://youtu.be/k0HW_1_dsRg</code>."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Would you like to have autoplay?"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose if you want Autoplay activated in your YouTube Video"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "CENTER PART"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Configure <code>Home Hotel Style</code> page template <code>CENTER</code> Section."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Check to start customizing the CENTER PART"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "First Image on the left"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Upload First Image on your left in first center part."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "First Area Content"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Write Here what you would like your visitors to see in the first area, you can also use some <code>HTML</code>"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Second Area Content"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Write Here what you would like your visitors to see in the second area, you can also use some <code>HTML</code>"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Second Image on the right"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Upload Second Image this time on your right in second center part."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Alt & Title Tag for Second Image"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Insert here Alt & Title Tag for Second Image."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Third Area Content"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Write Here what you would like your visitors to see in the third area, you can also use some <code>HTML</code>"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Third Image on the right"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Upload Third Image this time on your right in third center part."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Alt & Title Tag for Third Image"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Insert here Alt & Title Tag for Third Image."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "FOOTER PART"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Configure <code>Home Hotel Style</code> page template <code>FOOTER</code> Section."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Check to start customizing the FOOTER of this page"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Select a Category to be Shown on the left"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "On this particular page there are 3 spots choose how to fill the first one"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Select a Category to be Shown in the middle"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "On this particular page there are 3 spots choose how to fill the second one"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Select a Category to be Shown on the right"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "On this particular page there are 3 spots choose how to fill the third one"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "COLOR SECTION"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Configure <code>Home Hotel Style</code> page template <code>COLORS</code>."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Check to start customizing COLORS of this page"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose a color for for the whole background of <code>Home Hotel Style</code> page template."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Colorpicker Header Background"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose a color for for the <code>HEADER</code> background of <code>Home Hotel Style</code> page template."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Colorpicker Content Background"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose a color for the <code>CONTENT</code> background of <code>Home Hotel Style</code> page template."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Colorpicker FirstArea Background"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose a color for the <code>FIRST AREA</code> background of <code>Home Hotel Style</code> page template."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Colorpicker SecondArea Background"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose a color for the <code>SECOND AREA</code> background of <code>Home Hotel Style</code> page template."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Colorpicker Footer Background"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose a color for for the <code>FOOTER</code> background of <code>Home Hotel Style</code> page template."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Colorpicker Foot1 Background"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose a color for <code>FOOTER FIRST AREA</code> background of <code>Home Hotel Style</code> page template."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Colorpicker Foot2 Background"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose a color for <code>FOOTER SECOND AREA</code> background of <code>Home Hotel Style</code> page template."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Colorpicker Foot3 Background"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose a color for <code>FOOTER THIRD AREA</code> background of <code>Home Hotel Style</code> page template."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Forum HomePage"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "This panel is here to help you configure <code>Forum HomePage Style</code> page template."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose if you want a jquery vanishing Login Form (really cool indeed) or a static Login Form, or WordPress's default."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Yo man, So What, So What, So What Cha Want? Check for jQuery, or choose Static or maybe choose NONE for WordPress Default."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Upload an image to be used as Header instead of title and all this Wonderful SEO Stuff"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "It will completely override all the text in Header, recommended size = 960px*300px."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Header Font"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the Font For the Title."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Copy/Paste style code for the Selected Google font"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Please browse google.com/fonts and copy/paste the link to the stylesheet here."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Logo Image"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Upload logo image for Forum template, size = 200px*140px."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Alt & Title Tag for Logo Image"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Insert here Alt & Title Tag for Logo Image."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Home Fonts"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the Font that will be used as title on any sidebar."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Font Text Shadow"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose a text shadow color for fonts selected above."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Menu Panel"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "This panel is here to help you configure <code>the Menu</code>."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose how many Menu you would like to have in header Area"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "2 Menu = 1 Before logo and title & 1 after them; 1 Menu = only under logo and title; 0 Menu = do you really want me to explain this?"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Menu Font"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the Font For the Menu."
+msgstr ""
+
+#: options.php:1
+#@ options_framework_theme
+msgid "Custom CSS code,this is not only for menu so you'd have to add also selectors."
+msgstr ""
+
+#: options.php:1
+#@ options_framework_theme
+msgid "Would you like to add some Custom CSS code? Do it here."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Color Panel"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "This panel is here to help you configure <code>the Colors</code>."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Before starting the customization, please check this checkbox."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Click here to show the area."
+msgstr ""
+
+#: options.php:1
+#@ options_framework_theme
+msgid "Background"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Colorpicker Forum Menu"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose a color for <code>MENU BACKGROUND in FORUM TEMPLATE</code>."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Colorpicker Forum Menu Sub-ITEM"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose a color for <code>MENU SUB-ITEM BACKGROUND in FORUM TEMPLATE</code>."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Colorpicker Forum Menu Sub-ITEM ACTIVE"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose a color for <code>MENU SUB-ITEM BACKGROUND when ACTIVE in FORUM TEMPLATE</code>."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Colorpicker Forum Menu Selected ITEM Background"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose a color for <code>SELECTED ITEM MENU BACKGROUND in FORUM TEMPLATE</code>."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose a color for <code>SELECTED ITEM MENU BACKGROUND HOVER EFFECT in FORUM TEMPLATE</code>."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose a color for <code>HEADER BACKGROUND in FORUM TEMPLATE</code>."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Colorpicker Article Container"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose a color for <code>ARTICLE BACKGROUND in FORUM TEMPLATE</code>."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Colorpicker Article Title Background"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose a color for <code>ARTICLE TITLE BACKGROUND in FORUM TEMPLATE</code>."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Colorpicker First Sidebar Background"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose a color for <code>Widgets BACKGROUND in FORUM TEMPLATE</code>."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Colorpicker Screenshot Sidebar Background"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose a color for <code>Screenshot Sidebar BACKGROUND in FORUM TEMPLATE</code>."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Colorpicker BoxShadow SlotNews Sidebar"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose a color for <code>SlotNews BoxShadow in FORUM TEMPLATE</code>."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Colorpicker VideoClan Sidebar Background"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose a color for <code>VideoClan area BACKGROUND in FORUM TEMPLATE</code>."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Colorpicker BoxShadow VideoClan Sidebar"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose a color for <code>VideoClan BoxShadow in FORUM TEMPLATE</code>."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Colorpicker SlotNews Sidebar Background"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose a color for <code>SlotNews area BACKGROUND in FORUM TEMPLATE</code>."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Colorpicker Footer Area Background"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose a color for <code>Footer area BACKGROUND in FORUM TEMPLATE</code>."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Post Customizer"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose how to customize posts."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Show/Hide Read More button."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Click here to show or hide it."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Before Title Zone"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose what to show before titles."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Before Article Mini Logo"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Upload small logo before Article TITLE, recommended size = 36px*36px."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Sidebox Area"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose how to show informations on your right."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "SideBox Fonts"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the Font For the SideBox."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Colorpicker For Text Shadow"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose a color for <code>Titles Text Shadows</code>."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose if you would like a big sidebar on your right or 2 beatiful splitted boxes"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Big Sidebar = Old school web, 2 boxes = Web 2.0 Hurray!"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose if you would like to have 2 sidebars, 1 widgetized and 1 with latest articles of a category, or only 1 of a particular kind"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose among a widgetized/2 with latest articles/BOTH"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose if you would like to apply a slideshow effect to the sidebars you choose before"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "You can have only one, both or none sliding your latest articles"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Select a Category to be Shown on TOP of this area"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the category to be shown on TOP in this area, remember to set all posts images as Thumbnail"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Select a Category to be Shown BOTTOM in this area"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the category to be shown BOTTOM in this area, remember to set all posts images as Thumbnail"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Slideshow Area"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "From now on you'll be asked to select settings for the slideshows..."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "But before starting the customization, please check this checkbox."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose whether or not show top slideshow"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Selected = Show, Not Selected = Hide."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose how many slideshows would you like to have in HomePage"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the number of slideshows to be shown in HomePage"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Select a Category to be Shown in TOP Slideshow"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the category to be shown in the slideshow, remember to set all posts images as Thumbnail"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Select Height Size for TOP Slideshow"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose Height Size for TOP Slideshow, it would be better to resize your images before and to set all posts images as Thumbnail"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose how many slides would you like to have in TOP slideshow"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the number of slides to be shown in TOP slideshow"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Would you like to skip some Posts? Choose the number here"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the number of slides you would like to skip"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Select a Category to be Shown in First Slideshow"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose thecategory to be shown in the First slideshow, remember to set all posts images as Thumbnail"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose how many slides would you like to have in First slideshow"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the number of slides to be shown in First slideshow"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Select a Category to be Shown in Second Slideshow"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the category to be shown in Second slideshow, remember to set all posts images as Thumbnail"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose how many slides would you like to have in second slideshow?"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the number of slides to be shown in Second slideshow"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Would you like to skip some Posts? choose the number here"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Select a Category to be Shown in Third Slideshow"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the category to be shown in the Third slideshow, remember to set all posts images as Thumbnail"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose how many slides would you like to have in Third slideshow"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the number of slides to be shown in third slideshow"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Select a Category to be Shown in Fourth Slideshow"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the category to be shown in the Fourth slideshow, remember to set all posts images as Thumbnail"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose how many slides would you like to have in Fourth slideshow"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the number of slides to be shown in Fourth slideshow"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Select a Category to be Shown in Fifth Slideshow"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the category to be shown in the Fifth slideshow, remember to set all posts images as Thumbnail"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose how many slides would you like to have in Fifth slideshow"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the number of slides to be shown in Fifth slideshow"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "News Box Area"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose how many News Boxes would you like to have on the HomePage."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Would you like to show some more news Areas? Choose the number here"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the number of boxes here"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Select a Category to be Shown in First Box"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the category to be shown in the First box, remember to set all posts images as Thumbnail"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose how many Post you would like to have in First Box"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the number of posts to be shown in First slideshow"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the number of posts you would like to skip"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Select a Category to be Shown in Second Box"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the category to be shown in the Second box, remember to set all posts images as Thumbnail"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose how many Post you would like to have in Second Box"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the number of posts to be shown in Second slideshow"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Select a Category to be Shown in Third Box"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the category to be shown in the Third box, remember to set all posts images as Thumbnail"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose how many Post you would like to have in Third Box"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the number of posts to be shown in Third slideshow"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Select a Category to be Shown in Fourth Box"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the category to be shown in the Fourth box, remember to set all posts images as Thumbnail"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose how many Post you would like to have in Fourth Box"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the number of posts to be shown in Fourth slideshow"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Select a Category to be Shown in Fifth Box"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the category to be shown in the Fifth box, remember to set all posts images as Thumbnail"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose how many Post you would like to have in Fifth Box"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the number of posts to be shown in Fifth slideshow"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Low panels Area"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "From now on you'll be asked to select settings for bottom panels."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Select a Category to be Shown in Low Left Area"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the category to be shown , remember to set all posts images as Thumbnail"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose how many posts would you like to have in this area"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose the number of posts to be shown"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Carousel Area"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Using this panel you'll be able to configure Your Carousel."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Turn Carousel ON/OFF."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Click to enable."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Select a Category to be Shown in Carousel"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Posts in this category MUST, I repeat, MUST have at lease 1 image with this size: 200px*200px"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Select how many posts you would like to be Shown in Carousel"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "It MUST be a real number or it breaks! I repeat, IT MUST BE a number that corrisponds to posts already published."
+msgstr ""
+
+#: options.php:1
+#@ default
+msgid "Choose your Icons"
+msgstr ""
+
+#: options.php:1
+#@ default
+msgid "Choose the style of Next and Prev Icons."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "YouTube Page Template"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "YouTube Page Template Customizer"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Using this panel you'll be able to configure YouTube Page Template."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "YouTube RSS Feed"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Insert here a YouTube Rss Feed or create it here:"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "More Customizations"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Insert your location here"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Using this little trick you'll be able to have a working form that will drive customers straight to where you are"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Enables Fixed Banners."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Forced Section Just Working on it."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Activate Bulk Post Creator."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Enables test HomePage."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Custom Posts and Custom Meta Field Creator"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Enables Your 'Custom' Custom Posts."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose how many Custom Posts you would like to generate"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "It depends on you, how many custom posts would you like?"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "First Custom Post Name"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "First Custom Post SINGULAR name"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "First Custom Post PLURAL name"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "First Custom Post Icon"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose your First Post Icon, recommended size = 16px*16px."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "First Custom Post Description"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Second Custom Post Name"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Second Custom Post SINGULAR name"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Second Custom Post PLURAL name"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Second Custom Post Icon"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose your Second Post Icon, recommended size = 16px*16px."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Second Custom Post Description"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Third Custom Post Name"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Third Custom Post SINGULAR name"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Third Custom Post PLURAL name"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Third Custom Post Icon"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose your Third Post Icon, recommended size = 16px*16px."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Third Custom Post Description"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Fourth Custom Post Name"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Fourth Custom Post SINGULAR name"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Fourth Custom Post PLURAL name"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Fourth Custom Post Icon"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose your Fourth Post Icon, recommended size = 16px*16px."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Fourth Custom Post Description"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Fifth Custom Post Name"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Fifth Custom Post SINGULAR name"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Fifth Custom Post PLURAL name"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Fifth Custom Post Icon"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Choose your Fifth Post Icon, recommended size = 16px*16px."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Fifth Custom Post Description"
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Enables Your 'Custom' Custom Meta Fields."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Add More Custom Meta Fields."
+msgstr ""
+
+#: options.php:1
+#@ mdframework
+msgid "Click to add them."
+msgstr ""
+
+#: page-templates/hotel-style.php:1
+#: parti/forum/top-forum.php:26
+#: parti/forum/top-forum.php:27
+#: parti/head-normal.php:25
+#: parti/head-normal.php:26
+#: parti/top-forum.php:20
+#: parti/top-forum.php:21
+#@ mdframework
+msgid "Skip to content"
+msgstr ""
+
+#: parti/bigbox.php:37
+#: parti/forum/loop-news.php:45
+#: parti/loop-news.php:34
+#@ mdframework
+msgid "Get to the Archive"
+msgstr "Tutte le news"
+
+#: parti/carousel.php:14
+#: parti/forum/carousel.php:6
+#@ mdframework
+msgid "Previous"
+msgstr ""
+
+#: parti/carousel.php:43
+#: parti/forum/carousel.php:30
+#@ mdframework
+msgid "Next"
+msgstr ""
+
+#: parti/content-hotel.php:7
+#: parti/hotel/content-hotel.php:7
+#: parti/single-forum.php:7
+#@ mdframework
+msgctxt "Previous post link"
+msgid "&larr;"
+msgstr ""
+
+#: parti/content-hotel.php:8
+#: parti/hotel/content-hotel.php:8
+#: parti/single-forum.php:8
+#@ mdframework
+msgctxt "Next post link"
+msgid "&rarr;"
+msgstr ""
+
+#: parti/forum/404-forum.php:9
+#@ mdframework
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr ""
+
+#: parti/forum/404-forum.php:12
+#@ mdframework
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: parti/forum/archive-forum.php:12
+#, php-format
+#@ mdframework
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: parti/forum/archive-forum.php:14
+#, php-format
+#@ mdframework
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: parti/forum/archive-forum.php:14
+#@ mdframework
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: parti/forum/archive-forum.php:16
+#, php-format
+#@ mdframework
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: parti/forum/archive-forum.php:16
+#@ mdframework
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: parti/forum/archive-forum.php:18
+#@ mdframework
+msgid "Archives"
+msgstr ""
+
+#: parti/forum/category-forum.php:10
+#, php-format
+#@ mdframework
+msgid "Category Archives: %s"
+msgstr ""
+
+#: parti/forum/head-login.php:5
+#: parti/forum/head-login.php:37
+#: parti/forum/head-login2.php:5
+#: parti/forum/head-login2.php:38
+#: parti/forum/head-loginibrid.php:7
+#: parti/forum/head-loginibrid.php:20
+#: parti/forum/head-loginibrid.php:57
+#: parti/head-login.php:5
+#: parti/head-login.php:37
+#: parti/head-login2.php:5
+#: parti/head-login2.php:38
+#@ mdframework
+msgid "Login"
+msgstr ""
+
+#: parti/forum/head-login.php:6
+#: parti/forum/head-login2.php:6
+#: parti/forum/head-loginibrid.php:23
+#: parti/head-login.php:6
+#: parti/head-login2.php:6
+#@ mdframework
+msgid "Register"
+msgstr ""
+
+#: parti/forum/head-login.php:7
+#: parti/forum/head-login2.php:7
+#: parti/forum/head-loginibrid.php:26
+#: parti/head-login.php:7
+#: parti/head-login2.php:7
+#@ mdframework
+msgid "Forgot?"
+msgstr ""
+
+#: parti/forum/head-login.php:12
+#: parti/forum/head-login.php:15
+#: parti/forum/head-login2.php:13
+#: parti/forum/head-login2.php:16
+#: parti/forum/head-loginibrid.php:32
+#: parti/forum/head-loginibrid.php:35
+#: parti/head-login.php:12
+#: parti/head-login.php:15
+#: parti/head-login2.php:13
+#: parti/head-login2.php:16
+#@ mdframework
+msgid "Success!"
+msgstr ""
+
+#: parti/forum/head-login.php:13
+#: parti/forum/head-login2.php:14
+#: parti/forum/head-loginibrid.php:33
+#: parti/head-login.php:13
+#: parti/head-login2.php:14
+#@ mdframework
+msgid "Check your email for the password and then return to log in."
+msgstr ""
+
+#: parti/forum/head-login.php:16
+#: parti/forum/head-login2.php:17
+#: parti/forum/head-loginibrid.php:36
+#: parti/head-login.php:16
+#: parti/head-login2.php:17
+#@ mdframework
+msgid "Check your email to reset your password."
+msgstr ""
+
+#: parti/forum/head-login.php:18
+#: parti/forum/head-loginibrid.php:38
+#: parti/head-login.php:18
+#@ mdframework
+msgid "Have an account?"
+msgstr ""
+
+#: parti/forum/head-login.php:19
+#: parti/forum/head-loginibrid.php:39
+#: parti/head-login.php:19
+#@ mdframework
+msgid "Log in or sign up! It&rsquo;s fast &amp; <em>free!</em>"
+msgstr ""
+
+#: parti/forum/head-login.php:23
+#: parti/forum/head-login.php:48
+#: parti/forum/head-login2.php:24
+#: parti/forum/head-login2.php:49
+#: parti/forum/head-loginibrid.php:43
+#: parti/forum/head-loginibrid.php:68
+#: parti/head-login.php:23
+#: parti/head-login.php:48
+#: parti/head-login2.php:24
+#: parti/head-login2.php:49
+#: registration/register.php:37
+#@ mdframework
+#@ buddypress
+msgid "Username"
+msgstr ""
+
+#: parti/forum/head-login.php:27
+#: parti/forum/head-login2.php:28
+#: parti/forum/head-loginibrid.php:47
+#: parti/head-login.php:27
+#: parti/head-login2.php:28
+#@ mdframework
+msgid "Password"
+msgstr ""
+
+#: parti/forum/head-login.php:33
+#: parti/forum/head-login2.php:34
+#: parti/forum/head-loginibrid.php:53
+#: parti/head-login.php:33
+#: parti/head-login2.php:34
+#@ mdframework
+msgid "Remember me"
+msgstr ""
+
+#: parti/forum/head-login.php:44
+#: parti/forum/head-loginibrid.php:64
+#: parti/head-login.php:44
+#@ mdframework
+msgid "Register for this site!"
+msgstr ""
+
+#: parti/forum/head-login.php:45
+#: parti/forum/head-loginibrid.php:65
+#: parti/head-login.php:45
+#@ mdframework
+msgid "Sign up now for the good stuff."
+msgstr ""
+
+#: parti/forum/head-login.php:52
+#: parti/forum/head-login2.php:53
+#: parti/forum/head-loginibrid.php:72
+#: parti/head-login.php:52
+#: parti/head-login2.php:53
+#@ mdframework
+msgid "Your Email"
+msgstr ""
+
+#: parti/forum/head-login.php:57
+#: parti/forum/head-login2.php:58
+#: parti/forum/head-loginibrid.php:77
+#: parti/head-login.php:57
+#: parti/head-login2.php:58
+#@ mdframework
+msgid "Sign up!"
+msgstr ""
+
+#: parti/forum/head-login.php:58
+#: parti/forum/head-login2.php:59
+#: parti/forum/head-loginibrid.php:78
+#: parti/head-login.php:58
+#: parti/head-login2.php:59
+#@ mdframework
+msgid "<p>Check your email for the password!</p>"
+msgstr ""
+
+#: parti/forum/head-login.php:65
+#: parti/forum/head-loginibrid.php:85
+#: parti/head-login.php:65
+#@ mdframework
+msgid "Lose something?"
+msgstr ""
+
+#: parti/forum/head-login.php:66
+#: parti/forum/head-loginibrid.php:86
+#: parti/head-login.php:66
+#@ mdframework
+msgid "Enter your username or email to reset your password."
+msgstr ""
+
+#: parti/forum/head-login.php:69
+#: parti/forum/head-login2.php:70
+#: parti/forum/head-loginibrid.php:89
+#: parti/head-login.php:69
+#: parti/head-login2.php:70
+#@ mdframework
+msgid "Username or Email"
+msgstr ""
+
+#: parti/forum/head-login.php:74
+#: parti/forum/head-login2.php:75
+#: parti/forum/head-loginibrid.php:94
+#: parti/head-login.php:74
+#: parti/head-login2.php:75
+#@ mdframework
+msgid "Reset my password"
+msgstr ""
+
+#: parti/forum/head-login.php:75
+#: parti/forum/head-login2.php:76
+#: parti/forum/head-loginibrid.php:95
+#: parti/head-login.php:75
+#: parti/head-login2.php:76
+#@ mdframework
+msgid "<p>A message will be sent to your email address.</p>"
+msgstr ""
+
+#: parti/forum/head-login.php:84
+#: parti/forum/head-login2.php:88
+#: parti/forum/head-loginibrid.php:104
+#: parti/head-login.php:84
+#: parti/head-login2.php:88
+#@ mdframework
+msgid "Welcome,"
+msgstr ""
+
+#: parti/forum/head-login.php:89
+#: parti/forum/head-login2.php:93
+#: parti/forum/head-loginibrid.php:109
+#: parti/head-login.php:89
+#: parti/head-login2.php:93
+#@ mdframework
+msgid "You&rsquo;re logged in as"
+msgstr ""
+
+#: parti/forum/head-login.php:91
+#: parti/forum/head-login2.php:95
+#: parti/forum/head-loginibrid.php:111
+#: parti/head-login.php:91
+#: parti/head-login2.php:95
+#@ mdframework
+msgid "Log out"
+msgstr ""
+
+#: parti/forum/head-login.php:94
+#: parti/forum/head-login2.php:98
+#: parti/forum/head-loginibrid.php:114
+#: parti/head-login.php:93
+#: parti/head-login2.php:97
+#@ mdframework
+msgid "Admin"
+msgstr ""
+
+#: parti/forum/head-login.php:95
+#: parti/forum/head-login2.php:99
+#: parti/forum/head-loginibrid.php:10
+#: parti/forum/head-loginibrid.php:115
+#: parti/head-login.php:94
+#: parti/head-login2.php:98
+#@ mdframework
+msgid "Profile"
+msgstr ""
+
+#: parti/forum/head-login2.php:8
+#: parti/head-login2.php:8
+#@ mdframework
+msgid "Search"
+msgstr ""
+
+#: parti/forum/image-forum.php:15
+#, php-format
+#@ mdframework
+msgid "<span class=\"meta-prep meta-prep-entry-date\">Published </span> <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%8$s</a>."
+msgstr ""
+
+#: parti/forum/image-forum.php:28
+#@ mdframework
+msgid "&larr; Previous"
+msgstr ""
+
+#: parti/forum/image-forum.php:29
+#@ mdframework
+msgid "Next &rarr;"
+msgstr ""
+
+#: parti/forum/loop-news.php:33
+#@ mdframework
+msgid "Read the remaing part of: "
+msgstr ""
+
+#: parti/forum/loop-news.php:34
+#@ mdframework
+msgid "Read More >>"
+msgstr ""
+
+#: parti/forum/search-forum.php:10
+#, php-format
+#@ mdframework
+msgid "Search Results for: %s"
+msgstr ""
+
+#: parti/forum/search-forum.php:24
+#@ mdframework
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr ""
+
+#: parti/forum/single-forum.php:12
+#@ mdframework
+msgctxt "Previous post link"
+msgid "  "
+msgstr ""
+
+#: parti/forum/single-forum.php:13
+#@ mdframework
+msgctxt "Next post link"
+msgid "  "
+msgstr ""
+
+#: parti/forum/tag-forum.php:9
+#, php-format
+#@ mdframework
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: registration/activate.php:12
+#@ buddypress
+msgid "Account Activated"
+msgstr ""
+
+#: registration/activate.php:17
+#@ buddypress
+msgid "Your account was activated successfully! Your account details have been sent to you in a separate email."
+msgstr ""
+
+#: registration/activate.php:19
+#@ buddypress
+msgid "Your account was activated successfully! You can now log in with the username and password you provided when you signed up."
+msgstr ""
+
+#: registration/activate.php:24
+#@ buddypress
+msgid "Activate your Account"
+msgstr ""
+
+#: registration/activate.php:28
+#@ buddypress
+msgid "Please provide a valid activation key."
+msgstr ""
+
+#: registration/activate.php:32
+#@ buddypress
+msgid "Activation Key:"
+msgstr ""
+
+#: registration/activate.php:36
+#@ buddypress
+msgid "Activate"
+msgstr ""
+
+#: registration/register.php:16
+#@ buddypress
+msgid "User registration is currently not allowed."
+msgstr ""
+
+#: registration/register.php:23
+#@ buddypress
+msgid "Create an Account"
+msgstr ""
+
+#: registration/register.php:27
+#@ buddypress
+msgid "Registering for this site is easy, just fill in the fields below and we'll get a new account set up for you in no time."
+msgstr ""
+
+#: registration/register.php:35
+#@ buddypress
+msgid "Account Details"
+msgstr ""
+
+#: registration/register.php:41
+#@ buddypress
+msgid "Email Address"
+msgstr ""
+
+#: registration/register.php:45
+#@ buddypress
+msgid "Choose a Password"
+msgstr ""
+
+#: registration/register.php:49
+#@ buddypress
+msgid "Confirm Password"
+msgstr ""
+
+#: registration/register.php:65
+#@ buddypress
+msgid "Profile Details"
+msgstr ""
+
+#: registration/register.php:205
+#@ buddypress
+msgid "Blog Details"
+msgstr ""
+
+#: registration/register.php:207
+#@ buddypress
+msgid "Yes, I'd like to create a new site"
+msgstr ""
+
+#: registration/register.php:211
+#@ buddypress
+msgid "Blog URL"
+msgstr ""
+
+#: registration/register.php:220
+#@ buddypress
+msgid "Site Title"
+msgstr ""
+
+#: registration/register.php:224
+#@ buddypress
+msgid "I would like my site to appear in search engines, and in public listings around this network."
+msgstr ""
+
+#: registration/register.php:241
+#@ buddypress
+msgid "Complete Sign Up"
+msgstr ""
+
+#: registration/register.php:252
+#@ buddypress
+msgid "Sign Up Complete!"
+msgstr ""
+
+#: registration/register.php:258
+#@ buddypress
+msgid "You have successfully created your account! To begin using this site you will need to activate your account via the email we have just sent to your address."
+msgstr ""
+
+#: registration/register.php:260
+#@ buddypress
+msgid "You have successfully created your account! Please log in using the username and password you have just created."
+msgstr ""
+

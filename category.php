@@ -1,54 +1,1 @@
-<?php
-/**
- * The template for displaying Category pages.
- *
- * Used to display archive-type pages for posts in a category.
- *
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
- *
- * @package WordPress
- * @subpackage MD_Framework
- * @since MD Framework 1.0
- */
-
-get_header(); ?>
-
-	<section id="primary" class="site-content">
-		<div id="content" role="main">
-
-		<?php if ( have_posts() ) : ?>
-			<header class="archive-header">
-				<h1 class="archive-title"><?php printf( __( 'Category Archives: %s', 'mdframework' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h1>
-
-			<?php if ( category_description() ) : // Show an optional category description ?>
-				<div class="archive-meta"><?php echo category_description(); ?></div>
-			<?php endif; ?>
-			</header><!-- .archive-header -->
-
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
-
-				/* Include the post format-specific template for the content. If you want to
-				 * this in a child theme then include a file called called content-___.php
-				 * (where ___ is the post format) and that will be used instead.
-				 */
-				get_template_part( 'content', get_post_format() );
-
-			endwhile;
-
-			mdframework_content_nav( 'nav-below' );
-			?>
-
-		<?php else : ?>
-			<?php get_template_part( 'content', 'none' ); ?>
-		<?php endif; ?>
-
-		</div><!-- #content -->
-	</section><!-- #primary -->
-
-<?php $partibody = of_get_option('example_images', 'no entry' );
-if (!($partibody == 'unacol')){ 
-	get_sidebar();
-};?>
-<?php get_footer(); ?>
+<?php/** * The template for displaying Category pages. * * Used to display category-type pages for posts in a category. * * Learn more: http://codex.wordpress.org/Template_Hierarchy * * @package WordPress * @subpackage MD_Framework * @since MD Framework 1.0 */if (of_get_option('enabling_test_homepage')){		get_template_part('parti/test','options');	}else{ $_SESSION['templatesidewide'] = of_get_option('select_sitewide_template', '' );		switch ($_SESSION['templatesidewide']) {    case 'forum':        get_template_part('parti/'.$_SESSION['templatesidewide'].'/head',$_SESSION['templatesidewide']);/*Usually <head></head><body>*/		get_template_part('parti/'.$_SESSION['templatesidewide'].'/top',$_SESSION['templatesidewide']);/*<header></header><hgroup></hgroup><nav></nav>*/		get_template_part('parti/'.$_SESSION['templatesidewide'].'/category',$_SESSION['templatesidewide']);/*All the goodies */		get_template_part('parti/'.$_SESSION['templatesidewide'].'/footer',$_SESSION['templatesidewide']);/*End of the page */        break;    case 'blog':        get_template_part('parti/'.$_SESSION['templatesidewide'].'/head',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/top',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/category',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/footer',$_SESSION['templatesidewide']);        break;    case 'hotel':        get_template_part('parti/'.$_SESSION['templatesidewide'].'/head',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/top',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/category',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/footer',$_SESSION['templatesidewide']);        break;	case 'ecommerce':        get_template_part('parti/'.$_SESSION['templatesidewide'].'/head',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/top',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/category',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/footer',$_SESSION['templatesidewide']);        break;	case 'base':        get_template_part('parti/'.$_SESSION['templatesidewide'].'/head',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/top',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/category',$_SESSION['templatesidewide']);		get_template_part('parti/'.$_SESSION['templatesidewide'].'/footer',$_SESSION['templatesidewide']);        break;	default:		get_header();	}; };?>

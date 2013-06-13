@@ -1,0 +1,45 @@
+/***/
+DIV#content
+{
+}
+/** Videos page
+ */
+#videos
+{
+	width: 640px;
+}
+.video_player
+{
+	padding: 15px;
+}
+DIV#content DIV#videos DIV.video_player
+{
+	float: left;
+	width: 100%;
+}
+.video_thumbs
+{
+	margin: 0;
+}
+.video_thumbs LI
+{
+	list-style: none;
+	padding: 15px;
+	margin: 0;
+	float: left;
+	width: 290px;
+	height: 200px;
+}
+DIV#content DIV#videos UL.video_thumbs LI
+{
+	/*[disabled]float:left;*/
+	width: 40% !important;
+}
+.video_thumbs P
+{
+	margin: 10px 0;
+}
+.video_thumbs LI:hover IMG, .video_thumbs LI.active IMG
+{
+	opacity: .5;
+}

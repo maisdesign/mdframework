@@ -1,1321 +1,1321 @@
-msgid ""
-msgstr ""
-"Project-Id-Version: MD Framework v1.4\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: 2013-02-22 17:24:22+0000\n"
-"Last-Translator: maisdesign <marco@maisdesign.it>\n"
-"Language-Team: \n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: CSL v1.x\n"
-"X-Poedit-Language: Italian\n"
-"X-Poedit-Country: ITALY\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
-"X-Poedit-Basepath: ../\n"
-"X-Poedit-Bookmarks: \n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Textdomain-Support: yes"
-
-#: 404.php:17
-#@ mdframework
-msgid "This is somewhat embarrassing, isn&rsquo;t it?"
-msgstr "Questo &egrave; un p&oacute; imbarazzante, o sbaglio?"
-
-#: 404.php:21
-#@ mdframework
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr "Sembra che non mi riesca di trovare quello che cerchi. Effettua un&rsquo;altra ricerca."
-
-#: archive.php:29
-#, php-format
-#@ mdframework
-msgid "Daily Archives: %s"
-msgstr "Archivi Giornalieri: %s"
-
-#: archive.php:31
-#, php-format
-#@ mdframework
-msgid "Monthly Archives: %s"
-msgstr "Archivi Mensili: %s"
-
-#: archive.php:31
-#@ mdframework
-msgctxt "monthly archives date format"
-msgid "F Y"
-msgstr "F Y"
-
-#: archive.php:33
-#, php-format
-#@ mdframework
-msgid "Yearly Archives: %s"
-msgstr "Archivi Annuali: %s"
-
-#: archive.php:33
-#@ mdframework
-msgctxt "yearly archives date format"
-msgid "Y"
-msgstr "Y"
-
-#: archive.php:35
-#@ mdframework
-msgid "Archives"
-msgstr "Archivi"
-
-#: author.php:32
-#, php-format
-#@ mdframework
-msgid "Author Archives: %s"
-msgstr "Archivi Autori: %s"
-
-#: author.php:53
-#: content.php:52
-#, php-format
-#@ mdframework
-msgid "About %s"
-msgstr "Chi Siamo %s"
-
-#: category.php:21
-#, php-format
-#@ mdframework
-msgid "Category Archives: %s"
-msgstr "Archivi Categorie: %s"
-
-#: comments.php:31
-#, php-format
-#@ mdframework
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "Un commento su &ldquo;%2$s&rdquo;"
-msgstr[1] "%1$s commenti su &ldquo;%2$s&rdquo;"
-
-#: comments.php:42
-#@ mdframework
-msgid "Comment navigation"
-msgstr "Commenti alla navigazione"
-
-#: comments.php:43
-#@ mdframework
-msgid "&larr; Older Comments"
-msgstr "&larr; Vecchi Commenti"
-
-#: comments.php:44
-#@ mdframework
-msgid "Newer Comments &rarr;"
-msgstr "Nuovi commenti &rarr;"
-
-#: comments.php:53
-#@ mdframework
-msgid "Comments are closed."
-msgstr "I commenti sono chiusi."
-
-#: content-aside.php:13
-#: content-aside.php:20
-#: content-image.php:17
-#: content-link.php:18
-#: content-quote.php:17
-#: content-status.php:15
-#: content.php:22
-#, php-format
-#@ mdframework
-msgid "Permalink to %s"
-msgstr "Link a %s"
-
-#: content-aside.php:15
-#: content-image.php:13
-#: content-link.php:14
-#: content-quote.php:13
-#: content-status.php:21
-#: content.php:38
-#@ mdframework
-msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Continua a leggere <span class=\"meta-nav\">&rarr;</span>"
-
-#: content-aside.php:23
-#: content-image.php:23
-#: content-link.php:21
-#: content-quote.php:20
-#: content-status.php:27
-#: content.php:27
-#@ mdframework
-msgid "Leave a reply"
-msgstr "Lascia un commento"
-
-#: content-aside.php:23
-#: content-image.php:23
-#: content-link.php:21
-#: content-quote.php:20
-#: content-status.php:27
-#: content.php:27
-#@ mdframework
-msgid "1 Reply"
-msgstr "1 Risposta"
-
-#: content-aside.php:23
-#: content-image.php:23
-#: content-link.php:21
-#: content-quote.php:20
-#: content-status.php:27
-#: content.php:27
-#@ mdframework
-msgid "% Replies"
-msgstr "% Risposte"
-
-#: content-aside.php:26
-#: content-image.php:26
-#: content-link.php:24
-#: content-page.php:21
-#: content-quote.php:23
-#: content-status.php:30
-#: content.php:45
-#: functions.php:349
-#: image.php:37
-#@ mdframework
-msgid "Edit"
-msgstr "Modifica"
-
-#: content-link.php:12
-#@ mdframework
-msgid "Link"
-msgstr "Link"
-
-#: content-none.php:13
-#: search.php:34
-#@ mdframework
-msgid "Nothing Found"
-msgstr "Non ho trovato nulla"
-
-#: content-none.php:17
-#@ mdframework
-msgid "Apologies, but no results were found. Perhaps searching will help find a related post."
-msgstr "Mi dispiace, ma non ho trovato risultati. Una ricerca potrebbe aiutare a trovare articoli correlati."
-
-#: content-page.php:18
-#: content.php:39
-#: image.php:92
-#@ mdframework
-msgid "Pages:"
-msgstr "Pagine:"
-
-#: content.php:13
-#@ mdframework
-msgid "Featured post"
-msgstr "Post in evidenza"
-
-#: content.php:56
-#, php-format
-#@ mdframework
-msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Leggi tutti i post di %s <span class=\"meta-nav\">&rarr;</span>"
-
-#: functions.php:64
-#@ mdframework
-msgid "Primary Menu"
-msgstr "Menu principale"
-
-#: functions.php:120
-#@ mdframework
-msgctxt "Open Sans font: on or off"
-msgid "on"
-msgstr "su"
-
-#: functions.php:125
-#@ mdframework
-msgctxt "Open Sans font: add new subset (greek, cyrillic, vietnamese)"
-msgid "no-subset"
-msgstr "no-subset"
-
-#: functions.php:181
-#: header.php:41
-#, php-format
-#@ mdframework
-msgid "Page %s"
-msgstr "Pagina %s"
-
-#: functions.php:206
-#@ mdframework
-msgid "Main Sidebar"
-msgstr "Sidebar Principale"
-
-#: functions.php:208
-#@ mdframework
-msgid "Appears on posts and pages except the optional Front Page template, which has its own widgets"
-msgstr "Appare nei post e nelle pagine a parte alcune pagine personalizzate, che hanno i loro widget personalizzati."
-
-#: functions.php:216
-#@ mdframework
-msgid "Second Sidebar just in case of a three coloumn template"
-msgstr "Seconda Sidebar nel caso di un template a tre colonne"
-
-#: functions.php:218
-#@ mdframework
-msgid "Appears when a 3 coloumn template in choosen"
-msgstr "Appare quando &egrave; scelto un template a 3 colonne"
-
-#: functions.php:226
-#@ mdframework
-msgid "First Front Page Widget Area"
-msgstr "Prima area Widget della HomePage"
-
-#: functions.php:228
-#: functions.php:238
-#@ mdframework
-msgid "Appears when using the optional Front Page template with a page set as Static Front Page"
-msgstr ""
-
-#: functions.php:236
-#@ mdframework
-msgid "Second Front Page Widget Area"
-msgstr ""
-
-#: functions.php:246
-#@ mdframework
-msgid "Footer Left Widget"
-msgstr ""
-
-#: functions.php:248
-#@ mdframework
-msgid "First widgetized area on the left of Footer"
-msgstr ""
-
-#: functions.php:256
-#@ mdframework
-msgid "Footer Center Widget"
-msgstr ""
-
-#: functions.php:258
-#@ mdframework
-msgid "Second widgetized area in the middle of Footer"
-msgstr ""
-
-#: functions.php:266
-#@ mdframework
-msgid "Footer Right Widget"
-msgstr ""
-
-#: functions.php:268
-#@ mdframework
-msgid "Third widgetized area on the right of Footer"
-msgstr ""
-
-#: functions.php:290
-#: single.php:20
-#@ mdframework
-msgid "Post navigation"
-msgstr ""
-
-#: functions.php:291
-#@ mdframework
-msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
-msgstr ""
-
-#: functions.php:292
-#@ mdframework
-msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
-msgstr ""
-
-#: functions.php:317
-#@ mdframework
-msgid "Pingback:"
-msgstr ""
-
-#: functions.php:317
-#@ mdframework
-msgid "(Edit)"
-msgstr ""
-
-#: functions.php:332
-#@ mdframework
-msgid "Post author"
-msgstr ""
-
-#. translators: 1: date, 2: time
-#: functions.php:338
-#, php-format
-#@ mdframework
-msgid "%1$s at %2$s"
-msgstr ""
-
-#: functions.php:344
-#@ mdframework
-msgid "Your comment is awaiting moderation."
-msgstr ""
-
-#: functions.php:353
-#@ mdframework
-msgid "Reply"
-msgstr ""
-
-#: functions.php:372
-#: functions.php:375
-#@ mdframework
-msgid ", "
-msgstr ""
-
-#: functions.php:386
-#, php-format
-#@ mdframework
-msgid "View all posts by %s"
-msgstr ""
-
-#: functions.php:392
-#, php-format
-#@ mdframework
-msgid "This entry was posted in %1$s and tagged %2$s on %3$s<span class=\"by-author\"> by %4$s</span>."
-msgstr ""
-
-#: functions.php:394
-#, php-format
-#@ mdframework
-msgid "This entry was posted in %1$s on %3$s<span class=\"by-author\"> by %4$s</span>."
-msgstr ""
-
-#: functions.php:396
-#, php-format
-#@ mdframework
-msgid "This entry was posted on %3$s<span class=\"by-author\"> by %4$s</span>."
-msgstr ""
-
-#: image.php:26
-#, php-format
-#@ mdframework
-msgid "<span class=\"meta-prep meta-prep-entry-date\">Published </span> <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%8$s</a>."
-msgstr ""
-
-#: image.php:41
-#@ mdframework
-msgid "&larr; Previous"
-msgstr ""
-
-#: image.php:42
-#@ mdframework
-msgid "Next &rarr;"
-msgstr ""
-
-#: inc/options-framework.php:162
-#: inc/options-framework.php:378
-#@ optionsframework
-#@ options_framework_theme
-msgid "Theme Options"
-msgstr ""
-
-#: inc/options-framework.php:194
-#@ default
-msgid "Clear"
-msgstr ""
-
-#: inc/options-framework.php:195
-#@ default
-msgid "Default"
-msgstr ""
-
-#: inc/options-framework.php:196
-#@ default
-msgid "Select Color"
-msgstr ""
-
-#: inc/options-framework.php:241
-#@ options_framework_theme
-msgid "Save Options"
-msgstr ""
-
-#: inc/options-framework.php:242
-#@ options_framework_theme
-msgid "Restore Defaults"
-msgstr ""
-
-#: inc/options-framework.php:242
-#@ options_framework_theme
-msgid "Click OK to reset. Any theme settings will be lost!"
-msgstr ""
-
-#: inc/options-framework.php:274
-#@ options_framework_theme
-msgid "Default options restored."
-msgstr ""
-
-#: inc/options-framework.php:328
-#@ options_framework_theme
-msgid "Options saved."
-msgstr ""
-
-#: inc/options-media-uploader.php:51
-#@ optionsframework
-msgid "No file chosen"
-msgstr ""
-
-#: inc/options-media-uploader.php:53
-#: inc/options-media-uploader.php:100
-#@ options_framework_theme
-msgid "Upload"
-msgstr ""
-
-#: inc/options-media-uploader.php:55
-#: inc/options-media-uploader.php:101
-#@ options_framework_theme
-msgid "Remove"
-msgstr ""
-
-#: inc/options-media-uploader.php:79
-#@ optionsframework
-msgid "View File"
-msgstr ""
-
-#: inc/options-sanitize.php:232
-#@ options_framework_theme
-msgid "No Repeat"
-msgstr ""
-
-#: inc/options-sanitize.php:233
-#@ options_framework_theme
-msgid "Repeat Horizontally"
-msgstr ""
-
-#: inc/options-sanitize.php:234
-#@ options_framework_theme
-msgid "Repeat Vertically"
-msgstr ""
-
-#: inc/options-sanitize.php:235
-#@ options_framework_theme
-msgid "Repeat All"
-msgstr ""
-
-#: inc/options-sanitize.php:248
-#@ options_framework_theme
-msgid "Top Left"
-msgstr ""
-
-#: inc/options-sanitize.php:249
-#@ options_framework_theme
-msgid "Top Center"
-msgstr ""
-
-#: inc/options-sanitize.php:250
-#@ options_framework_theme
-msgid "Top Right"
-msgstr ""
-
-#: inc/options-sanitize.php:251
-#@ options_framework_theme
-msgid "Middle Left"
-msgstr ""
-
-#: inc/options-sanitize.php:252
-#@ options_framework_theme
-msgid "Middle Center"
-msgstr ""
-
-#: inc/options-sanitize.php:253
-#@ options_framework_theme
-msgid "Middle Right"
-msgstr ""
-
-#: inc/options-sanitize.php:254
-#@ options_framework_theme
-msgid "Bottom Left"
-msgstr ""
-
-#: inc/options-sanitize.php:255
-#@ options_framework_theme
-msgid "Bottom Center"
-msgstr ""
-
-#: inc/options-sanitize.php:256
-#@ options_framework_theme
-msgid "Bottom Right"
-msgstr ""
-
-#: inc/options-sanitize.php:269
-#@ options_framework_theme
-msgid "Scroll Normally"
-msgstr ""
-
-#: inc/options-sanitize.php:270
-#@ options_framework_theme
-msgid "Fixed in Place"
-msgstr ""
-
-#: inc/options-sanitize.php:344
-#@ options_framework_theme
-msgid "Normal"
-msgstr ""
-
-#: inc/options-sanitize.php:345
-#@ options_framework_theme
-msgid "Italic"
-msgstr ""
-
-#: inc/options-sanitize.php:346
-#@ options_framework_theme
-msgid "Bold"
-msgstr ""
-
-#: inc/options-sanitize.php:347
-#@ options_framework_theme
-msgid "Bold Italic"
-msgstr ""
-
-#: options.php:32
-#@ options_framework_theme
-msgid "One"
-msgstr ""
-
-#: options.php:33
-#@ options_framework_theme
-msgid "Two"
-msgstr ""
-
-#: options.php:34
-#@ options_framework_theme
-msgid "Three"
-msgstr ""
-
-#: options.php:35
-#@ options_framework_theme
-msgid "Four"
-msgstr ""
-
-#: options.php:36
-#@ options_framework_theme
-msgid "Five"
-msgstr ""
-
-#: options.php:41
-#@ options_framework_theme
-msgid "French Toast"
-msgstr ""
-
-#: options.php:42
-#@ options_framework_theme
-msgid "Pancake"
-msgstr ""
-
-#: options.php:43
-#@ options_framework_theme
-msgid "Omelette"
-msgstr ""
-
-#: options.php:44
-#@ options_framework_theme
-msgid "Crepe"
-msgstr ""
-
-#: options.php:45
-#@ options_framework_theme
-msgid "Waffle"
-msgstr ""
-
-#: options.php:106
-#@ options_framework_theme
-msgid "Basic Settings"
-msgstr ""
-
-#: options.php:110
-#@ options_framework_theme
-msgid "Input Text Mini"
-msgstr ""
-
-#: options.php:111
-#@ options_framework_theme
-msgid "A mini text input field."
-msgstr ""
-
-#: options.php:118
-#@ options_framework_theme
-msgid "Textarea"
-msgstr ""
-
-#: options.php:119
-#@ options_framework_theme
-msgid "Textarea description."
-msgstr ""
-
-#: options.php:125
-#@ options_framework_theme
-msgid "Input Select Small"
-msgstr ""
-
-#: options.php:126
-#@ options_framework_theme
-msgid "Small Select Box."
-msgstr ""
-
-#: options.php:134
-#@ options_framework_theme
-msgid "Input Select Wide"
-msgstr ""
-
-#: options.php:135
-#@ options_framework_theme
-msgid "A wider select box."
-msgstr ""
-
-#: options.php:143
-#@ options_check
-msgid "Select a Tag"
-msgstr ""
-
-#: options.php:144
-#@ options_check
-msgid "Passed an array of tags with term_id and term_name"
-msgstr ""
-
-#: options.php:151
-#@ options_framework_theme
-msgid "Select a Page"
-msgstr ""
-
-#: options.php:152
-#@ options_framework_theme
-msgid "Passed an pages with ID and post_title"
-msgstr ""
-
-#: options.php:158
-#@ options_framework_theme
-msgid "Input Radio (one)"
-msgstr ""
-
-#: options.php:159
-#@ options_framework_theme
-msgid "Radio select with default options \"one\"."
-msgstr ""
-
-#: options.php:166
-#@ options_framework_theme
-msgid "Input Checkbox"
-msgstr ""
-
-#: options.php:167
-#@ options_framework_theme
-msgid "Example checkbox, defaults to true."
-msgstr ""
-
-#: options.php:173
-#@ options_framework_theme
-msgid "Color Settings"
-msgstr ""
-
-#: options.php:177
-#: options.php:688
-#@ options_framework_theme
-msgid "Colorpicker Body Background"
-msgstr ""
-
-#: options.php:178
-#: options.php:185
-#: options.php:192
-#: options.php:199
-#: options.php:206
-#: options.php:213
-#: options.php:220
-#: options.php:309
-#@ options_framework_theme
-msgid "No color selected by default."
-msgstr ""
-
-#: options.php:184
-#@ options_framework_theme
-msgid "Colorpicker Header"
-msgstr ""
-
-#: options.php:191
-#@ options_framework_theme
-msgid "Colorpicker Top Menu"
-msgstr ""
-
-#: options.php:198
-#@ options_framework_theme
-msgid "Colorpicker Content"
-msgstr ""
-
-#: options.php:205
-#@ options_framework_theme
-msgid "Colorpicker Post"
-msgstr ""
-
-#: options.php:212
-#@ options_framework_theme
-msgid "Colorpicker Sidebar"
-msgstr ""
-
-#: options.php:219
-#@ options_framework_theme
-msgid "Colorpicker Footer"
-msgstr ""
-
-#: options.php:226
-#@ options_framework_theme
-msgid "Advanced Settings"
-msgstr ""
-
-#: options.php:236
-#: options.php:248
-#@ default
-msgid "Choose your Layout"
-msgstr ""
-
-#: options.php:237
-#@ default
-msgid "Choose how to compose your Header."
-msgstr ""
-
-#: options.php:249
-#@ default
-msgid "Choose where or not place the sidebar."
-msgstr ""
-
-#: options.php:262
-#@ default
-msgid "Choose your Footer"
-msgstr ""
-
-#: options.php:263
-#@ default
-msgid "Choose how to compose your footer."
-msgstr ""
-
-#: options.php:276
-#@ default
-msgid "Choose your Home Grid Style"
-msgstr ""
-
-#: options.php:277
-#@ default
-msgid "Choose how to compose Home Grid."
-msgstr ""
-
-#: options.php:293
-#@ options_framework_theme
-msgid "Example Background"
-msgstr ""
-
-#: options.php:294
-#@ options_framework_theme
-msgid "Change the background CSS."
-msgstr ""
-
-#: options.php:300
-#@ options_framework_theme
-msgid "Multicheck"
-msgstr ""
-
-#: options.php:301
-#@ options_framework_theme
-msgid "Multicheck description."
-msgstr ""
-
-#: options.php:308
-#@ options_framework_theme
-msgid "Colorpicker"
-msgstr ""
-
-#: options.php:314
-#@ options_framework_theme
-msgid "Typography"
-msgstr ""
-
-#: options.php:315
-#@ options_framework_theme
-msgid "Example typography."
-msgstr ""
-
-#: options.php:321
-#@ options_framework_theme
-msgid "Custom Typography"
-msgstr ""
-
-#: options.php:322
-#@ options_framework_theme
-msgid "Custom typography options."
-msgstr ""
-
-#: options.php:358
-#@ options_framework_theme
-msgid "Hotel Style HomePage"
-msgstr ""
-
-#: options.php:362
-#@ options_framework_theme
-msgid "What does this panel do?"
-msgstr ""
-
-#: options.php:363
-#@ options_framework_theme
-msgid "This panel is here to help you configure <code>Home Hotel Style</code> page template."
-msgstr ""
-
-#: options.php:367
-#@ options_framework_theme
-msgid "SEO PART"
-msgstr ""
-
-#: options.php:368
-#@ options_framework_theme
-msgid "Configure <code>Home Hotel Style</code> page template Basic SEO sections."
-msgstr ""
-
-#: options.php:372
-#@ options_framework_theme
-msgid "Check to start configuring SEO for this template"
-msgstr ""
-
-#: options.php:373
-#: options.php:455
-#: options.php:575
-#: options.php:648
-#: options.php:683
-#@ options_framework_theme
-msgid "Click here to activate it."
-msgstr ""
-
-#: options.php:378
-#@ options_framework_theme
-msgid "Titolo Pagina"
-msgstr ""
-
-#: options.php:379
-#@ options_framework_theme
-msgid "Insert here your <code>Home Hotel Style</code> template specific title tag."
-msgstr ""
-
-#: options.php:386
-#@ options_framework_theme
-msgid "Meta Tag KeyWord"
-msgstr ""
-
-#: options.php:387
-#@ options_framework_theme
-msgid "Insert here your Keyword MetaTag only for <code>Home Hotel Style</code> template."
-msgstr ""
-
-#: options.php:394
-#@ options_framework_theme
-msgid "Meta Tag Description"
-msgstr ""
-
-#: options.php:395
-#@ options_framework_theme
-msgid "Insert here your Description MetaTag only for <code>Home Hotel Style</code> template."
-msgstr ""
-
-#: options.php:402
-#@ options_framework_theme
-msgid "Meta Tag Copyright"
-msgstr ""
-
-#: options.php:403
-#@ options_framework_theme
-msgid "Insert here your <code>Home Hotel Style</code> template copyright info."
-msgstr ""
-
-#: options.php:411
-#@ options_framework_theme
-msgid "Meta Tag Author"
-msgstr ""
-
-#: options.php:412
-#@ options_framework_theme
-msgid "Insert here your <code>Home Hotel Style</code> template Author Tag."
-msgstr ""
-
-#: options.php:420
-#@ options_framework_theme
-msgid "General"
-msgstr ""
-
-#: options.php:421
-#@ options_framework_theme
-msgid "Mature"
-msgstr ""
-
-#: options.php:422
-#@ options_framework_theme
-msgid "Restricted"
-msgstr ""
-
-#: options.php:426
-#@ options_framework_theme
-msgid "Meta Tag Rating"
-msgstr ""
-
-#: options.php:427
-#@ options_framework_theme
-msgid "Choose your rating only for <code>Home Hotel Style</code> template."
-msgstr ""
-
-#: options.php:436
-#@ options_framework_theme
-msgid "HEADER PART"
-msgstr ""
-
-#: options.php:437
-#@ options_framework_theme
-msgid "Configure <code>Home Hotel Style</code> page template <code>HEADER</code> Section."
-msgstr ""
-
-#: options.php:441
-#@ default
-msgid "Choose your Header Layout"
-msgstr ""
-
-#: options.php:442
-#@ default
-msgid "Choose how to compose your Header. Title + Slide, Slide + Title or 100% Slide"
-msgstr ""
-
-#: options.php:454
-#@ options_framework_theme
-msgid "Check if you want a slideshow on this page"
-msgstr ""
-
-#: options.php:460
-#@ options_framework_theme
-msgid "First Image"
-msgstr ""
-
-#: options.php:461
-#@ options_framework_theme
-msgid "Upload first image of your slideshow."
-msgstr ""
-
-#: options.php:467
-#: options.php:483
-#: options.php:499
-#: options.php:515
-#: options.php:531
-#: options.php:587
-#@ options_framework_theme
-msgid "Alt & Title Tag for First Image"
-msgstr ""
-
-#: options.php:468
-#: options.php:484
-#: options.php:500
-#: options.php:516
-#: options.php:532
-#: options.php:588
-#@ options_framework_theme
-msgid "Insert here Alt & Title Tag for First Image."
-msgstr ""
-
-#: options.php:476
-#@ options_framework_theme
-msgid "Second Image"
-msgstr ""
-
-#: options.php:477
-#@ options_framework_theme
-msgid "Upload Second image of your slideshow."
-msgstr ""
-
-#: options.php:492
-#@ options_framework_theme
-msgid "Third Image"
-msgstr ""
-
-#: options.php:493
-#@ options_framework_theme
-msgid "Upload Third image of your slideshow."
-msgstr ""
-
-#: options.php:508
-#@ options_framework_theme
-msgid "Fourth Image"
-msgstr ""
-
-#: options.php:509
-#@ options_framework_theme
-msgid "Upload Fourth image of your slideshow."
-msgstr ""
-
-#: options.php:524
-#@ options_framework_theme
-msgid "Fifth Image"
-msgstr ""
-
-#: options.php:525
-#@ options_framework_theme
-msgid "Upload Fifth image of your slideshow."
-msgstr ""
-
-#: options.php:540
-#@ options_framework_theme
-msgid "Or... insert a Youtube Video"
-msgstr ""
-
-#: options.php:541
-#@ options_framework_theme
-msgid "Just place here your YouTube video URL, something like:<code>http://youtu.be/k0HW_1_dsRg</code>."
-msgstr ""
-
-#: options.php:548
-#@ options_framework_theme
-msgid "Yes"
-msgstr ""
-
-#: options.php:549
-#@ options_framework_theme
-msgid "No"
-msgstr ""
-
-#: options.php:553
-#@ options_framework_theme
-msgid "Would you like to have autoplay?"
-msgstr ""
-
-#: options.php:554
-#@ options_framework_theme
-msgid "Choose if you want Autoplay activated in your YouTube Video"
-msgstr ""
-
-#: options.php:569
-#@ options_framework_theme
-msgid "CENTER PART"
-msgstr ""
-
-#: options.php:570
-#@ options_framework_theme
-msgid "Configure <code>Home Hotel Style</code> page template <code>CENTER</code> Section."
-msgstr ""
-
-#: options.php:574
-#@ options_framework_theme
-msgid "Check to start customizing the CENTER PART"
-msgstr ""
-
-#: options.php:580
-#@ options_framework_theme
-msgid "First Image on the left"
-msgstr ""
-
-#: options.php:581
-#@ options_framework_theme
-msgid "Upload First Image on your left in first center part."
-msgstr ""
-
-#: options.php:603
-#@ options_framework_theme
-msgid "First Area Content"
-msgstr ""
-
-#: options.php:604
-#@ default
-msgid "Write Here what you would like your visitors to see in the first area, you can also use some <code>HTML</code>"
-msgstr ""
-
-#: options.php:618
-#@ options_framework_theme
-msgid "Second Area Content"
-msgstr ""
-
-#: options.php:619
-#@ default
-msgid "Write Here what you would like your visitors to see in the second area, you can also use some <code>HTML</code>"
-msgstr ""
-
-#: options.php:626
-#@ options_framework_theme
-msgid "Second Image on the right"
-msgstr ""
-
-#: options.php:627
-#@ options_framework_theme
-msgid "Upload Second Image this time on your right in second center part."
-msgstr ""
-
-#: options.php:633
-#@ options_framework_theme
-msgid "Alt & Title Tag for Second Image"
-msgstr ""
-
-#: options.php:634
-#@ options_framework_theme
-msgid "Insert here Alt & Title Tag for Second Image."
-msgstr ""
-
-#: options.php:642
-#@ options_framework_theme
-msgid "FOOTER PART"
-msgstr ""
-
-#: options.php:643
-#@ options_framework_theme
-msgid "Configure <code>Home Hotel Style</code> page template <code>FOOTER</code> Section."
-msgstr ""
-
-#: options.php:647
-#@ options_framework_theme
-msgid "Check to start customizing the FOOTER of this page"
-msgstr ""
-
-#: options.php:653
-#@ options_framework_theme
-msgid "Select a Category to be Shown on the left"
-msgstr ""
-
-#: options.php:654
-#@ options_framework_theme
-msgid "On this particular page there are 3 spots choose how to fill the first one"
-msgstr ""
-
-#: options.php:661
-#@ options_framework_theme
-msgid "Select a Category to be Shown in the middle"
-msgstr ""
-
-#: options.php:662
-#@ options_framework_theme
-msgid "On this particular page there are 3 spots choose how to fill the second one"
-msgstr ""
-
-#: options.php:669
-#@ options_framework_theme
-msgid "Select a Category to be Shown on the right"
-msgstr ""
-
-#: options.php:670
-#@ options_framework_theme
-msgid "On this particular page there are 3 spots choose how to fill the third one"
-msgstr ""
-
-#: options.php:677
-#@ options_framework_theme
-msgid "COLOR SECTION"
-msgstr ""
-
-#: options.php:678
-#@ options_framework_theme
-msgid "Configure <code>Home Hotel Style</code> page template <code>COLORS</code>."
-msgstr ""
-
-#: options.php:682
-#@ options_framework_theme
-msgid "Check to start customizing COLORS of this page"
-msgstr ""
-
-#: options.php:689
-#@ options_framework_theme
-msgid "Choose a color for for the whole background of <code>Home Hotel Style</code> page template."
-msgstr ""
-
-#: options.php:696
-#@ options_framework_theme
-msgid "Colorpicker Header Background"
-msgstr ""
-
-#: options.php:697
-#@ options_framework_theme
-msgid "Choose a color for for the <code>HEADER</code> background of <code>Home Hotel Style</code> page template."
-msgstr ""
-
-#: options.php:704
-#@ options_framework_theme
-msgid "Colorpicker Content Background"
-msgstr ""
-
-#: options.php:705
-#@ options_framework_theme
-msgid "Choose a color for the <code>CONTENT</code> background of <code>Home Hotel Style</code> page template."
-msgstr ""
-
-#: options.php:712
-#@ options_framework_theme
-msgid "Colorpicker FirstArea Background"
-msgstr ""
-
-#: options.php:713
-#@ options_framework_theme
-msgid "Choose a color for the <code>FIRST AREA</code> background of <code>Home Hotel Style</code> page template."
-msgstr ""
-
-#: options.php:720
-#@ options_framework_theme
-msgid "Colorpicker SecondArea Background"
-msgstr ""
-
-#: options.php:721
-#@ options_framework_theme
-msgid "Choose a color for the <code>SECOND AREA</code> background of <code>Home Hotel Style</code> page template."
-msgstr ""
-
-#: options.php:728
-#@ options_framework_theme
-msgid "Colorpicker Footer Background"
-msgstr ""
-
-#: options.php:729
-#@ options_framework_theme
-msgid "Choose a color for for the <code>FOOTER</code> background of <code>Home Hotel Style</code> page template."
-msgstr ""
-
-#: options.php:736
-#@ options_framework_theme
-msgid "Colorpicker Foot1 Background"
-msgstr ""
-
-#: options.php:737
-#@ options_framework_theme
-msgid "Choose a color for <code>FOOTER FIRST AREA</code> background of <code>Home Hotel Style</code> page template."
-msgstr ""
-
-#: options.php:744
-#@ options_framework_theme
-msgid "Colorpicker Foot2 Background"
-msgstr ""
-
-#: options.php:745
-#@ options_framework_theme
-msgid "Choose a color for <code>FOOTER SECOND AREA</code> background of <code>Home Hotel Style</code> page template."
-msgstr ""
-
-#: options.php:752
-#@ options_framework_theme
-msgid "Colorpicker Foot3 Background"
-msgstr ""
-
-#: options.php:753
-#@ options_framework_theme
-msgid "Choose a color for <code>FOOTER THIRD AREA</code> background of <code>Home Hotel Style</code> page template."
-msgstr ""
-
-#: page-templates/hotel-style.php:15
-#: page-templates/hotel-style.php:16
-#: parti/head-normal.php:25
-#: parti/head-normal.php:26
-#@ mdframework
-msgid "Skip to content"
-msgstr ""
-
-#: search.php:18
-#, php-format
-#@ mdframework
-msgid "Search Results for: %s"
-msgstr ""
-
-#: search.php:38
-#@ mdframework
-msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
-msgstr ""
-
-#: single.php:21
-#@ mdframework
-msgctxt "Previous post link"
-msgid "&larr;"
-msgstr ""
-
-#: single.php:22
-#@ mdframework
-msgctxt "Next post link"
-msgid "&rarr;"
-msgstr ""
-
-#: tag.php:21
-#, php-format
-#@ mdframework
-msgid "Tag Archives: %s"
-msgstr ""
-
+msgid ""
+msgstr ""
+"Project-Id-Version: MD Framework v1.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2013-02-22 17:24:22+0000\n"
+"Last-Translator: maisdesign <marco@maisdesign.it>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Italian\n"
+"X-Poedit-Country: ITALY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: 404.php:17
+#@ mdframework
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr "Questo &egrave; un p&oacute; imbarazzante, o sbaglio?"
+
+#: 404.php:21
+#@ mdframework
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Sembra che non mi riesca di trovare quello che cerchi. Effettua un&rsquo;altra ricerca."
+
+#: archive.php:29
+#, php-format
+#@ mdframework
+msgid "Daily Archives: %s"
+msgstr "Archivi Giornalieri: %s"
+
+#: archive.php:31
+#, php-format
+#@ mdframework
+msgid "Monthly Archives: %s"
+msgstr "Archivi Mensili: %s"
+
+#: archive.php:31
+#@ mdframework
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: archive.php:33
+#, php-format
+#@ mdframework
+msgid "Yearly Archives: %s"
+msgstr "Archivi Annuali: %s"
+
+#: archive.php:33
+#@ mdframework
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: archive.php:35
+#@ mdframework
+msgid "Archives"
+msgstr "Archivi"
+
+#: author.php:32
+#, php-format
+#@ mdframework
+msgid "Author Archives: %s"
+msgstr "Archivi Autori: %s"
+
+#: author.php:53
+#: content.php:52
+#, php-format
+#@ mdframework
+msgid "About %s"
+msgstr "Chi Siamo %s"
+
+#: category.php:21
+#, php-format
+#@ mdframework
+msgid "Category Archives: %s"
+msgstr "Archivi Categorie: %s"
+
+#: comments.php:31
+#, php-format
+#@ mdframework
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Un commento su &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s commenti su &ldquo;%2$s&rdquo;"
+
+#: comments.php:42
+#@ mdframework
+msgid "Comment navigation"
+msgstr "Commenti alla navigazione"
+
+#: comments.php:43
+#@ mdframework
+msgid "&larr; Older Comments"
+msgstr "&larr; Vecchi Commenti"
+
+#: comments.php:44
+#@ mdframework
+msgid "Newer Comments &rarr;"
+msgstr "Nuovi commenti &rarr;"
+
+#: comments.php:53
+#@ mdframework
+msgid "Comments are closed."
+msgstr "I commenti sono chiusi."
+
+#: content-aside.php:13
+#: content-aside.php:20
+#: content-image.php:17
+#: content-link.php:18
+#: content-quote.php:17
+#: content-status.php:15
+#: content.php:22
+#, php-format
+#@ mdframework
+msgid "Permalink to %s"
+msgstr "Link a %s"
+
+#: content-aside.php:15
+#: content-image.php:13
+#: content-link.php:14
+#: content-quote.php:13
+#: content-status.php:21
+#: content.php:38
+#@ mdframework
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Continua a leggere <span class=\"meta-nav\">&rarr;</span>"
+
+#: content-aside.php:23
+#: content-image.php:23
+#: content-link.php:21
+#: content-quote.php:20
+#: content-status.php:27
+#: content.php:27
+#@ mdframework
+msgid "Leave a reply"
+msgstr "Lascia un commento"
+
+#: content-aside.php:23
+#: content-image.php:23
+#: content-link.php:21
+#: content-quote.php:20
+#: content-status.php:27
+#: content.php:27
+#@ mdframework
+msgid "1 Reply"
+msgstr "1 Risposta"
+
+#: content-aside.php:23
+#: content-image.php:23
+#: content-link.php:21
+#: content-quote.php:20
+#: content-status.php:27
+#: content.php:27
+#@ mdframework
+msgid "% Replies"
+msgstr "% Risposte"
+
+#: content-aside.php:26
+#: content-image.php:26
+#: content-link.php:24
+#: content-page.php:21
+#: content-quote.php:23
+#: content-status.php:30
+#: content.php:45
+#: functions.php:349
+#: image.php:37
+#@ mdframework
+msgid "Edit"
+msgstr "Modifica"
+
+#: content-link.php:12
+#@ mdframework
+msgid "Link"
+msgstr "Link"
+
+#: content-none.php:13
+#: search.php:34
+#@ mdframework
+msgid "Nothing Found"
+msgstr "Non ho trovato nulla"
+
+#: content-none.php:17
+#@ mdframework
+msgid "Apologies, but no results were found. Perhaps searching will help find a related post."
+msgstr "Mi dispiace, ma non ho trovato risultati. Una ricerca potrebbe aiutare a trovare articoli correlati."
+
+#: content-page.php:18
+#: content.php:39
+#: image.php:92
+#@ mdframework
+msgid "Pages:"
+msgstr "Pagine:"
+
+#: content.php:13
+#@ mdframework
+msgid "Featured post"
+msgstr "Post in evidenza"
+
+#: content.php:56
+#, php-format
+#@ mdframework
+msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Leggi tutti i post di %s <span class=\"meta-nav\">&rarr;</span>"
+
+#: functions.php:64
+#@ mdframework
+msgid "Primary Menu"
+msgstr "Menu principale"
+
+#: functions.php:120
+#@ mdframework
+msgctxt "Open Sans font: on or off"
+msgid "on"
+msgstr "su"
+
+#: functions.php:125
+#@ mdframework
+msgctxt "Open Sans font: add new subset (greek, cyrillic, vietnamese)"
+msgid "no-subset"
+msgstr "no-subset"
+
+#: functions.php:181
+#: header.php:41
+#, php-format
+#@ mdframework
+msgid "Page %s"
+msgstr "Pagina %s"
+
+#: functions.php:206
+#@ mdframework
+msgid "Main Sidebar"
+msgstr "Sidebar Principale"
+
+#: functions.php:208
+#@ mdframework
+msgid "Appears on posts and pages except the optional Front Page template, which has its own widgets"
+msgstr "Appare nei post e nelle pagine a parte alcune pagine personalizzate, che hanno i loro widget personalizzati."
+
+#: functions.php:216
+#@ mdframework
+msgid "Second Sidebar just in case of a three coloumn template"
+msgstr "Seconda Sidebar nel caso di un template a tre colonne"
+
+#: functions.php:218
+#@ mdframework
+msgid "Appears when a 3 coloumn template in choosen"
+msgstr "Appare quando &egrave; scelto un template a 3 colonne"
+
+#: functions.php:226
+#@ mdframework
+msgid "First Front Page Widget Area"
+msgstr "Prima area Widget della HomePage"
+
+#: functions.php:228
+#: functions.php:238
+#@ mdframework
+msgid "Appears when using the optional Front Page template with a page set as Static Front Page"
+msgstr ""
+
+#: functions.php:236
+#@ mdframework
+msgid "Second Front Page Widget Area"
+msgstr ""
+
+#: functions.php:246
+#@ mdframework
+msgid "Footer Left Widget"
+msgstr ""
+
+#: functions.php:248
+#@ mdframework
+msgid "First widgetized area on the left of Footer"
+msgstr ""
+
+#: functions.php:256
+#@ mdframework
+msgid "Footer Center Widget"
+msgstr ""
+
+#: functions.php:258
+#@ mdframework
+msgid "Second widgetized area in the middle of Footer"
+msgstr ""
+
+#: functions.php:266
+#@ mdframework
+msgid "Footer Right Widget"
+msgstr ""
+
+#: functions.php:268
+#@ mdframework
+msgid "Third widgetized area on the right of Footer"
+msgstr ""
+
+#: functions.php:290
+#: single.php:20
+#@ mdframework
+msgid "Post navigation"
+msgstr ""
+
+#: functions.php:291
+#@ mdframework
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: functions.php:292
+#@ mdframework
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: functions.php:317
+#@ mdframework
+msgid "Pingback:"
+msgstr ""
+
+#: functions.php:317
+#@ mdframework
+msgid "(Edit)"
+msgstr ""
+
+#: functions.php:332
+#@ mdframework
+msgid "Post author"
+msgstr ""
+
+#. translators: 1: date, 2: time
+#: functions.php:338
+#, php-format
+#@ mdframework
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: functions.php:344
+#@ mdframework
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:353
+#@ mdframework
+msgid "Reply"
+msgstr ""
+
+#: functions.php:372
+#: functions.php:375
+#@ mdframework
+msgid ", "
+msgstr ""
+
+#: functions.php:386
+#, php-format
+#@ mdframework
+msgid "View all posts by %s"
+msgstr ""
+
+#: functions.php:392
+#, php-format
+#@ mdframework
+msgid "This entry was posted in %1$s and tagged %2$s on %3$s<span class=\"by-author\"> by %4$s</span>."
+msgstr ""
+
+#: functions.php:394
+#, php-format
+#@ mdframework
+msgid "This entry was posted in %1$s on %3$s<span class=\"by-author\"> by %4$s</span>."
+msgstr ""
+
+#: functions.php:396
+#, php-format
+#@ mdframework
+msgid "This entry was posted on %3$s<span class=\"by-author\"> by %4$s</span>."
+msgstr ""
+
+#: image.php:26
+#, php-format
+#@ mdframework
+msgid "<span class=\"meta-prep meta-prep-entry-date\">Published </span> <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%8$s</a>."
+msgstr ""
+
+#: image.php:41
+#@ mdframework
+msgid "&larr; Previous"
+msgstr ""
+
+#: image.php:42
+#@ mdframework
+msgid "Next &rarr;"
+msgstr ""
+
+#: inc/options-framework.php:162
+#: inc/options-framework.php:378
+#@ optionsframework
+#@ options_framework_theme
+msgid "Theme Options"
+msgstr ""
+
+#: inc/options-framework.php:194
+#@ default
+msgid "Clear"
+msgstr ""
+
+#: inc/options-framework.php:195
+#@ default
+msgid "Default"
+msgstr ""
+
+#: inc/options-framework.php:196
+#@ default
+msgid "Select Color"
+msgstr ""
+
+#: inc/options-framework.php:241
+#@ options_framework_theme
+msgid "Save Options"
+msgstr ""
+
+#: inc/options-framework.php:242
+#@ options_framework_theme
+msgid "Restore Defaults"
+msgstr ""
+
+#: inc/options-framework.php:242
+#@ options_framework_theme
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr ""
+
+#: inc/options-framework.php:274
+#@ options_framework_theme
+msgid "Default options restored."
+msgstr ""
+
+#: inc/options-framework.php:328
+#@ options_framework_theme
+msgid "Options saved."
+msgstr ""
+
+#: inc/options-media-uploader.php:51
+#@ optionsframework
+msgid "No file chosen"
+msgstr ""
+
+#: inc/options-media-uploader.php:53
+#: inc/options-media-uploader.php:100
+#@ options_framework_theme
+msgid "Upload"
+msgstr ""
+
+#: inc/options-media-uploader.php:55
+#: inc/options-media-uploader.php:101
+#@ options_framework_theme
+msgid "Remove"
+msgstr ""
+
+#: inc/options-media-uploader.php:79
+#@ optionsframework
+msgid "View File"
+msgstr ""
+
+#: inc/options-sanitize.php:232
+#@ options_framework_theme
+msgid "No Repeat"
+msgstr ""
+
+#: inc/options-sanitize.php:233
+#@ options_framework_theme
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: inc/options-sanitize.php:234
+#@ options_framework_theme
+msgid "Repeat Vertically"
+msgstr ""
+
+#: inc/options-sanitize.php:235
+#@ options_framework_theme
+msgid "Repeat All"
+msgstr ""
+
+#: inc/options-sanitize.php:248
+#@ options_framework_theme
+msgid "Top Left"
+msgstr ""
+
+#: inc/options-sanitize.php:249
+#@ options_framework_theme
+msgid "Top Center"
+msgstr ""
+
+#: inc/options-sanitize.php:250
+#@ options_framework_theme
+msgid "Top Right"
+msgstr ""
+
+#: inc/options-sanitize.php:251
+#@ options_framework_theme
+msgid "Middle Left"
+msgstr ""
+
+#: inc/options-sanitize.php:252
+#@ options_framework_theme
+msgid "Middle Center"
+msgstr ""
+
+#: inc/options-sanitize.php:253
+#@ options_framework_theme
+msgid "Middle Right"
+msgstr ""
+
+#: inc/options-sanitize.php:254
+#@ options_framework_theme
+msgid "Bottom Left"
+msgstr ""
+
+#: inc/options-sanitize.php:255
+#@ options_framework_theme
+msgid "Bottom Center"
+msgstr ""
+
+#: inc/options-sanitize.php:256
+#@ options_framework_theme
+msgid "Bottom Right"
+msgstr ""
+
+#: inc/options-sanitize.php:269
+#@ options_framework_theme
+msgid "Scroll Normally"
+msgstr ""
+
+#: inc/options-sanitize.php:270
+#@ options_framework_theme
+msgid "Fixed in Place"
+msgstr ""
+
+#: inc/options-sanitize.php:344
+#@ options_framework_theme
+msgid "Normal"
+msgstr ""
+
+#: inc/options-sanitize.php:345
+#@ options_framework_theme
+msgid "Italic"
+msgstr ""
+
+#: inc/options-sanitize.php:346
+#@ options_framework_theme
+msgid "Bold"
+msgstr ""
+
+#: inc/options-sanitize.php:347
+#@ options_framework_theme
+msgid "Bold Italic"
+msgstr ""
+
+#: options.php:32
+#@ options_framework_theme
+msgid "One"
+msgstr ""
+
+#: options.php:33
+#@ options_framework_theme
+msgid "Two"
+msgstr ""
+
+#: options.php:34
+#@ options_framework_theme
+msgid "Three"
+msgstr ""
+
+#: options.php:35
+#@ options_framework_theme
+msgid "Four"
+msgstr ""
+
+#: options.php:36
+#@ options_framework_theme
+msgid "Five"
+msgstr ""
+
+#: options.php:41
+#@ options_framework_theme
+msgid "French Toast"
+msgstr ""
+
+#: options.php:42
+#@ options_framework_theme
+msgid "Pancake"
+msgstr ""
+
+#: options.php:43
+#@ options_framework_theme
+msgid "Omelette"
+msgstr ""
+
+#: options.php:44
+#@ options_framework_theme
+msgid "Crepe"
+msgstr ""
+
+#: options.php:45
+#@ options_framework_theme
+msgid "Waffle"
+msgstr ""
+
+#: options.php:106
+#@ options_framework_theme
+msgid "Basic Settings"
+msgstr ""
+
+#: options.php:110
+#@ options_framework_theme
+msgid "Input Text Mini"
+msgstr ""
+
+#: options.php:111
+#@ options_framework_theme
+msgid "A mini text input field."
+msgstr ""
+
+#: options.php:118
+#@ options_framework_theme
+msgid "Textarea"
+msgstr ""
+
+#: options.php:119
+#@ options_framework_theme
+msgid "Textarea description."
+msgstr ""
+
+#: options.php:125
+#@ options_framework_theme
+msgid "Input Select Small"
+msgstr ""
+
+#: options.php:126
+#@ options_framework_theme
+msgid "Small Select Box."
+msgstr ""
+
+#: options.php:134
+#@ options_framework_theme
+msgid "Input Select Wide"
+msgstr ""
+
+#: options.php:135
+#@ options_framework_theme
+msgid "A wider select box."
+msgstr ""
+
+#: options.php:143
+#@ options_check
+msgid "Select a Tag"
+msgstr ""
+
+#: options.php:144
+#@ options_check
+msgid "Passed an array of tags with term_id and term_name"
+msgstr ""
+
+#: options.php:151
+#@ options_framework_theme
+msgid "Select a Page"
+msgstr ""
+
+#: options.php:152
+#@ options_framework_theme
+msgid "Passed an pages with ID and post_title"
+msgstr ""
+
+#: options.php:158
+#@ options_framework_theme
+msgid "Input Radio (one)"
+msgstr ""
+
+#: options.php:159
+#@ options_framework_theme
+msgid "Radio select with default options \"one\"."
+msgstr ""
+
+#: options.php:166
+#@ options_framework_theme
+msgid "Input Checkbox"
+msgstr ""
+
+#: options.php:167
+#@ options_framework_theme
+msgid "Example checkbox, defaults to true."
+msgstr ""
+
+#: options.php:173
+#@ options_framework_theme
+msgid "Color Settings"
+msgstr ""
+
+#: options.php:177
+#: options.php:688
+#@ options_framework_theme
+msgid "Colorpicker Body Background"
+msgstr ""
+
+#: options.php:178
+#: options.php:185
+#: options.php:192
+#: options.php:199
+#: options.php:206
+#: options.php:213
+#: options.php:220
+#: options.php:309
+#@ options_framework_theme
+msgid "No color selected by default."
+msgstr ""
+
+#: options.php:184
+#@ options_framework_theme
+msgid "Colorpicker Header"
+msgstr ""
+
+#: options.php:191
+#@ options_framework_theme
+msgid "Colorpicker Top Menu"
+msgstr ""
+
+#: options.php:198
+#@ options_framework_theme
+msgid "Colorpicker Content"
+msgstr ""
+
+#: options.php:205
+#@ options_framework_theme
+msgid "Colorpicker Post"
+msgstr ""
+
+#: options.php:212
+#@ options_framework_theme
+msgid "Colorpicker Sidebar"
+msgstr ""
+
+#: options.php:219
+#@ options_framework_theme
+msgid "Colorpicker Footer"
+msgstr ""
+
+#: options.php:226
+#@ options_framework_theme
+msgid "Advanced Settings"
+msgstr ""
+
+#: options.php:236
+#: options.php:248
+#@ default
+msgid "Choose your Layout"
+msgstr ""
+
+#: options.php:237
+#@ default
+msgid "Choose how to compose your Header."
+msgstr ""
+
+#: options.php:249
+#@ default
+msgid "Choose where or not place the sidebar."
+msgstr ""
+
+#: options.php:262
+#@ default
+msgid "Choose your Footer"
+msgstr ""
+
+#: options.php:263
+#@ default
+msgid "Choose how to compose your footer."
+msgstr ""
+
+#: options.php:276
+#@ default
+msgid "Choose your Home Grid Style"
+msgstr ""
+
+#: options.php:277
+#@ default
+msgid "Choose how to compose Home Grid."
+msgstr ""
+
+#: options.php:293
+#@ options_framework_theme
+msgid "Example Background"
+msgstr ""
+
+#: options.php:294
+#@ options_framework_theme
+msgid "Change the background CSS."
+msgstr ""
+
+#: options.php:300
+#@ options_framework_theme
+msgid "Multicheck"
+msgstr ""
+
+#: options.php:301
+#@ options_framework_theme
+msgid "Multicheck description."
+msgstr ""
+
+#: options.php:308
+#@ options_framework_theme
+msgid "Colorpicker"
+msgstr ""
+
+#: options.php:314
+#@ options_framework_theme
+msgid "Typography"
+msgstr ""
+
+#: options.php:315
+#@ options_framework_theme
+msgid "Example typography."
+msgstr ""
+
+#: options.php:321
+#@ options_framework_theme
+msgid "Custom Typography"
+msgstr ""
+
+#: options.php:322
+#@ options_framework_theme
+msgid "Custom typography options."
+msgstr ""
+
+#: options.php:358
+#@ options_framework_theme
+msgid "Hotel Style HomePage"
+msgstr ""
+
+#: options.php:362
+#@ options_framework_theme
+msgid "What does this panel do?"
+msgstr ""
+
+#: options.php:363
+#@ options_framework_theme
+msgid "This panel is here to help you configure <code>Home Hotel Style</code> page template."
+msgstr ""
+
+#: options.php:367
+#@ options_framework_theme
+msgid "SEO PART"
+msgstr ""
+
+#: options.php:368
+#@ options_framework_theme
+msgid "Configure <code>Home Hotel Style</code> page template Basic SEO sections."
+msgstr ""
+
+#: options.php:372
+#@ options_framework_theme
+msgid "Check to start configuring SEO for this template"
+msgstr ""
+
+#: options.php:373
+#: options.php:455
+#: options.php:575
+#: options.php:648
+#: options.php:683
+#@ options_framework_theme
+msgid "Click here to activate it."
+msgstr ""
+
+#: options.php:378
+#@ options_framework_theme
+msgid "Titolo Pagina"
+msgstr ""
+
+#: options.php:379
+#@ options_framework_theme
+msgid "Insert here your <code>Home Hotel Style</code> template specific title tag."
+msgstr ""
+
+#: options.php:386
+#@ options_framework_theme
+msgid "Meta Tag KeyWord"
+msgstr ""
+
+#: options.php:387
+#@ options_framework_theme
+msgid "Insert here your Keyword MetaTag only for <code>Home Hotel Style</code> template."
+msgstr ""
+
+#: options.php:394
+#@ options_framework_theme
+msgid "Meta Tag Description"
+msgstr ""
+
+#: options.php:395
+#@ options_framework_theme
+msgid "Insert here your Description MetaTag only for <code>Home Hotel Style</code> template."
+msgstr ""
+
+#: options.php:402
+#@ options_framework_theme
+msgid "Meta Tag Copyright"
+msgstr ""
+
+#: options.php:403
+#@ options_framework_theme
+msgid "Insert here your <code>Home Hotel Style</code> template copyright info."
+msgstr ""
+
+#: options.php:411
+#@ options_framework_theme
+msgid "Meta Tag Author"
+msgstr ""
+
+#: options.php:412
+#@ options_framework_theme
+msgid "Insert here your <code>Home Hotel Style</code> template Author Tag."
+msgstr ""
+
+#: options.php:420
+#@ options_framework_theme
+msgid "General"
+msgstr ""
+
+#: options.php:421
+#@ options_framework_theme
+msgid "Mature"
+msgstr ""
+
+#: options.php:422
+#@ options_framework_theme
+msgid "Restricted"
+msgstr ""
+
+#: options.php:426
+#@ options_framework_theme
+msgid "Meta Tag Rating"
+msgstr ""
+
+#: options.php:427
+#@ options_framework_theme
+msgid "Choose your rating only for <code>Home Hotel Style</code> template."
+msgstr ""
+
+#: options.php:436
+#@ options_framework_theme
+msgid "HEADER PART"
+msgstr ""
+
+#: options.php:437
+#@ options_framework_theme
+msgid "Configure <code>Home Hotel Style</code> page template <code>HEADER</code> Section."
+msgstr ""
+
+#: options.php:441
+#@ default
+msgid "Choose your Header Layout"
+msgstr ""
+
+#: options.php:442
+#@ default
+msgid "Choose how to compose your Header. Title + Slide, Slide + Title or 100% Slide"
+msgstr ""
+
+#: options.php:454
+#@ options_framework_theme
+msgid "Check if you want a slideshow on this page"
+msgstr ""
+
+#: options.php:460
+#@ options_framework_theme
+msgid "First Image"
+msgstr ""
+
+#: options.php:461
+#@ options_framework_theme
+msgid "Upload first image of your slideshow."
+msgstr ""
+
+#: options.php:467
+#: options.php:483
+#: options.php:499
+#: options.php:515
+#: options.php:531
+#: options.php:587
+#@ options_framework_theme
+msgid "Alt & Title Tag for First Image"
+msgstr ""
+
+#: options.php:468
+#: options.php:484
+#: options.php:500
+#: options.php:516
+#: options.php:532
+#: options.php:588
+#@ options_framework_theme
+msgid "Insert here Alt & Title Tag for First Image."
+msgstr ""
+
+#: options.php:476
+#@ options_framework_theme
+msgid "Second Image"
+msgstr ""
+
+#: options.php:477
+#@ options_framework_theme
+msgid "Upload Second image of your slideshow."
+msgstr ""
+
+#: options.php:492
+#@ options_framework_theme
+msgid "Third Image"
+msgstr ""
+
+#: options.php:493
+#@ options_framework_theme
+msgid "Upload Third image of your slideshow."
+msgstr ""
+
+#: options.php:508
+#@ options_framework_theme
+msgid "Fourth Image"
+msgstr ""
+
+#: options.php:509
+#@ options_framework_theme
+msgid "Upload Fourth image of your slideshow."
+msgstr ""
+
+#: options.php:524
+#@ options_framework_theme
+msgid "Fifth Image"
+msgstr ""
+
+#: options.php:525
+#@ options_framework_theme
+msgid "Upload Fifth image of your slideshow."
+msgstr ""
+
+#: options.php:540
+#@ options_framework_theme
+msgid "Or... insert a Youtube Video"
+msgstr ""
+
+#: options.php:541
+#@ options_framework_theme
+msgid "Just place here your YouTube video URL, something like:<code>http://youtu.be/k0HW_1_dsRg</code>."
+msgstr ""
+
+#: options.php:548
+#@ options_framework_theme
+msgid "Yes"
+msgstr ""
+
+#: options.php:549
+#@ options_framework_theme
+msgid "No"
+msgstr ""
+
+#: options.php:553
+#@ options_framework_theme
+msgid "Would you like to have autoplay?"
+msgstr ""
+
+#: options.php:554
+#@ options_framework_theme
+msgid "Choose if you want Autoplay activated in your YouTube Video"
+msgstr ""
+
+#: options.php:569
+#@ options_framework_theme
+msgid "CENTER PART"
+msgstr ""
+
+#: options.php:570
+#@ options_framework_theme
+msgid "Configure <code>Home Hotel Style</code> page template <code>CENTER</code> Section."
+msgstr ""
+
+#: options.php:574
+#@ options_framework_theme
+msgid "Check to start customizing the CENTER PART"
+msgstr ""
+
+#: options.php:580
+#@ options_framework_theme
+msgid "First Image on the left"
+msgstr ""
+
+#: options.php:581
+#@ options_framework_theme
+msgid "Upload First Image on your left in first center part."
+msgstr ""
+
+#: options.php:603
+#@ options_framework_theme
+msgid "First Area Content"
+msgstr ""
+
+#: options.php:604
+#@ default
+msgid "Write Here what you would like your visitors to see in the first area, you can also use some <code>HTML</code>"
+msgstr ""
+
+#: options.php:618
+#@ options_framework_theme
+msgid "Second Area Content"
+msgstr ""
+
+#: options.php:619
+#@ default
+msgid "Write Here what you would like your visitors to see in the second area, you can also use some <code>HTML</code>"
+msgstr ""
+
+#: options.php:626
+#@ options_framework_theme
+msgid "Second Image on the right"
+msgstr ""
+
+#: options.php:627
+#@ options_framework_theme
+msgid "Upload Second Image this time on your right in second center part."
+msgstr ""
+
+#: options.php:633
+#@ options_framework_theme
+msgid "Alt & Title Tag for Second Image"
+msgstr ""
+
+#: options.php:634
+#@ options_framework_theme
+msgid "Insert here Alt & Title Tag for Second Image."
+msgstr ""
+
+#: options.php:642
+#@ options_framework_theme
+msgid "FOOTER PART"
+msgstr ""
+
+#: options.php:643
+#@ options_framework_theme
+msgid "Configure <code>Home Hotel Style</code> page template <code>FOOTER</code> Section."
+msgstr ""
+
+#: options.php:647
+#@ options_framework_theme
+msgid "Check to start customizing the FOOTER of this page"
+msgstr ""
+
+#: options.php:653
+#@ options_framework_theme
+msgid "Select a Category to be Shown on the left"
+msgstr ""
+
+#: options.php:654
+#@ options_framework_theme
+msgid "On this particular page there are 3 spots choose how to fill the first one"
+msgstr ""
+
+#: options.php:661
+#@ options_framework_theme
+msgid "Select a Category to be Shown in the middle"
+msgstr ""
+
+#: options.php:662
+#@ options_framework_theme
+msgid "On this particular page there are 3 spots choose how to fill the second one"
+msgstr ""
+
+#: options.php:669
+#@ options_framework_theme
+msgid "Select a Category to be Shown on the right"
+msgstr ""
+
+#: options.php:670
+#@ options_framework_theme
+msgid "On this particular page there are 3 spots choose how to fill the third one"
+msgstr ""
+
+#: options.php:677
+#@ options_framework_theme
+msgid "COLOR SECTION"
+msgstr ""
+
+#: options.php:678
+#@ options_framework_theme
+msgid "Configure <code>Home Hotel Style</code> page template <code>COLORS</code>."
+msgstr ""
+
+#: options.php:682
+#@ options_framework_theme
+msgid "Check to start customizing COLORS of this page"
+msgstr ""
+
+#: options.php:689
+#@ options_framework_theme
+msgid "Choose a color for for the whole background of <code>Home Hotel Style</code> page template."
+msgstr ""
+
+#: options.php:696
+#@ options_framework_theme
+msgid "Colorpicker Header Background"
+msgstr ""
+
+#: options.php:697
+#@ options_framework_theme
+msgid "Choose a color for for the <code>HEADER</code> background of <code>Home Hotel Style</code> page template."
+msgstr ""
+
+#: options.php:704
+#@ options_framework_theme
+msgid "Colorpicker Content Background"
+msgstr ""
+
+#: options.php:705
+#@ options_framework_theme
+msgid "Choose a color for the <code>CONTENT</code> background of <code>Home Hotel Style</code> page template."
+msgstr ""
+
+#: options.php:712
+#@ options_framework_theme
+msgid "Colorpicker FirstArea Background"
+msgstr ""
+
+#: options.php:713
+#@ options_framework_theme
+msgid "Choose a color for the <code>FIRST AREA</code> background of <code>Home Hotel Style</code> page template."
+msgstr ""
+
+#: options.php:720
+#@ options_framework_theme
+msgid "Colorpicker SecondArea Background"
+msgstr ""
+
+#: options.php:721
+#@ options_framework_theme
+msgid "Choose a color for the <code>SECOND AREA</code> background of <code>Home Hotel Style</code> page template."
+msgstr ""
+
+#: options.php:728
+#@ options_framework_theme
+msgid "Colorpicker Footer Background"
+msgstr ""
+
+#: options.php:729
+#@ options_framework_theme
+msgid "Choose a color for for the <code>FOOTER</code> background of <code>Home Hotel Style</code> page template."
+msgstr ""
+
+#: options.php:736
+#@ options_framework_theme
+msgid "Colorpicker Foot1 Background"
+msgstr ""
+
+#: options.php:737
+#@ options_framework_theme
+msgid "Choose a color for <code>FOOTER FIRST AREA</code> background of <code>Home Hotel Style</code> page template."
+msgstr ""
+
+#: options.php:744
+#@ options_framework_theme
+msgid "Colorpicker Foot2 Background"
+msgstr ""
+
+#: options.php:745
+#@ options_framework_theme
+msgid "Choose a color for <code>FOOTER SECOND AREA</code> background of <code>Home Hotel Style</code> page template."
+msgstr ""
+
+#: options.php:752
+#@ options_framework_theme
+msgid "Colorpicker Foot3 Background"
+msgstr ""
+
+#: options.php:753
+#@ options_framework_theme
+msgid "Choose a color for <code>FOOTER THIRD AREA</code> background of <code>Home Hotel Style</code> page template."
+msgstr ""
+
+#: page-templates/hotel-style.php:15
+#: page-templates/hotel-style.php:16
+#: parti/head-normal.php:25
+#: parti/head-normal.php:26
+#@ mdframework
+msgid "Skip to content"
+msgstr ""
+
+#: search.php:18
+#, php-format
+#@ mdframework
+msgid "Search Results for: %s"
+msgstr ""
+
+#: search.php:38
+#@ mdframework
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr ""
+
+#: single.php:21
+#@ mdframework
+msgctxt "Previous post link"
+msgid "&larr;"
+msgstr ""
+
+#: single.php:22
+#@ mdframework
+msgctxt "Next post link"
+msgid "&rarr;"
+msgstr ""
+
+#: tag.php:21
+#, php-format
+#@ mdframework
+msgid "Tag Archives: %s"
+msgstr ""
+

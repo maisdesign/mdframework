@@ -1,0 +1,84 @@
+.rs-slider > LI
+{
+	position: relative;
+	left: -20px;
+}
+/*ARTICLE.content{background:none !important;}
+.contanews LI{background:#FFF !important;}*/
+SECTION.loopnews H2.news.titolo.articolo.withlogo
+{
+	/*+box-shadow:none;*/
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+H2.withlogo, H3.widget-title, A.withlogo
+{
+	/*+box-shadow:none;*/
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+ASIDE.fbox H2.news.titolo.articolo.withlogo, .fillme H3.widget-title
+{
+	/*IE9 SVG, needs conditional override of 'filter' to 'none'*/
+	background: none;
+	background: none;
+	/*FF3.6+*/
+	background: none;
+	/*Chrome,Safari4+*/
+	background: none;
+	/*Chrome10+,Safari5.1+*/
+	background: none;
+	/*Opera 11.10+*/
+	background: none;
+	/*IE10+*/
+	background: none;
+	/*W3C*/
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd3333', endColorstr='#00cccccc',GradientType=1 ) !Important;
+	/*IE6-8*/
+}
+.fillme.specialforum
+{
+	float: right !Important;
+	margin: 6% 0% 0 0 !Important;
+	width: 22% !Important;
+}
+SPAN.archiviocat A.withlogo
+{
+	color: #111;
+}
+.centrosito #content NAV.nav-single, #comments.comments-area
+{
+	background: url(#dd3333!Important);
+	background: none;
+	background: none;
+	background: none;
+	background: none;
+	background: none;
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd3333', endColorstr='#ffffff',GradientType=1 )!Important;
+}
+H3.descrizione, .contdesc
+{
+	text-decoration: none !important;
+}
+.leggialtro, .leggialtro:hover
+{
+	background: none !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+.innews .caption
+{
+	background: none;
+	color: #FF0000 !important;
+}
+.loop-thumb.innews P.caption A
+{
+	color: #FF0000 !important;
+	text-shadow: none;
+	font-weight: bold;
+}
