@@ -68,7 +68,7 @@ add_action( 'after_setup_theme', 'mdframework_setup' );
 /* Add more image sizes */
 add_image_size( 'category-thumb', 150, 75 ); /* 150*75 pixels wide cropped Archive pages */
 add_image_size( 'homeslide', 960, 300, true ); //(Home TOP Slideshow)
-add_image_size( 'homeslide', 270, 150, true ); //(Home Previews)
+add_image_size( 'homepreview', 270, 150, true ); //(Home Previews)
 /**
  * Adds support for a custom header image.
  */
@@ -1516,14 +1516,26 @@ function md_resizer_fit_slab_script_embed() {
 add_action( 'wp_enqueue_scripts', 'md_resizer_fit_slab_script_embed' );
 */
 function md_resizer_expandtext_script_embed() {
-	wp_enqueue_script(
-		'expandtext',
-		get_template_directory_uri() . '/js/jquery.expandtext.js',
-		array( 'jquery' )
-	);
+	 wp_register_script( 'expandtext', get_template_directory_uri() . '/js/jquery.expandtext.js', array( 'jquery', 'jquery-ui-core' ), '', true );  
+	wp_enqueue_script('expandtext');
 }
 
 add_action( 'wp_enqueue_scripts', 'md_resizer_expandtext_script_embed' );
+
+/* jquery cookie function */
+function md_cookie_jquery_embed()  
+{   
+    /* Register the script like this for a theme:   */
+    wp_register_script( 'jquery-cookie', get_template_directory_uri() . '/js/jquery.cookie.js', array( 'jquery', 'jquery-ui-core' ), '', true );  
+	wp_register_script( 'jquery-evercookie', get_template_directory_uri() . '/js/evercookie.js', array( 'jquery' ), '', true );  
+	wp_register_script( 'jquery-swfobject', get_template_directory_uri() . '/js/swfobject-2.2.min.js', array( 'jquery' ), '', true );  
+  
+    // For either a plugin or a theme, you can then enqueue the script:  
+    wp_enqueue_script( 'jquery-cookie' );  
+	wp_enqueue_script( 'jquery-evercookie' ); 
+	wp_enqueue_script( 'jquery-swfobject' ); 
+}  
+add_action( 'wp_enqueue_scripts', 'md_cookie_jquery_embed' );  
 
 /* Hex to RGB - RGB to Hex */
 function hex2rgb($hex) {
@@ -1540,13 +1552,28 @@ function hex2rgb($hex) {
    }
    $rgb = array($r, $g, $b);
    /*return implode(",", $rgb); // returns the rgb values separated by commas*/
-   return $rgb; // returns an array with the rgb values
+   return $rgb; /* returns an array with the rgb values**/
 };
 /* Custom Fields */
-// Re-define meta box path and URL
+/* Re-define meta box path and URL */
 define( 'RWMB_URL', trailingslashit( get_stylesheet_directory_uri() . '/meta-box' ) );
 define( 'RWMB_DIR', trailingslashit( TEMPLATEPATH . '/meta-box' ) );
-// Include the meta box script
+/* Include the meta box script */
 require_once RWMB_DIR . 'meta-box.php';
-// Include the meta box definition (the file where you define meta boxes, see `demo/demo.php`)
+/* Include the meta box definition (the file where y ou define meta boxes, see `demo/demo.php`) */
 include RWMB_DIR . '/enabled/config-meta-boxes.php';
+
+/* Session Manager */
+add_action('init', 'myStartSession', 1);
+/* add_action('wp_logout', 'myEndSession');
+add_action('wp_login', 'myEndSession'); */
+
+function myStartSession() {
+    if(!session_id()) {
+        session_start();
+    }
+}
+/*
+function myEndSession() {
+    session_destroy ();
+} */

@@ -13,4 +13,15 @@
 		echo $singcpost.'<br />'.$plurcpost.'<br />'.$desccpost.'<br />'.$imgcpost;
 	?></div>
 -->
+<!--
+<input type="text" name="copiami" value="" id="copiami" class="input" /> 
+-->
+<b>Cookie found:</b> <i>uid</i> = <span id='idtag'>currently not set</span>
+<script>								
+	jQuery(".vercingetorige").keyup(function () {
+		var $mail = $("#copiami");
+		$mail.val(this.value);
+	});
+	
+</script>
 </body>

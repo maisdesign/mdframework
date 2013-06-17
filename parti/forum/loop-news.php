@@ -18,7 +18,11 @@
 		?>
 		<li>
 			<figure class="thumb-image-loop">
-				<?php getImage('1'); ?>
+				<?php $images = rwmb_meta( 'md_cfield_preview_custom', 'type=plupload_image&size=homepreview' );
+								if ($images){
+									foreach ( $images as $image )
+										{echo "<img src='{$image['full_url']}' width='{$image['width']}' height='{$image['height']}' alt='{$image['alt']}' />";}
+									}else{ getImage('1');}; ?>
 			</figure>
 			<div class="loop-thumb innews">
 				<p class="caption">

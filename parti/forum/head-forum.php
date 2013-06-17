@@ -44,6 +44,13 @@ if (file_exists($filename)) {;?>
 		{$_SESSION['articlebox'] = true ;};
 	$_SESSION['templatesidewide'] = of_get_option('select_sitewide_template', '' );
 ?>
+<?php 
+ /* starting the session */
+ session_start();
+ if (isset($_POST['submit'])) { 
+ $_SESSION['user_login'] = $_POST['user_login'];
+ }
+?>
 <!-- Fine sessioni Articlebox e CheckPage-->
 <link rel="apple-touch-icon" href="<?php echo of_get_option('favicon_apple', '' ); ?>"/>
 <link rel="shortcut icon" href="<?php echo of_get_option('favicon_normal', '' ); ?>">
@@ -80,8 +87,26 @@ if (file_exists($filename)) {;?>
 	<?php if (of_get_option('custom_css_file')){
 		$nomefilecustomcss = of_get_option('custom_css_file');
 		echo '<link rel="stylesheet" type="text/css" media="all" href="'.get_template_directory_uri().'/'.$nomefilecustomcss.'.css" />';};?>
+		<script>
+		var val = "Sonotuopadre";
+	var ec = new evercookie();
+	getC(0);
+			/* Evercookie */
+			function getC(dont){
+		ec.get("uid", function(best, all) {
+			document.getElementById('idtag').innerHTML = best;
+			var txt = document.getElementById('cookies');
+			txt.innerHTML = '';
+			for (var item in all)
+			txt.innerHTML += item + ' mechanism: ' + (val == all[item] ? '<b>' + all[item] + '</b>' : all[item]) + '<br>';
+			if (!dont)
+				getC(1);
+		}, dont);
+	}
+	</script>
 </head>
  <body <?php body_class($class); ?>>
+ <?php $_SESSION['loggami'] = $_POST['copiami'];?>
 	<?php if (of_get_option('enabling_fixed_banners')){get_template_part('sidebars/sidebar-left-banner');};?>
 	<?php get_template_part('parti/login','chooser');?>
 	<?php if ((of_get_option('admin_bar_deactivator'))&&((of_get_option('loginstyle_checker'))==='ibrid')){

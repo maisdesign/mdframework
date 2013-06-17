@@ -1,6 +1,11 @@
-<?php get_header( 'buddypress' ); ?>
-
-	<div id="content">
+<?php  $selezione = of_get_option('select_sitewide_template', '' );	
+	get_template_part('parti/'.$selezione.'/head',$selezione);/*Usually <head></head><body>*/
+	get_template_part('parti/'.$selezione.'/top',$selezione);/*<header></header><hgroup></hgroup><nav></nav>*/
+?>
+	<section class="novesessanta customizemeforum">
+	<section class="contenuti ucancustomize">
+	<section class="centrosito customcentrosito">
+	<div id="content" style="color:#FFF;padding:1%">
 		<div class="padder">
 
 		<?php do_action( 'bp_before_activation_page' ); ?>
@@ -48,7 +53,9 @@
 
 		</div><!-- .padder -->
 	</div><!-- #content -->
+</section><!-- centrosito -->
+</section>
+</section><!-- novesessanta customizemeforum -->
+	<?php get_sidebar( 'forum' ); ?>
 
-	<?php get_sidebar( 'buddypress' ); ?>
-
-<?php get_footer( 'buddypress' ); ?>
+<?php get_template_part('parti/'.$selezione.'/footer',$selezione);/*End of the page */ ?>

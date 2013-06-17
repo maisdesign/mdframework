@@ -4,11 +4,13 @@
 				<?php get_search_form(); ?>
 			</li>
 			<li class="ibridzone logger">
-				<h3><a href="#" class="tadaa"><?php _e('Login','mdframework');?></a></h3>
+				<h3><a href="#" class="tadaa"><?php if ( is_user_logged_in()){_e('Logout','mdframework');}else{_e('Login / Register','mdframework');};?></a></h3>
 			</li>
+			<?php if ( is_user_logged_in()){;?>
 			<li class="ibridzone profilami">
 				<h3><a href="<?php echo get_admin_url(); ?>profile.php" ><?php _e('Profile','mdframework');?></a></h3>
 			</li>
+			<?php };?>
 		</ol>
 </section><!--ibridtoplogin-->
 <section class="magicamente" style="display:none">
@@ -26,7 +28,7 @@
 				<a href="#tabs-3"><?php _e('Forgot?','mdframework');?></a>
 			</li>
 		</ul>
-		
+		<!-- Login tab start -->
 			<div id="tabs-1">
 				<?php $register = $_GET['register']; $reset = $_GET['reset']; if ($register == true) { ?>
 					<h3><?php _e('Success!','mdframework');?></h3>
@@ -60,27 +62,52 @@
 					</div>
 				</form>
 			</div><!-- <div id="tabs-1"> -->
+			<!-- Registration Tab Start -->
 			<div id="tabs-2">
-				<h3><?php _e('Register for this site!','mdframework');?></h3>
-				<p><?php _e('Sign up now for the good stuff.','mdframework');?></p>
-				<form method="post" action="<?php echo site_url('wp-login.php?action=register', 'login_post') ?>" class="wp-user-form">
-				<div class="username">
-					<label for="user_login"><?php _e('Username','mdframework'); ?>: </label>
-					<input type="text" name="user_login" value="<?php echo esc_attr(stripslashes($user_login)); ?>" size="20" id="user_login" tabindex="101" />
+				 <div id="register-form">  
+					<h3><?php _e('Register for this site!','mdframework');?></h3>
+					<p><?php _e('Sign up now for the good stuff.','mdframework');?></p>
+					<!-- Let's set a cookie to store desidered username just in case we are using BuddyPress -->
+					
+					<form id="registrazione" action="<?php echo site_url('wp-login.php?action=register', 'login_post') ?>" method="post">
+						<div class="username">
+							<label for="user_login"><?php _e('Username','mdframework'); ?>: </label>			
+							<input type="text" name="user_login" value="Username" id="user_login" class="input vercingetorige" /> 
+							
+							<script>
+								/* Danger EVERCOOKIE! 
+	var val = "Sonotuopadre";
+	var ec = new evercookie();
+	getC(0);
+	//setTimeout(getC, 500, 1);
+	/* function getC(dont){
+		ec.get("uid", function(best, all) {
+			document.getElementById('idtag').innerHTML = best;
+			var txt = document.getElementById('cookies');
+			txt.innerHTML = '';
+			for (var item in all)
+			txt.innerHTML += item + ' mechanism: ' + (val == all[item] ? '<b>' + all[item] + '</b>' : all[item]) + '<br>';
+			if (!dont)
+				getC(1);
+		}, dont);
+	}*/
+	</script>
+						</div>
+						<div class="password">
+							<label for="user_email"><?php _e('Your Email','mdframework'); ?>: </label>
+							<input type="text" name="user_email" value="E-Mail" id="user_email" class="input"  /> 
+						</div>
+						<div class="login_fields">
+							<?php do_action('register_form'); ?>  
+							<?php $value='Ciao';setcookie ("testcookie", $value,time()+3600);?>
+							<input type="submit" value="<?php _e('Sign up!','mdframework'); ?>" id="register" name="submit"/> 
+						
+							<input type="hidden" name="redirect_to" value="<?php echo $_SERVER['REQUEST_URI']; ?>?register=true" />
+						</div>
 				</div>
-				<div class="password">
-					<label for="user_email"><?php _e('Your Email','mdframework'); ?>: </label>
-					<input type="text" name="user_email" value="<?php echo esc_attr(stripslashes($user_email)); ?>" size="25" id="user_email" tabindex="102" />
-				</div>
-				<div class="login_fields">
-					<?php do_action('register_form'); ?>
-					<input type="submit" name="user-submit" value="<?php _e('Sign up!','mdframework'); ?>" class="user-submit" tabindex="103" />
-					<?php $register = $_GET['register']; if($register == true) {;?> <?php _e('<p>Check your email for the password!</p>','mdframework'); } ?>
-					<input type="hidden" name="redirect_to" value="<?php echo $_SERVER['REQUEST_URI']; ?>?register=true" />
-					<input type="hidden" name="user-cookie" value="1" />
-				</div>
-			</form>
+			</form> 
 			</div><!-- <div id="tabs-2"> -->
+			<!-- Forgot Tab Start -->
 			<div id="tabs-3">
 				<h3><?php _e('Lose something?','mdframework');?></h3>
 				<p><?php _e('Enter your username or email to reset your password.','mdframework');?></p>

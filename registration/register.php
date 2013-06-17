@@ -1,6 +1,13 @@
-<?php get_header( 'buddypress' ); ?>
+<?php /* session_start(); */?> 
+<?php  $selezione = of_get_option('select_sitewide_template', '' );	
+	get_template_part('parti/'.$selezione.'/head',$selezione);/*Usually <head></head><body>*/
+	get_template_part('parti/'.$selezione.'/top',$selezione);/*<header></header><hgroup></hgroup><nav></nav>*/
+?>
 
-	<div id="content">
+	<section class="novesessanta customizemeforum">
+	<section class="contenuti ucancustomize">
+	<section class="centrosito customcentrosito">
+	<div id="content" style="color:#FFF;padding:1%">
 		<div class="padder">
 
 		<?php do_action( 'bp_before_register_page' ); ?>
@@ -35,8 +42,29 @@
 					<h4><?php _e( 'Account Details', 'buddypress' ); ?></h4>
 
 					<label for="signup_username"><?php _e( 'Username', 'buddypress' ); ?> <?php _e( '(required)', 'buddypress' ); ?></label>
+					<!--
+					<script type="text/javascript">
+					jQuery(document).ready(function ($) {
+					var $valorecookie = $.cookie('the_cookie');
+						$("#signup_username").val($valorecookie).val();
+						});
+					</script>
+					<script>document.getElementById('signup_username').value = document.write(getCookie('user_login'));</script>
+					-->
 					<?php do_action( 'bp_signup_username_errors' ); ?>
-					<input type="text" name="signup_username" id="signup_username" value="<?php bp_signup_username_value(); ?>" />
+					<?php if(session_id() == '') {
+    echo '<h1 style="color:#FFF">Sessione OFF</h1>';}else{echo '<h1 style="color:#FFF">Sessione ON</h1>';// session isn't started
+    foreach ($_SESSION as $key=>$val)
+    echo "  ".$key." :  ".$val."<br /><br />";
+};?>
+<?php
+if (isset($HTTP_COOKIE_VARS ["testcookie "])){
+	echo "Il contenuto del cookie è: " . $HTTP_COOKIE_VARS ["testcookie "] ;
+}else{
+echo "Il cookie non è stato impostato";
+};
+?>
+					<input type="text" name="signup_username" id="signup_username" value="<?php session_start(); if (isset($_SESSION['loggami'])){ /*$_SESSION['login_user']= $_POST['user_login'];*/echo $_SESSION['loggami'];}else{ /* bp_signup_username_value()*/ echo 'Niente da dichiarare';};?>" />
 
 					<label for="signup_email"><?php _e( 'Email Address', 'buddypress' ); ?> <?php _e( '(required)', 'buddypress' ); ?></label>
 					<?php do_action( 'bp_signup_email_errors' ); ?>
@@ -274,8 +302,10 @@
 
 		</div><!-- .padder -->
 	</div><!-- #content -->
-
-	<?php get_sidebar( 'buddypress' ); ?>
+</section><!-- centrosito -->
+</section>
+</section><!-- novesessanta customizemeforum -->
+	<?php get_sidebar( 'forum' ); ?>
 
 	<script type="text/javascript">
 		jQuery(document).ready( function() {
@@ -288,4 +318,4 @@
 		});
 	</script>
 
-<?php get_footer( 'buddypress' ); ?>
+<?php get_template_part('parti/'.$selezione.'/footer',$selezione);/*End of the page */ ?>
