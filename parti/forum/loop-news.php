@@ -47,8 +47,8 @@
 	  </ul>
 		<span class="archiviocat">
 			<?php $category_link = get_category_link( $catnews );?>
-			<a class="withlogo" href="<?php echo esc_url( $category_link ); ?>" title="<?php echo get_the_category_by_id($catnews); ?>">
-			<?php echo __('Tutte le news','mdframework');?>
+			<a class="withlogo" href="<?php echo esc_url( $category_link ); ?>" title="<?php $nomedellacat = get_the_category_by_id($catnews);;echo get_the_category_by_id($catnews); ?>">
+			<?php echo __('Tutte le ','mdframework');echo $nomedellacat;?>
 			</a>
 		</span>	  
 	</article>

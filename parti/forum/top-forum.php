@@ -41,5 +41,9 @@
 			<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
 		</nav><!-- #access -->
 	<?php };?>
+	<!-- TODO inserire IF qui per breadcrumbs -->
+	<div class="mdbreadcrumb">
+		<?php breadcrumbs();?>
+	</div>
 	</header>
 <!-- Fine file top-forum.php -->

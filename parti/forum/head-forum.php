@@ -87,23 +87,6 @@ if (file_exists($filename)) {;?>
 	<?php if (of_get_option('custom_css_file')){
 		$nomefilecustomcss = of_get_option('custom_css_file');
 		echo '<link rel="stylesheet" type="text/css" media="all" href="'.get_template_directory_uri().'/'.$nomefilecustomcss.'.css" />';};?>
-		<script>
-		var val = "Sonotuopadre";
-	var ec = new evercookie();
-	getC(0);
-			/* Evercookie */
-			function getC(dont){
-		ec.get("uid", function(best, all) {
-			document.getElementById('idtag').innerHTML = best;
-			var txt = document.getElementById('cookies');
-			txt.innerHTML = '';
-			for (var item in all)
-			txt.innerHTML += item + ' mechanism: ' + (val == all[item] ? '<b>' + all[item] + '</b>' : all[item]) + '<br>';
-			if (!dont)
-				getC(1);
-		}, dont);
-	}
-	</script>
 </head>
  <body <?php body_class($class); ?>>
  <?php $_SESSION['loggami'] = $_POST['copiami'];?>

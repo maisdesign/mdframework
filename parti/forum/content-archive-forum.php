@@ -30,63 +30,22 @@
 				</div><!-- .comments-link -->
 			<?php endif; /* comments_open() */?>
 		</header><!-- .entry-header -->
-		<?php 
+		<?php /* TODO = Aggiungere le altre opzioni di Layout */
+			if (is_category()){
+					$multicheck = of_get_option('which_part_in_category', 'none' );
+				}elseif (is_tag()){
+					$multicheck = of_get_option('which_part_in_tag', 'none' );
+				}else{
+					$multicheck = of_get_option('which_part_in_archive', 'none' );
+				};
 			$gridarchive = of_get_option('selezione_grid_archive');
 		if ($gridarchive != 'normalgrid'){
 		switch ($gridarchive){
 			case '33grid':
-				echo '<div class="immaginearchivio grid33 openlight'.$_SESSION['contandocat'].'">';
-				$images = rwmb_meta( 'md_cfield_preview_custom', 'type=plupload_image&size=150px' );
-								if ($images){
-									foreach ( $images as $image )
-										{echo "<img src='{$image['full_url']}' width='{$image['width']}' height='{$image['height']}' alt='{$image['alt']}' />";}
-									}else{
-				getImagenosizetags('1');};
-				echo '</div><div class="entry-content trentatre opened'.$_SESSION['contandocat'].' whileopen" style="display:none"><div class="openedimage">';
-				$images = rwmb_meta( 'md_cfield_preview_custom', 'type=plupload_image&size=150px' );
-								if ($images){
-									foreach ( $images as $image )
-										{echo "<img src='{$image['full_url']}' width='{$image['width']}' height='{$image['height']}' alt='{$image['alt']}' />";}
-									}else{
-				getImagenosizetags('1');};
-				echo '</div><!-- .openedimage --><div class="openedexcerpt">';
-				the_excerpt();
-				echo '</div><!-- openedexcerpt --><div class="infocontainer">';
-				mdframework_entry_meta();
-				echo '</div><!-- infocontainer -->';
-				wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'mdframework' ), 'after' => '</div>' ) );
-				echo'</div><!-- .entry-content -->';
-				echo "<script>
-        jQuery(document).ready(function($) {
-            function launch() {
-                 $('.opened".$_SESSION['contandocat']."').lightbox_me({centered: true, onLoad: function() { $('.opened".$_SESSION['contandocat']."').find('input:first').focus()}});
-            }
-            jQuery('.openlight".$_SESSION['contandocat']."').click(function(e) {
-                $('.opened".$_SESSION['contandocat']."').lightbox_me({centered: true, onLoad: function() {
-					$('.opened".$_SESSION['contandocat']."').find('input:first').focus();
-				}});
-                e.preventDefault();
-            });
-            $('table tr:nth-child(even)').addClass('stripe');
-        });		
-			</script>";
+				get_template_part('parti/forum/layout/33grid','');
 				break;
 			case 'nogrid':
-				echo '<div class="immaginearchivio nogrid">';
-				$images = rwmb_meta( 'md_cfield_preview_custom', 'type=plupload_image&size=category-thumb' );
-								if ($images){
-									foreach ( $images as $image )
-										{echo "<img src='{$image['full_url']}' width='{$image['width']}' height='{$image['height']}' alt='{$image['alt']}' />";}
-									}else{
-				getImagenosizetags('1');};
-				echo '</div><div class="entry-content trentatre nogrid">'/*<div class="nogrid excerpt">*/;
-				/*the_excerpt();*/
-				echo /*</div><!-- nogrid excerpt -->*/'<div class="infocontainer nogrid">';
-				mdframework_entry_meta();
-				edit_post_link( __( 'Edit', 'mdframework' ), '<span class="edit-link">', '</span>' );
-				echo '</div><!-- infocontainer nogrid-->';
-				wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'mdframework' ), 'after' => '</div>' ) );
-				echo'</div><!-- .entry-content -->';
+				get_template_part('parti/forum/layout/nogrid','');
 				break;
 		};};
 		if ($gridarchive != 'nogrid'){;?>

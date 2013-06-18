@@ -9,31 +9,10 @@
 					<?php get_template_part( 'content', get_post_format() ); ?>
 					<nav class="nav-single">
 						<h3 class="assistive-text"><?php _e( 'Post navigation', 'mdframework' ); ?></h3>
-						<span class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav indietro">' . _x( '  ', 'Previous post link', 'mdframework' ) . '</span> %title' ); ?></span>
-						<span class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav avanti">' . _x( '  ', 'Next post link', 'mdframework' ) . '</span>' ); ?></span>
+						<span class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'mdframework' ) . '</span> %title' ); ?></span>
+						<span class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'mdframework' ) . '</span>' ); ?></span>
 					</nav><!-- .nav-single -->
 					<?php comments_template( '', true ); ?>
-					<!-- <div style="float:left;width:100;background:#fff;color:#111" class="trova il meta">
-					<?php
-
-  $custom_field_keys = get_post_custom_keys();
-  foreach ( $custom_field_keys as $key => $value ) {
-    $valuet = trim($value);
-      if ( '_' == $valuet{0} )
-      continue;
-    echo $key . " => " . $value . "<br />";
-  };
-  $postid = get_the_ID();
-	$meta_values = get_post_meta($postid, 'select-player', true);
-	echo $meta_values;
-  if ($meta_values === 'option-1'){
-	echo 'Cerchiamo player';
-  }elseif ($meta_values === 'option-2'){
-	echo 'Non cerchiamo nessuno';
-  }else{
-	echo 'Non so cosa cerchiamo';
-	};?>
-	</div> -->
 					<?php endwhile; /* end of the loop. */?>
 				</div><!-- #content -->
 			</div><!-- #primary -->

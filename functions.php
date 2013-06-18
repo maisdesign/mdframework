@@ -1023,8 +1023,8 @@ remove_filter('get_the_excerpt', 'wp_trim_excerpt');
 add_filter('get_the_excerpt', 'custom_wp_trim_excerpt');
 */
 
-/* Excerpt con lunghezza personalizzata */
-/* Per utilizzare richiamare: <?php custom_excerpt('12'); ?> */
+/* Excerpt con lunghezza personalizzata 
+/* Per utilizzare richiamare: <?php custom_excerpt('12'); ?> 
 /* Dove ad esempio '12' è il numero di parole da conservare */
 function custom_excerpt($excerpt_length) {
     $content = get_the_content();
@@ -1043,6 +1043,18 @@ function custom_excerpt($excerpt_length) {
 
     echo $text;
 };
+
+function mdlimitableexcerpt($limit) {
+      $excerpt = explode(' ', get_the_excerpt(), $limit);
+      if (count($excerpt)>=$limit) {
+        array_pop($excerpt);
+        $excerpt = implode(" ",$excerpt).'...';
+      } else {
+        $excerpt = implode(" ",$excerpt);
+      } 
+      $excerpt = preg_replace('`\[[^\]]*\]`','',$excerpt);
+      return $excerpt;
+    }
 
 /* YouTube Page Template */
 /**
@@ -1302,7 +1314,7 @@ function show_related_posts() {
 		global $post;
 		$tags = wp_get_post_tags($post->ID);
 		if($tags) {
-  		_e('<h3>Post correlati</h3>') . "\n";
+  		_e('<h3>Post correlati</h3>','mdframework') . "\n";
   		$first_tag = $tags[0]->term_id;
   		$args = array(
     		'tag__in' => array($first_tag),
@@ -1522,10 +1534,10 @@ function md_resizer_expandtext_script_embed() {
 
 add_action( 'wp_enqueue_scripts', 'md_resizer_expandtext_script_embed' );
 
-/* jquery cookie function */
+/* jquery cookie function 
 function md_cookie_jquery_embed()  
 {   
-    /* Register the script like this for a theme:   */
+    /* Register the script like this for a theme:   
     wp_register_script( 'jquery-cookie', get_template_directory_uri() . '/js/jquery.cookie.js', array( 'jquery', 'jquery-ui-core' ), '', true );  
 	wp_register_script( 'jquery-evercookie', get_template_directory_uri() . '/js/evercookie.js', array( 'jquery' ), '', true );  
 	wp_register_script( 'jquery-swfobject', get_template_directory_uri() . '/js/swfobject-2.2.min.js', array( 'jquery' ), '', true );  
@@ -1536,7 +1548,7 @@ function md_cookie_jquery_embed()
 	wp_enqueue_script( 'jquery-swfobject' ); 
 }  
 add_action( 'wp_enqueue_scripts', 'md_cookie_jquery_embed' );  
-
+*/
 /* Hex to RGB - RGB to Hex */
 function hex2rgb($hex) {
    $hex = str_replace("#", "", $hex);
@@ -1577,3 +1589,100 @@ function myStartSession() {
 function myEndSession() {
     session_destroy ();
 } */
+/* Custom BreadCrumb Start */
+function breadcrumbs()
+{
+$delimiter = '&raquo;';
+$name = __('Home','mdframework');
+$currentBefore = '<span class="current">';
+$currentAfter = '</span>';
+
+global $post;
+$home = get_bloginfo('url');
+
+if(is_home() && get_query_var('paged') == 0) 
+echo '<span class="home">' . $name . '</span>';
+else
+echo '<a class="home" href="' . $home . '">' . $name . '</a> '. $delimiter . ' ';
+
+if ( is_category() )
+{
+global $wp_query;
+$cat_obj = $wp_query->get_queried_object();
+$thisCat = $cat_obj->term_id;
+$thisCat = get_category($thisCat);
+$parentCat = get_category($thisCat->parent);
+if ($thisCat->parent != 0) echo(get_category_parents($parentCat, TRUE, ' ' . $delimiter . ' '));
+echo $currentBefore;
+single_cat_title();
+echo $currentAfter;
+
+}
+elseif ( is_day() )
+{
+echo '<a href="' . get_year_link(get_the_time('Y')) . '">' . get_the_time('Y') . '</a> ' . $delimiter . ' ';
+echo '<a href="' . get_month_link(get_the_time('Y'),get_the_time('m')) . '">' . get_the_time('F') . '</a> ' . $delimiter . ' ';
+echo $currentBefore . get_the_time('d') . $currentAfter;
+}
+elseif ( is_month() )
+{
+echo '<a href="' . get_year_link(get_the_time('Y')) . '">' . get_the_time('Y') . '</a> ' . $delimiter . ' ';
+echo $currentBefore . get_the_time('F') . $currentAfter;
+}
+elseif ( is_year() )
+{
+echo $currentBefore . get_the_time('Y') . $currentAfter;
+}
+elseif ( is_single() )
+{
+$cat = get_the_category(); $cat = $cat[0];
+echo get_category_parents($cat, TRUE, ' ' . $delimiter . ' ');
+echo $currentBefore;
+the_title();
+echo $currentAfter;
+}
+elseif ( is_page() && !$post->post_parent )
+{
+echo $currentBefore;
+the_title();
+echo $currentAfter;
+}
+elseif ( is_page() && $post->post_parent )
+{
+$parent_id = $post->post_parent;
+$breadcrumbs = array();
+while ($parent_id)
+{
+$page = get_page($parent_id);
+$breadcrumbs[] = '<a href="' . get_permalink($page->ID) . '">' . get_the_title($page->ID) . '</a>';
+$parent_id = $page->post_parent;
+}
+$breadcrumbs = array_reverse($breadcrumbs);
+foreach ($breadcrumbs as $crumb) echo $crumb . ' ' . $delimiter . ' ';
+echo $currentBefore;
+the_title();
+echo $currentAfter;
+}
+elseif ( is_search() )
+{
+echo $currentBefore .__('Search for ','mdframework') . get_search_query() . $currentAfter;
+}
+elseif ( is_tag() )
+{
+echo $currentBefore;
+single_tag_title();
+echo $currentAfter;
+}
+elseif ( is_author() )
+{
+global $author;
+$userdata = get_userdata($author);
+echo $currentBefore. $userdata->display_name . $currentAfter;
+}
+elseif ( is_404() )
+{
+echo $currentBefore .__('Error 404','mdframework') . $currentAfter;
+}
+if ( get_query_var('paged') )
+echo $currentBefore . __('Page') . ' ' . get_query_var('paged') . $currentAfter;
+}

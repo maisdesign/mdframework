@@ -59,7 +59,8 @@ wp_enqueue_script('jquery');
 	<script type="text/javascript" language="javascript" src="<?php echo get_template_directory_uri();?>/js/jquery.transit.min.js"></script>
 	<script type="text/javascript" language="javascript" src="<?php echo get_template_directory_uri();?>/js/jquery.ba-throttle-debounce.min.js"></script>
 	
-	<?php if ((of_get_option('lateral_boxes_decision'))=='firstslide'){;?>
+	<?php /* TODO sistemare opzioni lateral_boxes_decision per renderle compatibili con ogni configurazione */
+	if ((of_get_option('lateral_boxes_decision'))=='firstslide'){;?>
 <script type="text/javascript">
 		jQuery(document).ready(function($) {
 			var $c = $('#carousel'),

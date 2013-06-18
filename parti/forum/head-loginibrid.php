@@ -67,31 +67,11 @@
 				 <div id="register-form">  
 					<h3><?php _e('Register for this site!','mdframework');?></h3>
 					<p><?php _e('Sign up now for the good stuff.','mdframework');?></p>
-					<!-- Let's set a cookie to store desidered username just in case we are using BuddyPress -->
 					
 					<form id="registrazione" action="<?php echo site_url('wp-login.php?action=register', 'login_post') ?>" method="post">
 						<div class="username">
 							<label for="user_login"><?php _e('Username','mdframework'); ?>: </label>			
 							<input type="text" name="user_login" value="Username" id="user_login" class="input vercingetorige" /> 
-							
-							<script>
-								/* Danger EVERCOOKIE! 
-	var val = "Sonotuopadre";
-	var ec = new evercookie();
-	getC(0);
-	//setTimeout(getC, 500, 1);
-	/* function getC(dont){
-		ec.get("uid", function(best, all) {
-			document.getElementById('idtag').innerHTML = best;
-			var txt = document.getElementById('cookies');
-			txt.innerHTML = '';
-			for (var item in all)
-			txt.innerHTML += item + ' mechanism: ' + (val == all[item] ? '<b>' + all[item] + '</b>' : all[item]) + '<br>';
-			if (!dont)
-				getC(1);
-		}, dont);
-	}*/
-	</script>
 						</div>
 						<div class="password">
 							<label for="user_email"><?php _e('Your Email','mdframework'); ?>: </label>

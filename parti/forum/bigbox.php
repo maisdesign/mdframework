@@ -5,7 +5,8 @@
 <?php do {;
 	$bigboxcat = of_get_option('big_box_category_'.$contabox);
 	$category_link = get_category_link( $bigboxcat);
-	/* $numnews = of_get_option('number_news_box_'.$contanews);*/
+	$numnews = of_get_option('how_many_posts_in_lateral_slide_'.$contabox);
+	$multicheck = of_get_option('which_part_in_lateral_slide_'.$contabox);
 	/* $offsetnews = of_get_option('news_box_skip_'.$contanews)*/;?>
 	<aside class="fbox">
 		<h2 class="news titolo articolo withlogo textfill ridimensionami" >
@@ -33,7 +34,7 @@
 			<div class="asidenews<?php echo $contabox;?> slidando">
 				<?php
 					query_posts( array(
-					'showposts'=>'5',
+					'showposts'=>$numnews,
 					/*'offset'=>$offsetnews,*/
 					'cat' => $bigboxcat));
 					if (have_posts()) :
@@ -41,8 +42,39 @@
 				?>
 				<div>
 					<div class="latestscreenshot">
+					<?php if (($multicheck['title'])==='1' ) {;?>
 						<p class="caption" href="<?php the_permalink() ?>"><?php the_title(); ?></p>		
-							<?php getImage('1'); ?>
+					<?php };if (($multicheck['preview'])==='1' ) {
+							$images = rwmb_meta( 'md_cfield_preview_custom', 'type=plupload_image&size=homepreview' );
+								if ($images){
+									foreach ( $images as $image )
+										{if (($multicheck['title'])==='0' ) {
+											echo '<a href="';
+												the_permalink();
+											echo'" title="';
+											the_title();
+											echo'">';
+										};
+										echo "<img src='{$image['full_url']}' width='{$image['width']}' height='{$image['height']}' alt='{$image['alt']}' />";
+										if (($multicheck['title'])==='0' ) {
+											echo '</a>';
+										};
+										}
+									}else{
+										if (($multicheck['title'])==='0' ) {
+											echo '<a href="';
+												the_permalink();
+											echo'" title="';
+											the_title();
+											echo'">';
+										};
+										getImage('1');
+										if (($multicheck['title'])==='0' ) {
+											echo '</a>';
+										};
+									};
+							};?>
+						<?php if (($multicheck['content'])==='1' ) {;?><p class="exclatsli"><?php the_excerpt();echo '</p>';};?>
 					</div>
 					<?php /*
 						<div class="riassuntonews">

@@ -12,6 +12,8 @@
 							<div class="archive-meta"><?php echo category_description(); ?></div>
 							<?php endif; ?>
 						</header><!-- .archive-header -->
+						<ul>
+            </ul>
 					<?php /* Start the Loop */
 						$contagrid = 1;
 						$_SESSION['contandocat'] = $contagrid;
