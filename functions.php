@@ -645,7 +645,7 @@ function options_typography_styles() {
 		}
 		if ( of_get_option( 'home_side_font_forum' ) ) {
 			$input = of_get_option( 'home_side_font_forum' );
-			$output .= options_typography_font_styles( of_get_option( 'home_side_font_forum' ) , 'H2.withlogo, H3.widget-title, A.withlogo,ASIDE.fbox H2.news.titolo.articolo.withlogo A');
+			$output .= options_typography_font_styles( of_get_option( 'home_side_font_forum' ) , 'H2.withlogo, H3.widget-title, A.withlogo,ASIDE.fbox H2.news.titolo.articolo.withlogo A,H3.withlogo');
 		}
 		if ( of_get_option( 'menu_font_forum' ) ) {
 			$input = of_get_option( 'menu_font_forum' );
@@ -1636,7 +1636,8 @@ echo $currentBefore . get_the_time('Y') . $currentAfter;
 elseif ( is_single() )
 {
 $cat = get_the_category(); $cat = $cat[0];
-echo get_category_parents($cat, TRUE, ' ' . $delimiter . ' ');
+$thecats = get_category_parents($cat, TRUE, ' ' . $delimiter . ' ');
+                if(!is_object($thecats)) echo $thecats;
 echo $currentBefore;
 the_title();
 echo $currentAfter;
@@ -1685,7 +1686,6 @@ echo $currentBefore .__('Error 404','mdframework') . $currentAfter;
 }
 if ( get_query_var('paged') )
 echo $currentBefore . __('Page') . ' ' . get_query_var('paged') . $currentAfter;
-}rrentBefore . __('Page') . ' ' . get_query_var('paged') . $currentAfter;
 }
 
 /* Add HighLight class to comments */
@@ -1733,7 +1733,9 @@ function button_js() {
 
 /* Colonne aggiuntive
 
-/* Aggiunge colonna ID post 
+/* Aggiunge colonna ID post */
+/* Post ID coloumn */
+/*
  add_filter('manage_posts_columns', 'posts_columns_id', 5);
     add_action('manage_posts_custom_column', 'posts_custom_id_columns', 5, 2);
     add_filter('manage_pages_columns', 'posts_columns_id', 5);
@@ -1747,7 +1749,8 @@ function posts_custom_id_columns($column_name, $id){
                 echo $id;
     }
 }
-/* Aggiunge colonna con il numero delle immagini aggiunte 
+/* Counts attached images and add a coloumn whit this number */
+/*
 add_filter('manage_posts_columns', 'posts_columns_attachment_count', 5);
 add_action('manage_posts_custom_column', 'posts_custom_columns_attachment_count', 5, 2);
 function posts_columns_attachment_count($defaults){
@@ -1761,7 +1764,8 @@ function posts_custom_columns_attachment_count($column_name, $id){
         if($count !=0){echo $count;}
     }
 }
-/* Colonna Feautured image 
+/* Feautured Image coloum*/
+/*
 if (function_exists( 'add_theme_support' )){
     add_filter('manage_posts_columns', 'posts_columns', 5);
     add_action('manage_posts_custom_column', 'posts_custom_columns', 5, 2);
@@ -1818,6 +1822,7 @@ add_action( 'wp_head', 'diww_facebook_image' );
 
 /* Da Attivare */
 /* Aggiungere file PDF con metabox */
+/* PDF uploader with metabox */
 /* http://wpsnipp.com/index.php/functions-php/attach-pdf-files-to-post-with-custom-metabox-file-selection/ */
 /* Aggiungere questo codice dove si vuole mostrare il pulsante : <a href="<? pdf_file_url(); ?>">My PDF File</a> */
 /*
@@ -1889,6 +1894,7 @@ function pdf_file_url(){
 */
 
 /* Da Attivare */
+/* Show latest 5 updated posts or pages, add this code in template */
 /* Mostra gli ultimi 5 post o pagine aggiornate */
 /* Aggiungere questo codice nel punto del template in cui si vogliono mostrare le info */
 /*
@@ -1911,7 +1917,7 @@ foreach ($recentposts as $post) {
 <?php endif; ?>
 */
 /* Da Attivare */
-/* Limita ricerca ai soli titoli dei post */
+/* Search title only */
 /* http://wpsnipp.com/index.php/functions-php/limit-search-to-post-titles-only/ */
 /*
 function __search_by_title_only( $search, &$wp_query )
@@ -1939,7 +1945,7 @@ add_filter( 'posts_search', '__search_by_title_only', 500, 2 );
 */
 
 /* Da Attivare */
-/* Colonna TrackBack e PingBack */
+/* TrackBack & PingBack coloumn*/
 /*
 function commentCount($type = 'comments'){
         if($type == 'trackbacks'):
@@ -1987,7 +1993,7 @@ function posts_custom_columns_counts($column_name, $id){
 */
 
 /* Da Attivare */
-/* Messaggi di avviso nella dash */
+/* Alert messages in dashboard */
 /* http://speckyboy.com/2011/04/27/20-snippets-and-hacks-to-make-wordpress-user-friendly-for-your-clients/ */
 /*
 /**
@@ -2052,7 +2058,7 @@ function example_add_dashboard_widgets() {
 add_action('wp_dashboard_setup', 'example_add_dashboard_widgets' );
 */
 
-/* Widget Ultimi post nella DashBoard*/
+/* Latest posts Widget DashBoard*/
 function wps_recent_posts_dw() {
 ?>
    <ol>
@@ -2071,7 +2077,7 @@ function add_wps_recent_posts_dw() {
 }
 add_action('wp_dashboard_setup', 'add_wps_recent_posts_dw' );
 
-/* Conteggio totale parole */
+/* Word counter */
 function post_word_count() {
     $count = 0;
     $posts = get_posts( array(
