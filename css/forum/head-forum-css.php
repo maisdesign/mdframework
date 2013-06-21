@@ -31,7 +31,7 @@ BODY{<?php if (of_get_option('super_background')){
 	<?php /* .videoclan{background:<?php echo of_get_option('videoclan_area_background','#FFF');?>
 	.slotnews{background:<?php echo of_get_option('slotnews_area_background','#FFF');?>} */;?>
 	FOOTER.homeforum{background:<?php echo of_get_option('footer_area_background','#FFF');?>}
-	H2.withlogo, H3.widget-title, A.withlogo, ASIDE.fbox H2.news.titolo.articolo.withlogo A{-moz-text-shadow:1px 1px 1px <?php echo of_get_option('text_shadow_font_home_side','#E64E4E');?>;-webkit-text-shadow:1px 1px 1px <?php echo of_get_option('text_shadow_font_home_side','#E64E4E');?>;-o-text-shadow:1px 1px 1px <?php echo of_get_option('text_shadow_font_home_side','#E64E4E');?>;text-shadow:1px 1px 1px <?php echo of_get_option('text_shadow_font_home_side','#E64E4E');?>}
+	H2.withlogo, H3.widget-title, A.withlogo,H3.withlogo, ASIDE.fbox H2.news.titolo.articolo.withlogo A{-moz-text-shadow:1px 1px 1px <?php echo of_get_option('text_shadow_font_home_side','#E64E4E');?>;-webkit-text-shadow:1px 1px 1px <?php echo of_get_option('text_shadow_font_home_side','#E64E4E');?>;-o-text-shadow:1px 1px 1px <?php echo of_get_option('text_shadow_font_home_side','#E64E4E');?>;text-shadow:1px 1px 1px <?php echo of_get_option('text_shadow_font_home_side','#E64E4E');?>}
 	<?php if ( (of_get_option('forced_section'))){;?>
 		.forcedlateral H2 SPAN A{-moz-text-shadow:1px 1px 1px <?php echo of_get_option('text_shadows_sidebox_color','#E64E4E');?>;-webkit-text-shadow:1px 1px 1px <?php echo of_get_option('text_shadows_sidebox_color','#E64E4E');?>;-o-text-shadow:1px 1px 1px <?php echo of_get_option('text_shadows_sidebox_color','#E64E4E');?>;text-shadow:1px 1px 1px <?php echo of_get_option('text_shadows_sidebox_color','#E64E4E');?>}
 		<?php $fbst = of_get_option('slotnews_box_shadow','#AAA');$fbsb = of_get_option('videoclan_box_shadow','#AAA');?> 
@@ -67,5 +67,6 @@ $rgb = hex2rgb($sidebarcolor);
 $r = $rgb[0];$g = $rgb[1];$b = $rgb[2];
 if (of_get_option('sidebar_transparency_chooser')){
 $transpsidebar = of_get_option('sidebar_transparency_chooser');
+echo '.fillme{background:rgb('.$r.','.$g.','.$b.');}';
 echo '.fillme{background:rgba('.$r.','.$g.','.$b.','.'0.'.$transpsidebar.');}';
-}else{ echo '.fillme{background:rgba('.$r.','.$g.','.$b.');}';};?>
+}else{ echo '.fillme{background:rgb('.$r.','.$g.','.$b.');}';};?>

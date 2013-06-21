@@ -3,7 +3,7 @@
 <?php $lowlefcatnum = of_get_option('low_left_num_forum');?>
 <?php $lowlefcatoffset = of_get_option('low_left_offset_forum');?>
 <aside class="videoclan">
-	<h2 class="titolo video withlogo"><?php echo get_the_category_by_id($lowlefcatid); ?></h2>
+	<h3 class="titolo video withlogo"><?php echo get_the_category_by_id($lowlefcatid); ?></h3>
 	<div class="vecchiotorneo"><img src="<?php echo get_template_directory_uri();?>/images/up.png" alt="next"/></div>
 	<div id="turnament">
 	<?php

@@ -23,7 +23,7 @@
 					<p><?php _e( 'User registration is currently not allowed.', 'buddypress' ); ?></p>
 
 				<?php do_action( 'bp_after_registration_disabled' ); ?>
-			<?php endif; // registration-disabled signup setp ?>
+			<?php endif; // registration-disabled signup setup ?>
 
 			<?php if ( 'request-details' == bp_get_current_signup_step() ) : ?>
 
@@ -42,28 +42,7 @@
 					<h4><?php _e( 'Account Details', 'buddypress' ); ?></h4>
 
 					<label for="signup_username"><?php _e( 'Username', 'buddypress' ); ?> <?php _e( '(required)', 'buddypress' ); ?></label>
-					<!--
-					<script type="text/javascript">
-					jQuery(document).ready(function ($) {
-					var $valorecookie = $.cookie('the_cookie');
-						$("#signup_username").val($valorecookie).val();
-						});
-					</script>
-					<script>document.getElementById('signup_username').value = document.write(getCookie('user_login'));</script>
-					-->
 					<?php do_action( 'bp_signup_username_errors' ); ?>
-					<?php if(session_id() == '') {
-    echo '<h1 style="color:#FFF">Sessione OFF</h1>';}else{echo '<h1 style="color:#FFF">Sessione ON</h1>';// session isn't started
-    foreach ($_SESSION as $key=>$val)
-    echo "  ".$key." :  ".$val."<br /><br />";
-};?>
-<?php
-if (isset($HTTP_COOKIE_VARS ["testcookie "])){
-	echo "Il contenuto del cookie è: " . $HTTP_COOKIE_VARS ["testcookie "] ;
-}else{
-echo "Il cookie non è stato impostato";
-};
-?>
 					<input type="text" name="signup_username" id="signup_username" value="<?php session_start(); if (isset($_SESSION['loggami'])){ /*$_SESSION['login_user']= $_POST['user_login'];*/echo $_SESSION['loggami'];}else{ /* bp_signup_username_value()*/ echo 'Niente da dichiarare';};?>" />
 
 					<label for="signup_email"><?php _e( 'Email Address', 'buddypress' ); ?> <?php _e( '(required)', 'buddypress' ); ?></label>

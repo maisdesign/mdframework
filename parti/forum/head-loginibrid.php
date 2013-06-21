@@ -43,7 +43,7 @@
 				<form method="post" action="<?php echo home_url(); ?>/wp-login.php" class="wp-user-form">
 					<div class="username">
 						<label for="user_login"><?php _e('Username','mdframework'); ?>: </label>
-						<input type="text" name="log" value="<?php echo esc_attr(stripslashes($user_login)); ?>" size="20" id="user_login" tabindex="11" />
+						<input type="text" name="log" value="<?php echo esc_attr(stripslashes($user_login)); ?>" size="20" class="user_login" tabindex="11" />
 					</div>
 					<div class="password">
 						<label for="user_pass"><?php _e('Password','mdframework'); ?>: </label>
@@ -71,7 +71,7 @@
 					<form id="registrazione" action="<?php echo site_url('wp-login.php?action=register', 'login_post') ?>" method="post">
 						<div class="username">
 							<label for="user_login"><?php _e('Username','mdframework'); ?>: </label>			
-							<input type="text" name="user_login" value="Username" id="user_login" class="input vercingetorige" /> 
+							<input type="text" name="user_login" value="Username" class="user_login" class="input vercingetorige" /> 
 						</div>
 						<div class="password">
 							<label for="user_email"><?php _e('Your Email','mdframework'); ?>: </label>
@@ -94,7 +94,7 @@
 				<form method="post" action="<?php echo site_url('wp-login.php?action=lostpassword', 'login_post') ?>" class="wp-user-form">
 				<div class="username">
 					<label for="user_login" class="hide"><?php _e('Username or Email','mdframework'); ?>: </label>
-					<input type="text" name="user_login" value="" size="20" id="user_login" tabindex="1001" />
+					<input type="text" name="user_login" value="" size="20" class="user_login" tabindex="1001" />
 				</div>
 				<div class="login_fields">
 					<?php do_action('login_form', 'resetpass'); ?>

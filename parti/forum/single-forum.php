@@ -24,6 +24,12 @@
 				;?>
 			</section>
 		</section><!-- .centrosito -->
+		<?php if (of_get_option('qr_code_show')){;?>
+			<div class="qrcont">
+				<p><?php _e('Follow us via Mobile','mdframework');?></p>
+				<img src="http://api.qrserver.com/v1/create-qr-code/?size=100x100&data=<?php the_permalink(); ?>" alt="QR:  <?php the_title(); ?>"/>
+			</div>
+		<?php };?>
 		<?php $numslshow = of_get_option('slideshows_numbers');
 		switch ($numslshow) {
 			case 5:

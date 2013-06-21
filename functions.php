@@ -1685,4 +1685,507 @@ echo $currentBefore .__('Error 404','mdframework') . $currentAfter;
 }
 if ( get_query_var('paged') )
 echo $currentBefore . __('Page') . ' ' . get_query_var('paged') . $currentAfter;
+}rrentBefore . __('Page') . ' ' . get_query_var('paged') . $currentAfter;
 }
+
+/* Add HighLight class to comments */
+add_action('wp_head','wps_highlight_hash');
+function wps_highlight_hash(){
+     echo '<script type="text/javascript">
+     $(document).ready(function() {
+        /* HIGHLIGHT WITH COMMENT HASH */
+        if(window.location.hash) {
+          $(window.location.hash).addClass("highlight");
+        }
+     });
+     </script>';
+}
+
+/* DropDown Shortcode registrati */
+/* Aggiornamenti da qui: http://wpsnipp.com/index.php/functions-php/update-automatically-create-media_buttons-for-shortcode-selection/ */
+add_action('media_buttons','add_sc_select',11);
+function add_sc_select(){
+    global $shortcode_tags;
+     /* ------------------------------------- */
+     /* enter names of shortcode to exclude bellow */
+     /* ------------------------------------- */
+    $exclude = array("wp_caption", "embed");
+    echo '&nbsp;<select id="sc_select"><option>Shortcode</option>';
+    foreach ($shortcode_tags as $key => $val){
+            if(!in_array($key,$exclude)){
+            $shortcodes_list .= '<option value="['.$key.'][/'.$key.']">'.$key.'</option>';
+            }
+        }
+     echo $shortcodes_list;
+     echo '</select>';
+}
+add_action('admin_head', 'button_js');
+function button_js() {
+        echo '<script type="text/javascript">
+        jQuery(document).ready(function(){
+           jQuery("#sc_select").change(function() {
+                          send_to_editor(jQuery("#sc_select :selected").val());
+                          return false;
+                });
+        });
+        </script>';
+}
+
+/* Colonne aggiuntive
+
+/* Aggiunge colonna ID post 
+ add_filter('manage_posts_columns', 'posts_columns_id', 5);
+    add_action('manage_posts_custom_column', 'posts_custom_id_columns', 5, 2);
+    add_filter('manage_pages_columns', 'posts_columns_id', 5);
+    add_action('manage_pages_custom_column', 'posts_custom_id_columns', 5, 2);
+function posts_columns_id($defaults){
+    $defaults['wps_post_id'] = __('ID');
+    return $defaults;
+}
+function posts_custom_id_columns($column_name, $id){
+        if($column_name === 'wps_post_id'){
+                echo $id;
+    }
+}
+/* Aggiunge colonna con il numero delle immagini aggiunte 
+add_filter('manage_posts_columns', 'posts_columns_attachment_count', 5);
+add_action('manage_posts_custom_column', 'posts_custom_columns_attachment_count', 5, 2);
+function posts_columns_attachment_count($defaults){
+    $defaults['wps_post_attachments'] = __('Att');
+    return $defaults;
+}
+function posts_custom_columns_attachment_count($column_name, $id){
+        if($column_name === 'wps_post_attachments'){
+        $attachments = get_children(array('post_parent'=>$id));
+        $count = count($attachments);
+        if($count !=0){echo $count;}
+    }
+}
+/* Colonna Feautured image 
+if (function_exists( 'add_theme_support' )){
+    add_filter('manage_posts_columns', 'posts_columns', 5);
+    add_action('manage_posts_custom_column', 'posts_custom_columns', 5, 2);
+    add_filter('manage_pages_columns', 'posts_columns', 5);
+    add_action('manage_pages_custom_column', 'posts_custom_columns', 5, 2);
+}
+function posts_columns($defaults){
+    $defaults['wps_post_thumbs'] = __('Thumbs');
+    return $defaults;
+}
+function posts_custom_columns($column_name, $id){
+        if($column_name === 'wps_post_thumbs'){
+        echo the_post_thumbnail( array(125,80) );
+    }
+}
+*/
+
+/* Istruzioni OpenGraph */
+/* http://wpsnipp.com/index.php/functions-php/facebook-open-graph-snippet-to-set-default-image/ */
+if (of_get_option('fb_graph_id')){
+$adID = of_get_option('fb_graph_id');
+$uplogo = of_get_option('logo_image_forum');
+function diww_facebook_image() {
+                echo '<meta property="fb:admins" content="'.$adID.'" />';
+                echo '<meta property="og:title" content="' . get_the_title() . '" />';
+                echo '<meta property="og:site_name" content="' . get_bloginfo('name') . '" />';
+        global $post;
+        if ( is_singular() ) { // only if a single post or page
+                echo '<meta property="og:type" content="article" />';
+                echo '<meta property="og:url" content="' . get_permalink() . '" />';
+        if (has_post_thumbnail( $post->ID )) { // use featured image if there is one
+                $feat_image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );
+                echo '<meta property="og:image" content="' . esc_attr( $feat_image[0] ) . '" />';
+         }else{ // use site logo in case no featured image
+			if (of_get_option('logo_image_forum')){
+				echo '<meta property="og:image" content='.$uplogo.'" />';
+			}else{
+                echo '<meta property="og:image" content="'.get_template_directory_uri().'images/setalogo.jpg" />';
+			};
+         }
+        }
+        if ( is_home() ) { // for homepage only
+                echo '<meta property="og:type" content="website" />';
+                echo '<meta property="og:url" content="' . get_bloginfo('url') . '" />';
+                if (of_get_option('logo_image_forum')){
+				echo '<meta property="og:image" content='.$uplogo.'" />';
+			}else{
+                echo '<meta property="og:image" content="'.get_template_directory_uri().'images/setalogo.jpg" />';
+			};
+        }
+}
+add_action( 'wp_head', 'diww_facebook_image' );
+};
+
+/* Da Attivare */
+/* Aggiungere file PDF con metabox */
+/* http://wpsnipp.com/index.php/functions-php/attach-pdf-files-to-post-with-custom-metabox-file-selection/ */
+/* Aggiungere questo codice dove si vuole mostrare il pulsante : <a href="<? pdf_file_url(); ?>">My PDF File</a> */
+/*
+add_action("admin_init", "pdf_init");
+add_action('save_post', 'save_pdf_link');
+function pdf_init(){
+        add_meta_box("my-pdf", "PDF Document", "pdf_link", "post", "normal", "low");
+        }
+function pdf_link(){
+        global $post;
+        $custom  = get_post_custom($post->ID);
+        $link    = $custom["link"][0];
+        $count   = 0;
+        echo '<div class="link_header">';
+        $query_pdf_args = array(
+                'post_type' => 'attachment',
+                'post_mime_type' =>'application/pdf',
+                'post_status' => 'inherit',
+                'posts_per_page' => -1,
+                );
+        $query_pdf = new WP_Query( $query_pdf_args );
+        $pdf = array();
+        echo '<select name="link">';
+        echo '<option class="pdf_select">SELECT pdf FILE</option>';
+        foreach ( $query_pdf->posts as $file) {
+           if($link == $pdf[]= $file->guid){
+              echo '<option value="'.$pdf[]= $file->guid.'" selected="true">'.$pdf[]= $file->guid.'</option>';
+                 }else{
+              echo '<option value="'.$pdf[]= $file->guid.'">'.$pdf[]= $file->guid.'</option>';
+                 }
+                $count++;
+        }
+        echo '</select><br /></div>';
+        echo '<p>Selecting a pdf file from the above list to attach to this post.</p>';
+        echo '<div class="pdf_count"><span>Files:</span> <b>'.$count.'</b></div>';
+}
+function save_pdf_link(){
+        global $post;
+        if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE){ return $post->ID; }
+        update_post_meta($post->ID, "link", $_POST["link"]);
+}
+add_action( 'admin_head', 'pdf_css' );
+function pdf_css() {
+        echo '<style type="text/css">
+        .pdf_select{
+                font-weight:bold;
+                background:#e5e5e5;
+                }
+        .pdf_count{
+                font-size:9px;
+                color:#0066ff;
+                text-transform:uppercase;
+                background:#f3f3f3;
+                border-top:solid 1px #e5e5e5;
+                padding:6px 6px 6px 12px;
+                margin:0px -6px -8px -6px;
+                -moz-border-radius:0px 0px 6px 6px;
+                -webkit-border-radius:0px 0px 6px 6px;
+                border-radius:0px 0px 6px 6px;
+                }
+        .pdf_count span{color:#666;}
+                </style>';
+}
+function pdf_file_url(){
+        global $wp_query;
+        $custom = get_post_custom($wp_query->post->ID);
+        echo $custom['link'][0];
+}
+*/
+
+/* Da Attivare */
+/* Mostra gli ultimi 5 post o pagine aggiornate */
+/* Aggiungere questo codice nel punto del template in cui si vogliono mostrare le info */
+/*
+<?php
+     $today = current_time('mysql', 1);
+     $howMany = 5;
+     if ( $recentposts = $wpdb->get_results("SELECT ID, post_title FROM $wpdb->posts WHERE post_status = 'publish' AND post_modified_gmt < '$today' ORDER BY post_modified_gmt DESC LIMIT $howMany")):
+?>
+<h2><?php _e("Recent Updates"); ?></h2>
+<ul>
+<?php
+foreach ($recentposts as $post) {
+     if ($post->post_title == '') $post->post_title = sprintf(__('Post #%s'), $post->ID);
+     echo "<li><a href='".get_permalink($post->ID)."'>";
+     the_title();
+     echo '</a></li>';
+}
+?>
+</ul>
+<?php endif; ?>
+*/
+/* Da Attivare */
+/* Limita ricerca ai soli titoli dei post */
+/* http://wpsnipp.com/index.php/functions-php/limit-search-to-post-titles-only/ */
+/*
+function __search_by_title_only( $search, &$wp_query )
+{
+    global $wpdb;
+    if ( empty( $search ) )
+        return $search; // skip processing - no search term in query
+    $q = $wp_query->query_vars;
+    $n = ! empty( $q['exact'] ) ? '' : '%';
+    $search =
+    $searchand = '';
+    foreach ( (array) $q['search_terms'] as $term ) {
+        $term = esc_sql( like_escape( $term ) );
+        $search .= "{$searchand}($wpdb->posts.post_title LIKE '{$n}{$term}{$n}')";
+        $searchand = ' AND ';
+    }
+    if ( ! empty( $search ) ) {
+        $search = " AND ({$search}) ";
+        if ( ! is_user_logged_in() )
+            $search .= " AND ($wpdb->posts.post_password = '') ";
+    }
+    return $search;
+}
+add_filter( 'posts_search', '__search_by_title_only', 500, 2 );
+*/
+
+/* Da Attivare */
+/* Colonna TrackBack e PingBack */
+/*
+function commentCount($type = 'comments'){
+        if($type == 'trackbacks'):
+                $typeSql = 'comment_type = "trackback"';
+                $oneText = 'One :trackback';
+                $moreText = '% :trackbacks';
+                $noneText = 'No :trackbacks';
+        elseif($type == 'pingbacks'):
+                $typeSql = 'comment_type = "pingback"';
+                $oneText = 'One :pingback';
+                $moreText = '% :pingbacks';
+                $noneText = 'No :pingbacks';
+        endif;
+        global $wpdb;
+    $result = $wpdb->get_var('
+        SELECT
+            COUNT(comment_ID)
+        FROM
+            '.$wpdb->comments.'
+        WHERE
+            '.$typeSql.' AND
+            comment_approved="1" AND
+            comment_post_ID= '.get_the_ID()
+    );
+        if($result == 0):
+                echo str_replace('%', $result, $noneText);
+        elseif($result == 1):
+                echo str_replace('%', $result, $oneText);
+        elseif($result > 1):
+                echo str_replace('%', $result, $moreText);
+        endif;
+}
+add_filter('manage_posts_columns', 'posts_columns_counts', 1);
+add_action('manage_posts_custom_column', 'posts_custom_columns_counts', 1, 2);
+function posts_columns_counts($defaults){
+    $defaults['wps_post_counts'] = __('Counts');
+    return $defaults;
+}
+function posts_custom_columns_counts($column_name, $id){
+        if($column_name === 'wps_post_counts'){
+                commentCount('trackbacks'); echo "<br />";
+                commentCount('pingbacks');
+          }
+}
+*/
+
+/* Da Attivare */
+/* Messaggi di avviso nella dash */
+/* http://speckyboy.com/2011/04/27/20-snippets-and-hacks-to-make-wordpress-user-friendly-for-your-clients/ */
+/*
+/**
+ * Generic function to show a message to the user using WP's
+ * standard CSS classes to make use of the already-defined
+ * message colour scheme.
+ *
+ * @param $message The message you want to tell the user.
+ * @param $errormsg If true, the message is an error, so use
+ * the red message style. If false, the message is a status
+  * message, so use the yellow information message style.
+ 
+function showMessage($message, $errormsg = false)
+{
+    if ($errormsg) {
+        echo '<div id="message" class="error">';
+    }
+    else {
+        echo '<div id="message" class="updated fade">';
+    }
+ 
+    echo "<p><strong>$message</strong></p></div>";
+}
+/**
+ * Just show our message (with possible checking if we only want
+ * to show message to certain users.
+ *
+function showAdminMessages()
+{
+    // Shows as an error message. You could add a link to the right page if you wanted.
+    showMessage("You need to upgrade your database as soon as possible...", true);
+ 
+    // Only show to admins
+    if (user_can('manage_options') {
+       showMessage("Hello admins!");
+    }
+}
+ 
+/**
+  * Call showAdminMessages() when showing other admin
+  * messages. The message only gets shown in the admin
+  * area, but not on the frontend of your WordPress site.
+  *
+add_action('admin_notices', 'showAdminMessages');
+*/
+
+/* Da Attivare */
+/* Custom DashBoard Widget */
+/* http://speckyboy.com/2011/04/27/20-snippets-and-hacks-to-make-wordpress-user-friendly-for-your-clients/ */
+/*
+// Create the function to output the contents of our Dashboard Widget
+function example_dashboard_widget_function() {
+    // Display whatever it is you want to show
+    echo "Hello World, I'm a great Dashboard Widget";
+} 
+  
+// Create the function use in the action hook
+function example_add_dashboard_widgets() {
+    wp_add_dashboard_widget('example_dashboard_widget', 'Example Dashboard Widget', 'example_dashboard_widget_function');
+}
+// Hoook into the 'wp_dashboard_setup' action to register our other functions
+add_action('wp_dashboard_setup', 'example_add_dashboard_widgets' );
+*/
+
+/* Widget Ultimi post nella DashBoard*/
+function wps_recent_posts_dw() {
+?>
+   <ol>
+     <?php
+          global $post;
+          $args = array( 'numberposts' => 5 );
+          $myposts = get_posts( $args );
+                foreach( $myposts as $post ) :  setup_postdata($post); ?>
+                    <li> (<? the_date('Y / n / d'); ?>) <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+          <?php endforeach; ?>
+   </ol>
+<?php
+}
+function add_wps_recent_posts_dw() {
+       wp_add_dashboard_widget( 'wps_recent_posts_dw', __( 'Recent Posts' ), 'wps_recent_posts_dw' );
+}
+add_action('wp_dashboard_setup', 'add_wps_recent_posts_dw' );
+
+/* Conteggio totale parole */
+function post_word_count() {
+    $count = 0;
+    $posts = get_posts( array(
+        'numberposts' => -1,
+        'post_type' => array( 'post', 'page' )
+    ));
+    foreach( $posts as $post ) {
+        $count += str_word_count( strip_tags( get_post_field( 'post_content', $post->ID )));
+    }
+    $num =  number_format_i18n( $count );
+    $text = _n( 'Word', 'Words', $num );
+    echo "<tr><td class='first b'>{$num}</td><td class='t'>{$text}</td></tr>";
+}
+add_action( 'right_now_content_table_end', 'post_word_count');
+
+/* Custom post status message */
+add_filter( 'display_post_states', 'custom_post_state' );
+function custom_post_state( $states ) {
+        global $post;
+        $show_custom_state = get_post_meta( $post->ID, '_status' );
+        // We are using "None" as a way to disable this feature for the current post.
+        if ( $show_custom_state && $show_custom_state[0] != 'None' ) $states[] = '<span class="custom_state ' . strtolower( $show_custom_state[0] ) . '">' . $show_custom_state[0] . '</span>';
+        return $states;
+}
+add_action( 'admin_head', 'status_css' );
+function status_css()
+{
+        echo '
+        <!-- Styling of Custom Statuses -->
+        <style type="text/css">
+                .custom{border-top:solid 1px #e5e5e5;}
+                .custom_state{
+                        font-size:9px;
+                        color:#666;
+                        background:#e5e5e5;
+                        padding:3px 6px 3px 6px;
+                        -moz-border-radius:3px;
+                        -webkit-border-radius:3px;
+                        border-radius:3px;
+                        border-radius:3px;
+                }
+                .spelling{background:#4BC8EB;color:#fff;}
+                .review{background:#CB4BEB;color:#fff;}
+                .errors{background:#FF0000;color:#fff;}
+                .source{background:#D7E01F;color:#333;}
+                .rejected{background:#000000;color:#fff;}
+                .final{background:#DE9414;color:#333;}
+        </style>';
+}
+// Only those with the capability should be able to change things.
+if ( current_user_can( 'publish_posts' ) ) {
+        // Insert our "Custom Status" into the Post Publish Box
+        add_action( 'post_submitbox_misc_actions', 'custom_status_metabox' );
+        function custom_status_metabox() {
+                global $post;
+                $custom = get_post_custom( $post->ID );
+                $status = $custom["_status"][0];
+                $i = 0;
+                // Available Statuses
+                $custom_status = array( 'None', 'Spelling', 'Review', 'Errors', 'Source', 'Rejected', 'Final' );
+                echo '<div class="misc-pub-section custom">';_e('Custom status:','mdframework');
+                echo '<select name="ourstatus">';
+                        for ( $i = 0; $i < count( $custom_status ); $i++ ) {
+                                echo '<option value="' . $custom_status[$i] . '"';
+                                if ( $status == $custom_status[$i] ) echo ' selected="selected"';
+                                echo '>' . $custom_status[$i] . '</option>';
+                        }
+                echo '</select></div>';
+        }
+        // Save
+        add_action( 'save_post', 'save_status' );
+        function save_status( $post_id ) {
+                if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return $post_id;
+                update_post_meta( $post_id, "_status", $_POST["ourstatus"] );
+        }
+}
+/* Custom logo nella Dash */
+//hook the administrative header output
+add_action('admin_head', 'custom_dash_logo');
+ 
+function custom_dash_logo() {
+echo '
+<style type="text/css">
+#header-logo ,#wp-admin-bar-wp-logo>.ab-item .ab-icon { background-image: url('.get_bloginfo('template_directory').'/images/dash.PNG) !important; background-position:0 !important;}
+</style>
+';
+}
+
+/* Custom Login Logo */
+
+// login page logo
+function custom_login_logo() {
+    echo '<style type="text/css">h1 a { background: url('.get_bloginfo('template_directory').'/images/dash.PNG) 50% 50% no-repeat !important; }</style>';
+}
+add_action('login_head', 'custom_login_logo');
+
+/* Disabilita widget di default dalla dash */
+/* Create the function to use in the action hook */
+function example_remove_dashboard_widgets() {
+    // Globalize the metaboxes array, this holds all the widgets for wp-admin
+  
+    global $wp_meta_boxes;
+  
+    // Remove the incomming links widget
+    unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_incoming_links']);   
+  
+    // Remove right now
+   /* unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_right_now']); */
+     /* news da WP */
+	 unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_primary']); 
+     unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_secondary']);
+	 /* Widget Plugin */
+	 unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_plugins']);
+}
+  
+// Hoook into the 'wp_dashboard_setup' action to register our function
+add_action('wp_dashboard_setup', 'example_remove_dashboard_widgets' );
